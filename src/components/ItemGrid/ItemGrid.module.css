@@ -1,0 +1,6 @@
+.grid{
+    border: solid rgb(197, 9, 244);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

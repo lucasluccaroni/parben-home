@@ -11,6 +11,7 @@ function App() {
       <Navbar />
       <ItemListContainer message={"ItemListContainer"} />
       <h1>Bienvenido a JJMuebles!</h1>
+
     </>
   )
 }

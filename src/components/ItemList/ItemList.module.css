@@ -1,0 +1,9 @@
+.list{
+    border: solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 400px;
+}
+

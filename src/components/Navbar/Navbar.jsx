@@ -8,8 +8,8 @@ const Navbar = () => {
 
     return (
         <nav className={css.nav}>
-            <h1 className={css.title} >JJMuebles</h1>
-            <img src={"./vite.svg"} />
+            <h1 className={css.title}> JJMuebles </h1>
+            {/* <img src={"./vite.svg"} /> */}
             <section className={css.section}>
                 <ButtonHamb />
                 <Button label={"Home"} clase={"colorVerde"} callback={handleClick} />
