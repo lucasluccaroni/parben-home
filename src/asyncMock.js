@@ -50,7 +50,7 @@ export const getProducts = async () => {
         const result = await new Promise((resolve) => {
             setTimeout(() => {
                 resolve(products)
-            }, 3000)
+            }, 1000)
         })
         return result
     }
@@ -58,3 +58,37 @@ export const getProducts = async () => {
         console.log("ERROR EN EN ASYNCMOCK => ", err)
     }
 }
+
+export const getProductByCategory = async (categoryId) => {
+    try {
+        const result = await new Promise((resolve) => {
+            setTimeout(() => {
+                const productsFound = products.filter(prod => prod.category === categoryId)
+                console.log(`RESULTADO DE BUSQUEDA CATEROGRIA ${categoryId} => `, productsFound)
+                resolve(productsFound)
+            }, 1000)
+        })
+
+        return result
+    }
+    catch (err) {
+        console.log("ERRO EN ASYNCMOCK - category", err)
+    }
+}
+
+
+export const getProductById = async (itemId) => {
+    try {
+        const result = await new Promise((resolve) => {
+            setTimeout(() => {
+                const productFound = products.find(prod => prod.id == itemId)
+                resolve(productFound)
+            }, 1000)
+        })
+        return result
+    }
+    catch (err) {
+        console.log("ERROR EN EN ASYNCMOCK - byId => ", err)
+    }
+}
+

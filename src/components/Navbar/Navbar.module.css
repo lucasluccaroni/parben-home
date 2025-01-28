@@ -3,10 +3,18 @@
 }
 
 .nav{
+    background-color: #A79F92;
     border: solid orange;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 350px;
+    height: 100px;
+    cursor: pointer;
 }
 
 .section{
