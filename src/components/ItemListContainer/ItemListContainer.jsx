@@ -7,10 +7,11 @@ import { useParams } from "react-router-dom"
 
 const ItemListContainer = ({ message }) => {
     const [products, setProducts] = useState([])
-    const [listOrGrid, setListOrGrid] = useState(true)
+    const [viewOption, setViewOtion] = useState("grilla")
     const [loading, setLoading] = useState(true)
     const { categoryId } = useParams()
 
+    // useEffect para importar datos
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -31,20 +32,22 @@ const ItemListContainer = ({ message }) => {
     }, [categoryId])
     console.log(products)
 
-    if(loading){
+    // Cambio de componente entre vista de grilla o columna
+    const ItemView = viewOption === "grilla" ? ItemGrid : ItemList
+    const changeViewOption = () => {
+        setViewOtion(viewOption === "grilla" ? "columna" : "grilla")
+    }
+
+    // Componente Loading
+    if (loading) {
         return <h1> Cargando... </h1>
     }
 
     return (
         <div>
             <h1> {message} </h1>
-            <button onClick={() => setListOrGrid(listOrGrid => !listOrGrid)} > {listOrGrid ? "Columnas" : "Cuadrícula"} </button>
-            {
-                listOrGrid ?
-                    <ItemGrid products={products} /> :
-                    <ItemList products={products} />
-            }
-
+            <button onClick={changeViewOption} > {viewOption === "grilla" ? "Ver: columna" : "Ver: grilla"} </button>
+            <ItemView products={products} />
         </div>
     )
 }
