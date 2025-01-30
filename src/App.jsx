@@ -23,7 +23,7 @@ function App() {
           <Route path='/tips' element={<h1>Tips</h1>} />
           <Route path='/contacto' element={<h1>Contacto</h1>} />
           <Route path='/como-comprar' element={<h1>Como comprar</h1>} />
-          <Route path='*' element={<h1>404 Página no encontrada :( </h1>} />
+          <Route path='*' element={<h1>404 Página no encontrada :(</h1>} />
 
           <Route path="/category/:categoryId" element={<ItemListContainer message={"CATEGORIA AQUI ej. sofas"} />} />
         </Routes>
