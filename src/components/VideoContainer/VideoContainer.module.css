@@ -1,0 +1,14 @@
+.videoContainer {
+    height: 100vh;
+    width: fit-content;
+    border: dotted violet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video{
+    border: solid black 5px;
+    width: 60vw;
+    height: 70vh;
+}

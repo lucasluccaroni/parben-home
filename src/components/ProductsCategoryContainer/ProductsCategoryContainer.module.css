@@ -1,0 +1,7 @@
+.container{
+    margin-top: 10vh;
+    border: solid salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

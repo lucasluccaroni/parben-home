@@ -2,6 +2,9 @@ import Navbar from './components/Navbar/Navbar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import CarrouselText from './components/CarrouselText/CarrouselText'
+import Footer from './components/Footer/Footer'
+import HomeContainer from './components/HomeContainer/HomeContainer'
+import "./App.css"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
@@ -9,11 +12,11 @@ function App() {
 
   return (
     <>
-      <BrowserRouter >
         <CarrouselText text={"¡15% OFF EN EFECTIVO!"} repetitions={20} />
+      <BrowserRouter >
         <Navbar />
         <Routes>
-          <Route path='/' element={<h1>Home</h1>} />
+          <Route path='/' element={<HomeContainer/>} />
           <Route path="/productos" element={<ItemListContainer message={"Todos los productos"} />} /> {/* cambiar a categorias */}
           <Route path='/detalle/:productId' element={<ItemDetailContainer />} />
           <Route path='/servicios' element={<h1>Servicios</h1>} />
@@ -25,7 +28,7 @@ function App() {
           <Route path="/category/:categoryId" element={<ItemListContainer message={"CATEGORIA AQUI ej. sofas"} />} />
         </Routes>
       </BrowserRouter>
-      {/* footer aca? */}
+      <Footer />
     </>
   )
 }
