@@ -5,8 +5,7 @@ const ButtonHamb = () => {
     return (
         <>
             <div className={css.menuContainer}>
-                {/* <button className={css.menuButton}>Productos</button> */}
-                <Link to="/productos" > Productos </Link>
+                <Link className={css.link} to="/productos" > Productos </Link>
                 <div className={css.menuContent}>
                     <Link to={"/category/sofas"} > Sofas</Link>
                     <Link to={"/category/esquineros"} > Esquineros</Link>

@@ -1,26 +1,66 @@
-.title{
-    color: red;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 20vh;
 }
 
-.nav{
-    background-color: #A79F92;
-    border: solid orange;
+.logo {
+    width: 25vw;
+    height: 12vh;
+    padding: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: #37332D;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: 5vh;
+    background-color: #37332D;
+}
+
+.link {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 7vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: "Marcellus", serif;
 }
 
-.logo{
-    width: 350px;
-    height: 100px;
-    cursor: pointer;
+.link:hover {
+    background-color: #A79F92;
+    color: #37332D;
 }
 
-.section{
-    width: 50%;
-    border: solid red;
+.comoComprarButton {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    text-align: center;
+    height: 5vh;
+    width: 10vw;
+    padding: 3px;
+    margin-right: 20px;
+    border: solid black 2px;
+    background-color: #A79F92;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: "Marcellus", serif;
+}
+
+.comoComprarButton:active {
+    transform: scale(0.95);
 }

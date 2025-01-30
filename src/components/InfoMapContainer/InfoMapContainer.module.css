@@ -1,0 +1,8 @@
+.container{
+    border: double teal;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    height: 90vh;
+}

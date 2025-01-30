@@ -1,17 +1,8 @@
 .menuContainer {
     position: relative;
     display: inline-block;
+    margin: 0;
 }
-
-.menuButton {
-    background-color: #3498db;
-    /* color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px; */
-}
-
 .menuContent {
     display: none;
     position: absolute;
@@ -19,7 +10,8 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     min-width: 160px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-family: "Marcellus", serif;
 }
 
 .menuContent a {
@@ -30,9 +22,31 @@
 }
 
 .menuContent a:hover {
-    background-color: #f1f1f1;
+    background-color: #A79F92;
+    color: white;
+    border: solid black 1px;
 }
 
 .menuContainer:hover .menuContent {
     display: block;
+}
+
+.link{
+    padding: 0;
+    margin: 0;
+    width: 7vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: "Marcellus", serif;
+}
+
+.link:hover{
+    background-color: #A79F92;
+    color: #37332D;
 }

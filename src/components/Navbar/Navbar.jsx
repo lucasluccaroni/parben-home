@@ -6,15 +6,15 @@ const Navbar = () => {
 
     return (
         <nav className={css.nav}>
-            <img onClick={() => navigate("/")} src={"/images/logo-nav.png"} alt="Parben Home Logo" className={css.logo} />
+            <img onClick={() => navigate("/")} src={"/images/logo-nav2.png"} alt="Parben Home Logo" className={css.logo} />
             <section className={css.section}>
-                <Link to="/" > Home </Link>
+                <Link className={css.link} to="/" > Inicio </Link>
                 <ButtonHamb />
-                <Link to="/servicios" > Servicios </Link>
-                <Link to="/tips" > Tips </Link>
-                <Link to="contacto" > Contacto </Link>
+                <Link className={css.link} to="/servicios" > Servicios </Link>
+                <Link className={css.link} to="/tips" > Tips </Link>
+                <Link className={css.link} to="contacto" > Contacto </Link>
             </section>
-            <Link to="como-comprar"> ¿Cómo comprar? </Link>
+            <Link className={css.comoComprarButton} to="como-comprar"> ¿Cómo comprar? </Link>
         </nav>
     )
 }

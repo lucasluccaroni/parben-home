@@ -24,6 +24,8 @@
     top: 20%;
     animation: carrusel 40s linear infinite;
     width: fit-content;
+    font-family: "Geist", serif;
+    font-weight: 400;
 }
 
 .carrouselText span{

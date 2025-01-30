@@ -8,6 +8,7 @@
     color: inherit;
     font-size: xx-large;
     text-decoration: none;
+    font-family: "Geist", serif;
 
     height: 20vh;
     width: 25vw;
@@ -15,5 +16,5 @@
 
 .links:hover {
     background-color: #0056b3; /* Nuevo color de fondo al pasar el mouse */
-    transform: scale(1.05); /* Agranda el botón un poco */
+    transform: scale(1.05); /* Agranda el boton un poco */
 }
