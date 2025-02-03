@@ -3,6 +3,7 @@ import { getProductByCategory, getProducts } from "../../asyncMock"
 import ItemList from "../ItemList/ItemList"
 import ItemGrid from "../ItemGrid/ItemGrid"
 import { useParams } from "react-router-dom"
+import css from "./ItemListContainer.module.css"
 
 
 const ItemListContainer = ({ message }) => {
@@ -40,11 +41,11 @@ const ItemListContainer = ({ message }) => {
 
     // Componente Loading
     if (loading) {
-        return <h1> Cargando... </h1>
+        return <h1 className={css.container} > Cargando... </h1>
     }
 
     return (
-        <div>
+        <div className={css.container} >
             <h1> {message} </h1>
             <button onClick={changeViewOption} > {viewOption === "grilla" ? "Ver: columna" : "Ver: grilla"} </button>
             <ItemView products={products} />

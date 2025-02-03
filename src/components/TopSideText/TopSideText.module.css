@@ -1,0 +1,13 @@
+.spanContainer{
+    background-color: black;
+    color: #F2F3EE;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    overflow: hidden; 
+    font-family: "Geist", serif;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

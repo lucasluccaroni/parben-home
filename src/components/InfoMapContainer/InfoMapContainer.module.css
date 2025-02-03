@@ -1,8 +1,9 @@
 .container{
-    border: double teal;
+    /* border: double teal; */
+    background-color: #37332D;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 80vw;
-    height: 90vh;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
 }

@@ -9,7 +9,7 @@ const Footer = () => {
                 <a href="https://www.instagram.com/lucasluccaroni/" target="_blank" rel="noopener noreferrer">
                     <img className={css.logo} src="/images/redes/instagram.png" alt="Instagram logo" />
                 </a>
-                <a href="http://whatsapp.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5491162763002" target="_blank" rel="noopener noreferrer">
                     <img className={css.logo} src="/images/redes/whatsapp.png" alt="Whatsapp logo" />
                 </a>
                 <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">

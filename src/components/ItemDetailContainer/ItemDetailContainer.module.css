@@ -1,0 +1,22 @@
+.itemDetailContainer {
+    margin-top: 40vh;
+    font-family: "Geist", serif;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 5vh;
+    width: 10vw;
+    padding: 3px;
+    margin-right: 20px;
+    border: solid black 2px;
+    background-color: #A79F92;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: "Marcellus", serif;
+
+}

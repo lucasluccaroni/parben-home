@@ -6,15 +6,20 @@
     margin: 10px;
     border: solid 1px;
     color: inherit;
-    font-size: xx-large;
+    font-size: x-large;
     text-decoration: none;
     font-family: "Geist", serif;
+    /* color: #F2F3EE; */
+
 
     height: 20vh;
-    width: 25vw;
+    width: 20vw;
 }
 
 .links:hover {
-    background-color: #0056b3; /* Nuevo color de fondo al pasar el mouse */
-    transform: scale(1.05); /* Agranda el boton un poco */
+    font-family: "Geist", serif;
+    background-color: #37332D;
+    color: #F2F3EE;
+    /* background-color: #A79F92;  */
+    transform: scale(1.05);
 }

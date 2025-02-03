@@ -1,13 +1,15 @@
 .container {
     padding: 10px;
-    margin-top: 15px;
-    border: solid black;
+    /* margin-top: 15px; */
+    border: solid black 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 80vh;
     position: relative;
+    background-color: #A79F92;
+    font-family: "Marcellus", serif;
 }
 
 .containerLogos {

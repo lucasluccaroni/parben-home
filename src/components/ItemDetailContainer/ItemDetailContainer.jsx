@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import { getProductById } from "../../asyncMock"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import css from "./ItemDetailContainer.module.css"
+import { Link } from "react-router-dom"
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)
@@ -27,10 +28,11 @@ const ItemDetailContainer = () => {
     console.log(product)
 
     return (
-        <>
+        <div className={css.itemDetailContainer}>
+            <Link className={css.boton} to={"/productos"} > Volver </Link>
             <h1>ItemDetailContainer</h1>
             <ItemDetail {...product} />
-        </>
+        </div>
     )
 }
 

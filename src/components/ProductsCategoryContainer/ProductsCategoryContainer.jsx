@@ -19,7 +19,7 @@ const ProductsCategoryContainer = () => {
 
     return (
         <div className={css.container} >
-            <h1> Nuestros productos </h1>
+            <h1 className={css.titulo} > Nuestros productos </h1>
             <ProductCategoryList paths={paths} />
         </div>
     )

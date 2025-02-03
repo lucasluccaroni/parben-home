@@ -4,6 +4,12 @@
     align-items: center;
     flex-wrap: wrap;
     height: 20vh;
+    position: absolute;
+    top: 20;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Asegura que esté por encima de la imagen */
+    background-color: transparent; /* Hace el fondo transparente */
 }
 
 .logo {

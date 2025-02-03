@@ -1,6 +1,8 @@
 .videoContainer {
     height: 100vh;
-    width: fit-content;
+    width: 100vw;
+    /* margin-top: 10vh; */
+    /* margin-bottom: 10vh; */
     border: dotted violet;
     display: flex;
     align-items: center;
@@ -9,6 +11,6 @@
 
 .video{
     border: solid black 5px;
-    width: 60vw;
-    height: 70vh;
+    width: 100vw;
+    height: 100vh;
 }
