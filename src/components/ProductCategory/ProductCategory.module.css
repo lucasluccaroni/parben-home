@@ -1,3 +1,8 @@
+.img {
+    background-size: cover;
+    background-position: center;
+}
+
 .links {
     display: flex;
     align-items: center;
@@ -9,17 +14,21 @@
     font-size: x-large;
     text-decoration: none;
     font-family: "Geist", serif;
-    /* color: #F2F3EE; */
-
-
+    font-family: "Marcellus", serif;
     height: 20vh;
     width: 20vw;
+
+    background-size: cover;
+    background-position: center;
+
 }
 
 .links:hover {
-    font-family: "Geist", serif;
-    background-color: #37332D;
+    /* font-family: "Geist", serif; */
     color: #F2F3EE;
-    /* background-color: #A79F92;  */
     transform: scale(1.05);
 }
+
+/* color: #F2F3EE; *
+/* background-color: #37332D; */
+/* background-color: #A79F92;  */

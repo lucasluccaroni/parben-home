@@ -9,18 +9,18 @@ import "./App.css"
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import ProductsCategoryContainer from './components/ProductsCategoryContainer/ProductsCategoryContainer'
 
 function App() {
 
   return (
     <div className="App" >
-      {/* <CarrouselText text={"¡15% OFF EN EFECTIVO!"} repetitions={20} /> */}
     <TopSideText text={"🔥 ¡15% OFF EN EFECTIVO! 🔥"} />
       <BrowserRouter >
         <Navbar />
         <Routes>
           <Route path='/' element={<HomeContainer />} />
-          <Route path="/productos" element={<ItemListContainer message={"Todos los productos"} />} /> {/* cambiar a categorias */}
+          <Route path="/productos" element={<ProductsCategoryContainer variant={true} />} />
           <Route path='/detalle/:productId' element={<ItemDetailContainer />} />
           <Route path='/servicios' element={<h1>Servicios</h1>} />
           <Route path='/tips' element={<h1>Tips</h1>} />

@@ -7,7 +7,8 @@
     flex-direction: column;
     align-items: center;
     font-size: x-large;
-    font-family: "Geist", serif;
+    /* font-family: "Geist", serif; */
+    font-family: "Marcellus", serif;
 }
 
 .listaHorarios {
@@ -21,12 +22,12 @@
 }
 
 .listaTelMail {
+    margin-top: 15;
     border: solid 1px;
     width: 20vw;
     /* height: 30vh; */
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-items: flex-start;
+    align-items: right;
     padding: 15px;
 }
