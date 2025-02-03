@@ -13,12 +13,13 @@
 }
 
 .logo {
-    width: 25vw;
+    width: 20vw;
     height: 12vh;
     padding: 30px;
     margin-left: 20px;
     cursor: pointer;
-    background-color: #37332D;
+    /* background-color: #37332D; */
+    /* color: #37332D; */
 }
 
 .section {
@@ -26,8 +27,10 @@
     align-items: center;
     flex-wrap: wrap;
     width: fit-content;
+    margin-right: 12vw;
     height: 5vh;
-    background-color: #37332D;
+    /* color: #37332D; */
+    /* background-color: #37332D; */
 }
 
 .link {
@@ -39,7 +42,8 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    color: white;
+    /* color: white; */
+    color: #37332D;
     text-decoration: none;
     font-size: x-large;
     font-family: "Marcellus", serif;
@@ -58,8 +62,7 @@
     height: 5vh;
     width: 10vw;
     padding: 3px;
-    margin-right: 20px;
-    border: solid black 2px;
+    margin-right: 5vw;
     background-color: #A79F92;
     color: white;
     text-decoration: none;

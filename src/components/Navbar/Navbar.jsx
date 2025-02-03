@@ -6,7 +6,7 @@ const Navbar = () => {
 
     return (
         <nav className={css.nav}>
-            <img onClick={() => navigate("/")} src={"/images/logo-nav2.png"} alt="Parben Home Logo" className={css.logo} />
+            <img onClick={() => navigate("/")} src={"/images/logo-nav.png"} alt="Parben Home Logo" className={css.logo} />
             <section className={css.section}>
                 <Link className={css.link} to="/" > Inicio </Link>
                 <ButtonHamb />

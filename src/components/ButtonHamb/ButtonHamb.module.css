@@ -24,7 +24,7 @@
 .menuContent a:hover {
     background-color: #A79F92;
     color: white;
-    border: solid black 1px;
+    /* border: solid black 1px; */
 }
 
 .menuContainer:hover .menuContent {
@@ -40,7 +40,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #37332D;
     text-decoration: none;
     font-size: x-large;
     font-family: "Marcellus", serif;
