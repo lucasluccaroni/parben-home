@@ -1,0 +1,29 @@
+.img {
+    background-size: cover;
+    background-position: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 15px;
+    /* border: solid 1px; */
+    color: inherit;
+    font-size: xx-large;
+    text-decoration: none;
+    font-family: "Geist", serif;
+    font-family: "Marcellus", serif;
+    height: 30vh;
+    width: 40vw;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.links:hover {
+    color: #F2F3EE;
+    font-size: 45px;
+    transform: scale(1.05);
+}

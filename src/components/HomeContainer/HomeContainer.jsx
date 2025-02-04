@@ -8,6 +8,7 @@ import HomeImage from "../HomeImage/HomeImage"
 const HomeContainer = () => {
     useEffect(() => {
         document.title = "Parben Home | Inicio"
+        window.scrollTo({top: 0, behavior: "instant"})
     }, [])
     return (
         <div className={css.homeContainer} >

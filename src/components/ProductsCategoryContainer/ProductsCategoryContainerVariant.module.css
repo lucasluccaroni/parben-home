@@ -3,12 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: red;
-    background-color: aquamarine;
+    color: #100F0F;
+    background-color: #37332D;
 }
 
 .titulo {
     font-family: "Marcellus", serif;
-    color: #320ad4;
+    color: #F2F3EE;
     font-size: 50px;
 }

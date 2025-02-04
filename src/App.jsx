@@ -20,7 +20,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<HomeContainer />} />
-          <Route path="/productos" element={<ProductsCategoryContainer variant={true} />} />
+          <Route path="/productos" element={<ProductsCategoryContainer variantValidation={true} />} />
           <Route path='/detalle/:productId' element={<ItemDetailContainer />} />
           <Route path='/servicios' element={<h1>Servicios</h1>} />
           <Route path='/tips' element={<h1>Tips</h1>} />
