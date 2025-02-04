@@ -8,4 +8,12 @@
 .titulo {
     font-family: "Marcellus", serif;
     font-size: 50px;
+    color: #100F0F;
+}
+
+.subTitulo {
+    font-family: "Marcellus", serif;
+    font-size: 40px;
+    color: #100F0F;
+    margin-top: 0;
 }

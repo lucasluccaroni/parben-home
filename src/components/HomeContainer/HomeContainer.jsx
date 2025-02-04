@@ -6,16 +6,17 @@ import { useEffect } from "react"
 import HomeImage from "../HomeImage/HomeImage"
 
 const HomeContainer = () => {
-    useEffect(()=>{
+    useEffect(() => {
         document.title = "Parben Home | Inicio"
     }, [])
     return (
         <div className={css.homeContainer} >
-            <HomeImage/>
-            <h1 className={css.titulo} >BIENVENIDOS A PARBEN HOME</h1>
-            <ProductsCategoryContainer/>
-            <VideoContainer/>
-            <InfoMapContainer/>
+            <HomeImage />
+            <h1 className={css.titulo} > Parben Home </h1>
+            <h2 className={css.subTitulo} >Creamos ambientes que cuentan historias.</h2>
+            <ProductsCategoryContainer />
+            <VideoContainer />
+            <InfoMapContainer />
         </div>
     )
 }

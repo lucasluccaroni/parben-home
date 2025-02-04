@@ -9,25 +9,35 @@
     font-size: x-large;
     /* font-family: "Geist", serif; */
     font-family: "Marcellus", serif;
+    position: relative;
+}
+
+.img{
+    width: 25vw;
+    height: 40vh;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    z-index: 5;
 }
 
 .listaHorarios {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     justify-items: center;
-    border: solid 1px;
     padding: 15px;
     width: 20vw;
+    z-index: 10;
 }
 
 .listaTelMail {
     margin-top: 15;
-    border: solid 1px;
     width: 20vw;
     /* height: 30vh; */
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: center;
     padding: 15px;
+    z-index: 10;
 }

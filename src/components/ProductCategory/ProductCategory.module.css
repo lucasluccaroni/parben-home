@@ -9,7 +9,7 @@
     justify-content: center;
     padding: 5px;
     margin: 10px;
-    border: solid 1px;
+    /* border: solid 1px; */
     color: inherit;
     font-size: x-large;
     text-decoration: none;
@@ -17,15 +17,15 @@
     font-family: "Marcellus", serif;
     height: 20vh;
     width: 20vw;
-
     background-size: cover;
     background-position: center;
 
 }
 
 .links:hover {
-    /* font-family: "Geist", serif; */
     color: #F2F3EE;
+    font-size: xx-large;
+
     transform: scale(1.05);
 }
 

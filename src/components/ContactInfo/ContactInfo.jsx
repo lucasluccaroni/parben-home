@@ -3,6 +3,7 @@ import css from "./ContactInfo.module.css"
 const ContactInfo = () => {
     return (
         <div className={css.container}>
+            <img className={css.img} src="./images/logo-navegador2.png" alt="Parben Home Logo" />
             <h1> Veni a visitarnos </h1>
             <p>Av Olazabal 2315, CABA - CP.1428 - Buenos Aires</p>
             <div className={css.listaHorarios} >
