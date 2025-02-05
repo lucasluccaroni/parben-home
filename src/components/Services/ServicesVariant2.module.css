@@ -1,8 +1,8 @@
 .container {
-    margin-top: 10vh;
     display: flex;
-    /* border: solid rgb(255, 234, 0); */
+    border: solid rgb(255, 234, 0);
     width: 100vw;
+    height: 80vh;
     /* Altura del contenedor */
     background: linear-gradient(to right,
             /* Dirección del degradado */

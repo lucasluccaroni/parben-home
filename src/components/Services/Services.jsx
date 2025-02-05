@@ -37,7 +37,6 @@ const Services = ({ variant, reverse, imagen }) => {
     return (
         <div className={`${css.container} ${reverse ? css.reverse : ""}`}>
             <img className={css.img} src={image} alt="Logo" />
-
             <h2 className={css.text}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat labore repellendus ex porro obcaecati molestias accusantium, ducimus animi non tempore maiores id sequi alias nisi autem earum. Praesentium, fugiat.
                 Rem amet illo voluptatibus inventore, quaerat numquam sunt neque deserunt commodi aliquid atque quam recusandae tempore nostrum at totam, dolore obcaecati architecto repellendus? Quaerat earum aperiam, labore dicta consequuntur nihil.
                 Illum at ut earum ab ipsam minus quod quidem, quis natus laborum? Error, alias doloribus exercitationem quo dolor autem ab perferendis voluptatum quaerat facere officiis provident commodi voluptates iusto corrupti?
