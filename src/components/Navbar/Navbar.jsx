@@ -1,8 +1,19 @@
-import css from "./Navbar.module.css"
+import styles from "./Navbar.module.css"
+import stylesVariant from "./NavbarVariant.module.css"
 import ButtonHamb from "../ButtonHamb/ButtonHamb"
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useNavigate, useLocation } from "react-router-dom"
 const Navbar = () => {
     const navigate = useNavigate()
+    const { pathname } = useLocation()
+
+    let css
+    if(pathname !== "/"){
+        css = stylesVariant
+    } else {
+        css = styles
+    }
+
+    console.log(pathname)
 
     return (
         <nav className={css.nav}>

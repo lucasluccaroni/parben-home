@@ -4,12 +4,16 @@
     align-items: center;
     flex-wrap: wrap;
     height: 20vh;
-    position: absolute;
+    /* position: absolute;
     top: 20;
-    left: 0;
+    left: 0; */
     width: 100%;
     z-index: 10; /* Asegura que esté por encima de la imagen */
-    background-color: transparent; /* Hace el fondo transparente */
+    /*background-color: transparent; */   /* Hace el fondo transparente */
+    background-image: url("/public/images/navbar-image.jpg");
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .logo {
@@ -72,4 +76,11 @@
 
 .comoComprarButton:active {
     transform: scale(0.95);
+}
+
+.img{
+    background-image: "/images/navbar-image";
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
