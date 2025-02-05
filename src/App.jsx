@@ -10,6 +10,7 @@ import "./App.css"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ProductsCategoryContainer from './components/ProductsCategoryContainer/ProductsCategoryContainer'
+import ServicesContainer from './ServicesContainer/ServicesContainer'
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
           <Route path='/' element={<HomeContainer />} />
           <Route path="/productos" element={<ProductsCategoryContainer variantValidation={true} />} />
           <Route path='/detalle/:productId' element={<ItemDetailContainer />} />
-          <Route path='/servicios' element={<h1>Servicios</h1>} />
+          <Route path='/servicios' element={<ServicesContainer/>} />
           <Route path='/tips' element={<h1>Tips</h1>} />
           <Route path='/contacto' element={<h1>Contacto</h1>} />
           <Route path='/como-comprar' element={<h1>Como comprar</h1>} />

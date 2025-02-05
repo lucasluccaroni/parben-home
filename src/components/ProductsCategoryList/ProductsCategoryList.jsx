@@ -1,10 +1,15 @@
+import { useState, useEffect } from "react"
 import styles from "./ProductsCategoryList.module.css"
 import variantStyles from "./ProductsCategoryListVariant.module.css"
 import ProductCategory from "../ProductCategory/ProductCategory"
 
 const ProductCategoryList = ({ paths, variantValidation }) => {
+    const [css, setCss] = useState(styles)
 
-    const css = variantValidation ? variantStyles : styles
+    useEffect(() => {
+        setCss(variantValidation ? variantStyles : styles)
+
+    }, [variantValidation])
 
     return (
         <div className={css.listContainer} key={paths.key}>

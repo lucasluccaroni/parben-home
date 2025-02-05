@@ -2,19 +2,17 @@ import styles from "./ProductsCategoryContainer.module.css"
 import variantStyles from "./ProductsCategoryContainerVariant.module.css"
 import ProductCategoryList from "../ProductsCategoryList/ProductsCategoryList"
 import { useEffect, useState } from "react"
-import { scrollToTop } from "../../scrollToTop"
 
 const ProductsCategoryContainer = ({ variantValidation }) => {
-    const [variant, setVariant] = useState(variantValidation)
+    const [css, setCss] = useState(styles)
 
-    const css = variant ? variantStyles : styles
+    // const css = variant ? variantStyles : styles
 
     useEffect(() => {
         document.title = "Parben Home | Productos"
-        // window.scrollTo({top: 0, behavior: "smooth"})
-        // scrollToTop()
+        setCss(variantValidation ? variantStyles : styles)
 
-    }, [variant])
+    }, [variantValidation])
 
 
 
