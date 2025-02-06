@@ -35,7 +35,8 @@
     padding: 0;
     margin: 0;
     width: 7vw;
-    height: 5vh;
+    /* height: 5vh; */
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;

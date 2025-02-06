@@ -27,8 +27,9 @@
     align-items: center;
     flex-wrap: wrap;
     width: fit-content;
-    margin-right: 12vw;
-    height: 5vh;
+    margin-right: 225px;
+    height: 45px;
+    /* height: 5vh; */
     /* color: #37332D; */
     /* background-color: #37332D; */
 }
@@ -37,7 +38,8 @@
     padding: 0;
     margin: 0;
     height: 100%;
-    width: 7vw;
+    /* width: 7vw; */
+    width: 120px;
     display: flex;
     justify-content: space-around;
     align-items: center;
