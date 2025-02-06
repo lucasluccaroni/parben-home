@@ -6,14 +6,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    /* height: 80vh; */
+    height: 46rem;
     position: relative;
     background-color: #A79F92;
     font-family: "Marcellus", serif;
 }
 
 .containerLogos {
-    width: 50vw;
+    width: 55rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -25,8 +26,9 @@
 }
 
 .firma {
+    font-family: "Geist", serif;
     color: rgba(0, 0, 0, 0.358);
-    width: 15vw;
+    width: 20rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

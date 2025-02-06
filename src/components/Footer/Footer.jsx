@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
                 <h3> mail@mail.com </h3>
             <div className={css.firma} >
-            <p>Designed by: Lucas Luccaroni</p>
+            <p>Designed by: Lucas Luccaroni 2025</p>
             <a href="https://github.com/lucasluccaroni" target="_blank" rel="noopener noreferrer">
                 <img className={css.githubLogo} src="/images/redes/github.png" alt="GitHub logo" />
             </a>
