@@ -3,14 +3,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 20vh;
+    height: 185px;
     /* position: absolute;
     top: 20;
     left: 0; */
     width: 100%;
     z-index: 10; /* Asegura que esté por encima de la imagen */
     /*background-color: transparent; */   /* Hace el fondo transparente */
-    background-image: url("/public/images/navbar-image.jpg");
+    background-image: url("/images/navbar-image.jpg");
     background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;

@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 20vh;
+    height: 185px;
     position: absolute;
     top: 20;
     left: 0;
@@ -59,8 +59,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 5vh;
-    width: 10vw;
+    height: 40px;
+    width: 200px;
     padding: 3px;
     margin-right: 5vw;
     background-color: #A79F92;
