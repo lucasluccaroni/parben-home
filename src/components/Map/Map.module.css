@@ -1,6 +1,8 @@
 .map {
-    width: 50vw;
-    height: 80vh;
+    /* width: 50vw; */
+    width: 59rem;
+    /* height: 80vh; */
+    height: 48rem;
     border: 0;
     margin-left: 5vw;
 }

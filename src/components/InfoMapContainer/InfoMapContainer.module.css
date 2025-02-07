@@ -1,9 +1,11 @@
-.container{
+.container {
     /* border: double teal; */
     background-color: #37332D;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* width: 100vw;
+    height: 100vh; */
     width: 100vw;
-    height: 100vh;
+    height: 58rem;
 }

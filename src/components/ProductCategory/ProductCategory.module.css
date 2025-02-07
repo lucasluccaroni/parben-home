@@ -15,8 +15,10 @@
     text-decoration: none;
     font-family: "Geist", serif;
     font-family: "Marcellus", serif;
-    height: 20vh;
-    width: 20vw;
+    /* height: 20vh; */
+    height: 12rem;
+    /* width: 20vw; */
+    width: 25rem;
     background-size: cover;
     background-position: center;
 
