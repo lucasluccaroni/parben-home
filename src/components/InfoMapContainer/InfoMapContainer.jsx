@@ -5,8 +5,8 @@ import css from "./InfoMapContainer.module.css"
 const InfoMapContainer = () => {
     return (
         <div className={css.container} >
-            <Map />
             <ContactInfo/>
+            <Map />
         </div>
     )
 }

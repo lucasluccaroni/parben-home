@@ -32,10 +32,10 @@
 }
 
 .link{
-    padding: 0;
-    margin: 0;
+    padding-right: 10px;
+    margin-right: 0;
     width: 7vw;
-    /* height: 5vh; */
+    width: 120px;
     height: 45px;
     display: flex;
     justify-content: center;
@@ -50,4 +50,13 @@
 .link:hover{
     background-color: #A79F92;
     color: #37332D;
+}
+
+
+/* ---- MEDIA QUERIES  ---- */
+
+@media (max-width: 700px){
+    .link{
+        height: 80px;
+    }
 }

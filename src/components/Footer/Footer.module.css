@@ -41,3 +41,30 @@
     width: 40px;
     height: 40px;
 }
+
+
+/* ---- MEDIA QUERIES ---- */
+
+@media(width <= 750px){
+    .container{
+        height: 30rem;
+    }
+    .containerLogos{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    .firma{
+        /* border: solid red; */
+        font-size: 8px;
+        width: 10rem;
+        justify-content: space-evenly;
+    }
+    .githubLogo {
+        width: 15px;
+        height: 15px;
+    }
+}

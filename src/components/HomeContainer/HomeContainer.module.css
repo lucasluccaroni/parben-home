@@ -9,11 +9,14 @@
     font-family: "Marcellus", serif;
     font-size: 50px;
     color: #100F0F;
+    text-align: center;
+
 }
 
 .subTitulo {
     font-family: "Marcellus", serif;
     font-size: 40px;
+    text-align: center;
     color: #100F0F;
     margin-top: 0;
 }

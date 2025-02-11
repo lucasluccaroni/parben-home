@@ -17,3 +17,12 @@
     /* height: 100vh; */
     height: 55rem;
 }
+
+@media (width <= 1000px){
+    .videoContainer{
+        height: 40rem;
+    }
+    .video{
+        height: 40rem;
+    }
+}

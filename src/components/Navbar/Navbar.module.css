@@ -2,14 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     height: 185px;
     position: absolute;
     top: 20;
     left: 0;
     width: 100%;
-    z-index: 10; /* Asegura que esté por encima de la imagen */
-    background-color: transparent; /* Hace el fondo transparente */
+    z-index: 10;
+    /* Asegura que esté por encima de la imagen */
+    background-color: transparent;
+    /* Hace el fondo transparente */
 }
 
 .logo {
@@ -25,26 +27,21 @@
 .section {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     width: fit-content;
     margin-right: 225px;
     height: 45px;
-    /* height: 5vh; */
-    /* color: #37332D; */
-    /* background-color: #37332D; */
+
 }
 
 .link {
     padding: 0;
     margin: 0;
     height: 100%;
-    /* width: 7vw; */
     width: 120px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    /* color: white; */
     color: #37332D;
     text-decoration: none;
     font-size: x-large;
@@ -62,9 +59,9 @@
     align-items: center;
     text-align: center;
     height: 40px;
-    width: 200px;
     padding: 3px;
-    margin-right: 5vw;
+    width: 200px;
+    margin-right: 100px;
     background-color: #A79F92;
     color: white;
     text-decoration: none;
@@ -74,4 +71,69 @@
 
 .comoComprarButton:active {
     transform: scale(0.95);
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+
+@media (min-width: 1400px) and (max-width: 1590px) {
+    .comoComprarButton {
+        font-size: large;
+        padding: 10px
+    }
+}
+
+
+@media (min-width: 700px) and (max-width: 1400px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 300px;
+    }
+
+    .section {
+        margin-right: 0;
+    }
+
+
+    .comoComprarButton {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 700px;
+    }
+
+    .section {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+    }
+
+    .comoComprarButton {
+        margin-right: 0;
+    }
+
+    .link{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media  (max-width: 400px){
+    .logo{
+        width: 290px;
+        height: 80px;
+    }
 }

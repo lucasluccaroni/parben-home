@@ -1,8 +1,84 @@
+.mapContainer{
+    /* border: solid red; */
+    margin-left: 5vw;
+    width: 59rem;
+    height: 48rem;
+}
+
+
 .map {
     /* width: 50vw; */
+    /* width: 40vw; */
     width: 59rem;
-    /* height: 80vh; */
-    height: 48rem;
+    width: 100%;
+    height: 100%;
+    /* height: 70vh; */
+    /* height: 48rem; */
     border: 0;
-    margin-left: 5vw;
+}
+
+@media(width <= 1900px) {
+    .map {
+        width: 50rem;
+    }
+}
+@media(width <= 1750px) {
+    .map {
+        width: 45rem;
+    }
+}
+@media(width <= 1600px) {
+    .map {
+        width: 35rem;
+        /* height: 35rem; */
+    }
+}
+@media(width <= 1450px) {
+    .map {
+        width: 35rem;
+        /* height: 35rem; */
+    }
+}
+@media(width <= 1200px) {
+    .map {
+        width: 30rem;
+        height: 35rem;
+    }
+}
+@media(width <= 1000px) {
+    .mapContainer{
+        height: fit-content;
+        width: fit-content;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .map {
+        width: 30rem;
+        height: 30rem;
+    }
+}
+@media(width <= 1000px) {
+    /* .mapContainer{
+        height: fit-content;
+        width: fit-content;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    } */
+    .map {
+        width: 20rem;
+        height: 25rem;
+    }
+}
+
+@media(width <= 400px) {
+    /* .mapContainer{
+        height: fit-content;
+        width: fit-content;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    } */
+    .map {
+        width: 15rem;
+        height: 15rem;
+    }
 }

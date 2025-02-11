@@ -34,3 +34,28 @@
 /* color: #F2F3EE; *
 /* background-color: #37332D; */
 /* background-color: #A79F92;  */
+
+
+@media (width <=460px) {
+    .links {
+        width: 7rem;
+        height: 3rem;
+        font-size: medium;
+    }
+
+    .links:hover{
+        font-size: large;
+    }
+}
+
+@media (width <=899px) {
+    .links {
+        width: 12rem;
+        height: 5rem;
+        font-size: medium;
+    }
+
+    .links:hover{
+        font-size: large;
+    }
+}
