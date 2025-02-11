@@ -10,6 +10,7 @@ const HomeContainer = () => {
         document.title = "Parben Home | Inicio"
         window.scrollTo({top: 0, behavior: "instant"})
     }, [])
+    
     return (
         <div className={css.homeContainer} >
             <HomeImage />

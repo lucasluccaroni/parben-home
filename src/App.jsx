@@ -3,6 +3,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import TipsContainer from './components/TipsContainer/TipsContainer'
 import TopSideText from './components/TopSideText/TopSideText'
+import ComoComprar from './components/ComoComprar/ComoComprar'
 import Footer from './components/Footer/Footer'
 import HomeContainer from './components/HomeContainer/HomeContainer'
 import "./App.css"
@@ -10,7 +11,7 @@ import "./App.css"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ProductsCategoryContainer from './components/ProductsCategoryContainer/ProductsCategoryContainer'
-import ServicesContainer from './ServicesContainer/ServicesContainer'
+import ServicesContainer from './components/ServicesContainer/ServicesContainer'
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
           <Route path='/servicios' element={<ServicesContainer />} />
           <Route path='/tips' element={<TipsContainer />} />
           <Route path='/contacto' element={<h1>Contacto</h1>} />
-          <Route path='/como-comprar' element={<h1>Como comprar</h1>} />
+          <Route path='/como-comprar' element={<ComoComprar />} />
           <Route path='*' element={<h1>404 Página no encontrada :(</h1>} />
 
           <Route path="/category/:categoryId" element={<ItemListContainer message={"CATEGORIA AQUI ej. sofas"} />} />

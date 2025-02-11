@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import Services from "../components/Services/Services"
+import Services from "../Services/Services"
 import css from "./ServicesContainer.module.css"
 
 

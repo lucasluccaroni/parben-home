@@ -1,0 +1,42 @@
+.container {
+    border: solid green;
+    width: 100vw;
+    height: 70rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/images/navbar-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.titulo {
+    font-family: "M";
+    color: blue;
+    text-align: center;
+    font-size: 60px;
+}
+
+.grandContainer{
+    width: 100vw;
+    border: solid greenyellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor1{
+    align-self: end;
+    border: solid violet;
+    width: 50vw;
+    height: 28rem;
+}
+
+.contenedor2{
+    align-self: start;
+    border: solid yellow;
+    width: 50vw;
+    height: 28rem;
+}
