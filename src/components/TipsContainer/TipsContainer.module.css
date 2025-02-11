@@ -17,4 +17,19 @@
     font-size: 40px;
     color: #100F0F;
     margin-top: 0;
+    text-align: center;
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+
+@media(width <= 1000px){
+    .subTitulo{
+        font-size: 30px; 
+    }
+}
+@media(width <= 500px){
+    .subTitulo{
+        font-size: 20px; 
+    }
 }
