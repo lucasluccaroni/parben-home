@@ -126,9 +126,9 @@
     .nav {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        height: 700px;
+        height: 700px;        
     }
 
     .section {
@@ -140,7 +140,7 @@
     }
 
     .comoComprarButton {
-        margin-right: 0;
+        margin-left: 0;
     }
 
     .link{
@@ -150,11 +150,21 @@
         height: 70px;
         width: 125px;
     }
+
+    .logo{
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+    }
 }
 
-@media  (max-width: 400px){
+@media  (width <= 400px){
     .logo{
         width: 290px;
         height: 80px;
+    }
+    .nav{
+        justify-content: center;
+        align-items: center;
     }
 }
