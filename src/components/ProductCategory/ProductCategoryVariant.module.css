@@ -29,3 +29,55 @@
     font-size: 45px;
     transform: scale(1.05);
 }
+
+
+/* ---- MEDIA QUERIES ---- */
+@media(width <= 1625px){
+    .links{
+        width: 35rem;
+        height: 12rem;
+    }
+}
+
+@media(width <= 1300px){
+    .links{
+        width: 30rem;
+        height: 10rem;
+    }
+}
+
+@media(width <= 1130px){
+    .links{
+        width: 25rem;
+        height: 10rem;
+    }
+}
+
+@media(width <= 970px){
+    .links{
+        width: 20rem;
+        height: 8rem;
+    }
+}
+
+@media(width <= 820px){
+    .links{
+        width: 15rem;
+        height: 8rem;
+        font-size: x-large;
+    }
+    .links:hover{
+        font-size: 30px;
+    }
+}
+
+@media(width <= 645px){
+    .links{
+        width: 12rem;
+        height: 7rem;
+        font-size: large;
+    }
+    .links:hover{
+        font-size: 25px;
+    }
+}

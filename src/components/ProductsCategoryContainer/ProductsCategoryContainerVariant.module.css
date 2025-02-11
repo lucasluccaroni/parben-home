@@ -12,3 +12,21 @@
     color: #F2F3EE;
     font-size: 50px;
 }
+
+
+
+/* ---- MEDIA QUERIES ---- */
+@media(width <= 1625px){
+    .container{
+        padding: 20px;
+    }
+}
+@media(width <= 645px){
+    .container{
+        padding: 10px;
+    }
+    .titulo{
+        text-align: center;
+        font-size: 40px;
+    }
+}
