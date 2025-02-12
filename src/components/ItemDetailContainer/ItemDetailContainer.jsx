@@ -7,7 +7,8 @@ import { Link } from "react-router-dom"
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)
-    const {productId} = useParams()
+    const [productCategory, setProductCategory] = useState(null)
+    const { productId } = useParams()
 
     console.log("Dentro de ItemDetailContainer")
     console.log(productId)
@@ -17,6 +18,7 @@ const ItemDetailContainer = () => {
             try {
                 const result = await getProductById(productId)
                 setProduct(result)
+                setProductCategory(result.category)
             }
             catch (err) {
                 console.log("Error en ItemDetailContainer => ", err)
@@ -24,13 +26,14 @@ const ItemDetailContainer = () => {
         }
         fetchData()
     }, [productId])
-    
+
     console.log(product)
+    console.log(productCategory)
+
 
     return (
         <div className={css.itemDetailContainer}>
-            <Link className={css.boton} to={"/productos"} > Volver </Link>
-            <h1>ItemDetailContainer</h1>
+            <Link className={css.boton} to={`/category/${productCategory}`} > Volver </Link>            
             <ItemDetail {...product} />
         </div>
     )
