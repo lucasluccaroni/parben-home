@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import Services from "../Services/Services"
+import ServicesComponent from "../ServicesComponent/ServicesComponent"
 import css from "./ServicesContainer.module.css"
 
 
@@ -12,9 +12,9 @@ const ServicesContainer = () => {
     return (
         <div className={css.container}>
             <h1 className={css.subTitulo} >Los servicios que te ofrecemos.</h1>
-            <Services variant={0} imagen={3}  />
-            <Services variant={1} imagen={3} reverse={true} />
-            <Services variant={2} imagen={3} />
+            <ServicesComponent variant={0} imagen={3}  />
+            <ServicesComponent variant={1} imagen={3} reverse={true} />
+            <ServicesComponent variant={2} imagen={3} />
 
         </div>
     )

@@ -14,13 +14,19 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            try {
-                const result = await getProductById(productId)
-                setProduct(result)
+            try{
+
             }
-            catch (err) {
-                console.log("Error en ItemDetailContainer => ", err)
-            }
+            catch(err){}
+
+
+            // try {
+            //     const result = await getProductById(productId)
+            //     setProduct(result)
+            // }
+            // catch (err) {
+            //     console.log("Error en ItemDetailContainer => ", err)
+            // }
         }
         fetchData()
     }, [productId])

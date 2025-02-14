@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
-import styles from "./Services.module.css"
-import variantStyles1 from "./ServicesVariant1.module.css"
-import variantStyles2 from "./ServicesVariant2.module.css"
+import styles from "./ServicesComponent.module.css"
+import variantStyles1 from "./ServicesComponentVariant1.module.css"
+import variantStyles2 from "./ServicesComponentVariant2.module.css"
 
 
 
-const Services = ({ variant, reverse, imagen }) => {
+const ServicesComponent = ({ variant, reverse, imagen }) => {
     const [css, setCss] = useState(styles)
     const [image, setImage] = useState("")
 
@@ -45,4 +45,4 @@ const Services = ({ variant, reverse, imagen }) => {
     )
 }
 
-export default Services
+export default ServicesComponent

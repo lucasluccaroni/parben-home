@@ -3,6 +3,9 @@ import variantStyles from "./ProductsCategoryContainerVariant.module.css"
 import ProductCategoryList from "../ProductsCategoryList/ProductsCategoryList"
 import { useEffect, useState } from "react"
 
+import { getDocs, collection} from "firebase/firestore"
+import { db } from "../../services/firebase/firebaseConfig"
+
 const ProductsCategoryContainer = ({ variantValidation }) => {
     const [css, setCss] = useState(styles)
 
@@ -11,6 +14,26 @@ const ProductsCategoryContainer = ({ variantValidation }) => {
     useEffect(() => {
         document.title = "Parben Home | Productos"
         setCss(variantValidation ? variantStyles : styles)
+
+        const fetchData = async () => {
+            try{
+                const collectionRef = collection(db, "products")
+                const querySnapShot = await getDocs(collectionRef)
+                console.log(querySnapShot)
+    
+                const productsAdapted = querySnapShot.docs.map(doc => {
+                    const fields = doc.data()
+                    return { id: doc.id, ...fields }
+                })
+                console.log(productsAdapted)
+                setProducts(productsAdapted)
+            }
+            catch(err){
+                console.log("ERROR EN PRODUCTCATEGORY FETCH => ", err)
+            }
+            fetchData()
+
+        }
 
     }, [variantValidation])
 
