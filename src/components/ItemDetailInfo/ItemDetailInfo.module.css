@@ -33,8 +33,24 @@
     /* border: solid red 1px; */
 }
 
+.pdfLink {
+    margin-top: 5px;
+    width: 150px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    background-color: #d8a8a8;
+    border-radius: 2%;
+}
+.pdfLink:active {
+    transform: scale(0.99);
+}
 
-.link {
+
+.wpLink {
     width: 150px;
     text-decoration: none;
     display: flex;
@@ -45,8 +61,7 @@
     background-color: #B3D8A8;
     border-radius: 2%;
 }
-
-.link:active {
+.wpLink:active {
     transform: scale(0.99);
 }
 

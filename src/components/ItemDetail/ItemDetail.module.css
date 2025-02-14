@@ -10,7 +10,7 @@
 }
 
 .imgContainer{
-    border: solid rgb(42, 130, 165) 1px;
+    /* border: solid rgb(42, 130, 165) 1px; */
     width: 50vw;    
     height: 70vh;
 }
