@@ -1,20 +1,117 @@
 .container {
-    width: 50vw;
-    height: 100vh;
+    /* border: solid blue 1px; */
+    /* width: 50rem; */
+    /* width: 44vw; */
+    width: 45vw;
+    height: 90vh;
     background-color: #37332D;
     color: #F2F3EE;
-    position: absolute;
-    left: 50%;
     padding-left: 2vw;
     padding-right: 2vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    font-family: "Geist", serif;
 }
 
-.text{
+.namePriceContainer {
+    /* border: solid aqua 1px; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.description {
+    text-align: justify;
+}
+
+.text {
     margin-right: 10px;
-    padding-right: 10vw ;
+    padding-right: 10vw;
     width: 20vw;
+    /* border: solid red 1px; */
+}
+
+
+.link {
+    width: 150px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    background-color: #B3D8A8;
+    border-radius: 2%;
+}
+
+.link:active {
+    transform: scale(0.99);
+}
+
+.linkText {
+    color: black;
+}
+
+.wpLogo {
+    width: 30px;
+    height: 30px;
+}
+
+/* ---- MEDIA QUERIES ---- */
+
+
+@media(width <=1100px) {
+    .container {
+        height: 45vh;
+        width: 60vw;
+        width: 100vw;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .link {
+        width: 100px;
+        height: 30px;
+    }
+    .linkText{
+        font-size: 8px;
+        margin-left: 5px;
+    }
+    .wpLogo{
+        width: 20px;
+        height: 20px;
+    }
+    .description{
+        width: 35rem;
+        height: 28rem;
+        padding-right: 2rem;
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+
+@media (width <=700px){
+    .description{
+        font-size: 14px;
+        width: 50vw;
+        height: 50vh;
+    }
+
+}
+
+@media(width <= 470px){
+    .container{
+        flex-direction: column;
+        height: fit-content;
+        width: 100vw;
+    }
+    .description{
+        border: solid red;
+        padding-left: 1px;
+        width: 80vw;
+        height: fit-content;
+    }
 }

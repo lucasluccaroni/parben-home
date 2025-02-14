@@ -1,6 +1,7 @@
 .itemDetailContainer {
-    margin-top: 40vh;
+    margin-top: 2vh;
     font-family: "Geist", serif;
+    border: solid yellow;
 }
 
 .boton {
@@ -8,15 +9,20 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 4vh;
-    width: 7vw;
+    height: 2rem;
+    width: 6rem;
     padding: 3px;
+    margin-bottom: 2vh;
+    margin-left: 2vh;
     margin-right: 20px;
-    border: solid black 2px;
+    border: solid black 1px;
     background-color: #A79F92;
     color: white;
     text-decoration: none;
     font-size: x-large;
     font-family: "Marcellus", serif;
+}
 
+.boton:active{
+    transform: scale(0.90);
 }

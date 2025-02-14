@@ -4,7 +4,8 @@ const products = [
         name: "Sofa Baires",
         price: "1000000",
         category: "sofas",
-        img: "https://dcdn.mitiendanube.com/stores/001/136/305/products/bairres-tn1-1ff76b338ba4167ce916891812223556-240-0.webp",
+        img: "/images/products-category/sillas.jpg",
+        img2: "https://dcdn.mitiendanube.com/stores/001/136/305/products/bairres-tn1-1ff76b338ba4167ce916891812223556-240-0.webp",
         description: "Descripcion de Sofa Baires"
     },
     {
