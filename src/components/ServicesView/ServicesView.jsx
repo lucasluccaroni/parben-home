@@ -1,9 +1,9 @@
 import { useEffect } from "react"
 import ServicesComponent from "../ServicesComponent/ServicesComponent"
-import css from "./ServicesContainer.module.css"
+import css from "./ServicesView.module.css"
 
 
-const ServicesContainer = () => {
+const ServicesView = () => {
     useEffect(() => {
         document.title = "Parben Home | Servicios"
         window.scrollTo({ top: 0, behavior: "instant" })
@@ -20,4 +20,4 @@ const ServicesContainer = () => {
     )
 }
 
-export default ServicesContainer
+export default ServicesView

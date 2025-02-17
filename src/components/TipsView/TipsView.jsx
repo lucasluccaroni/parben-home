@@ -1,8 +1,8 @@
 import { useEffect } from "react"
 import Tips from "../Tips/Tips"
-import css from "./TipsContainer.module.css"
+import css from "./TipsView.module.css"
 
-const TipsContainer = () => {
+const TipsView = () => {
     useEffect(()=>{
         document.title = "Parben Home | Tips"
     }, [])
@@ -19,4 +19,4 @@ const TipsContainer = () => {
     )
 }
 
-export default TipsContainer
+export default TipsView

@@ -1,11 +1,11 @@
-import css from "./HomeContainer.module.css"
+import css from "./HomeView.module.css"
 import ProductsCategoryContainer from "../ProductsCategoryContainer/ProductsCategoryContainer"
 import VideoContainer from "../VideoContainer/VideoContainer"
 import InfoMapContainer from "../InfoMapContainer/InfoMapContainer"
 import { useEffect } from "react"
 import HomeImage from "../HomeImage/HomeImage"
 
-const HomeContainer = () => {
+const HomeView = () => {
     useEffect(() => {
         document.title = "Parben Home | Inicio"
         window.scrollTo({top: 0, behavior: "instant"})
@@ -23,4 +23,4 @@ const HomeContainer = () => {
     )
 }
 
-export default HomeContainer
+export default HomeView

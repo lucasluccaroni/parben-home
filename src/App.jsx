@@ -1,17 +1,18 @@
+import TopSideText from './components/TopSideText/TopSideText'
 import Navbar from './components/Navbar/Navbar'
+import HomeView from './components/HomeView/HomeView'
+import ProductsCategoryContainer from './components/ProductsCategoryContainer/ProductsCategoryContainer'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
-import TipsContainer from './components/TipsContainer/TipsContainer'
-import TopSideText from './components/TopSideText/TopSideText'
+import ServicesView from './components/ServicesView/ServicesView'
+import TipsView from './components/TipsView/TipsView'
+import ContactView from './components/ContactView/ContactView'
 import ComoComprar from './components/ComoComprar/ComoComprar'
 import Footer from './components/Footer/Footer'
-import HomeContainer from './components/HomeContainer/HomeContainer'
 import "./App.css"
 
-
+import { ToastContainer } from 'react-toastify'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import ProductsCategoryContainer from './components/ProductsCategoryContainer/ProductsCategoryContainer'
-import ServicesContainer from './components/ServicesContainer/ServicesContainer'
 
 function App() {
 
@@ -21,17 +22,20 @@ function App() {
       <BrowserRouter >
         <Navbar />
         <Routes>
-          <Route path='/' element={<HomeContainer />} />
+          <Route path='/' element={<HomeView />} />
           <Route path="/productos" element={<ProductsCategoryContainer variantValidation={true} />} />
           <Route path='/detalle/:productId' element={<ItemDetailContainer />} />
-          <Route path='/servicios' element={<ServicesContainer />} />
-          <Route path='/tips' element={<TipsContainer />} />
-          <Route path='/contacto' element={<h1>Contacto</h1>} />
+          <Route path='/servicios' element={<ServicesView />} />
+          <Route path='/tips' element={<TipsView />} />
+          <Route path='/contacto' element={<ContactView />} />
           <Route path='/como-comprar' element={<ComoComprar />} />
           <Route path='*' element={<h1>404 Página no encontrada :(</h1>} />
 
           <Route path="/category/:categoryId" element={<ItemListContainer message={"CATEGORIA AQUI ej. sofas"} />} />
+
         </Routes>
+
+        <ToastContainer />
       </BrowserRouter>
       <Footer />
     </div>
