@@ -1,13 +1,13 @@
 
 export const formValidator = (data) => {
-    const { firstName, lastName, phone, email, query } = data
+    const { firstName, lastName, phone, email, message } = data
     let valid = true
     const errors = []
 
     const regexText = /^[a-zA-Z]{3,}$/
     const regexNumber = /^[0-9]{8,}$/
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const wordCount = query.trim().split(/\s+/).length
+    const wordCount = message.trim().split(/\s+/).length
 
 
     if (!firstName.trim() || !regexText.test(firstName.trim())) {
@@ -27,7 +27,7 @@ export const formValidator = (data) => {
         errors.push("Email inválido, inténtelo nuevamente.")
         valid = false
 
-    } else if (!query.trim() || (wordCount < 2)) {
+    } else if (!message.trim() || (wordCount < 2)) {
         errors.push("Error. Por favor detalle su consulta.")
         valid = false
     }

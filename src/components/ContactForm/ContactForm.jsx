@@ -4,12 +4,20 @@ import { formValidator } from "../../utils/formValidator"
 import { addQuerieToDb } from "../../services/firebase/firestore/formQueries"
 import css from "./ContactForm.module.css"
 
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const ContactForm = () => {
     const [firstName, setFirstName] = useState("")
     const [lastName, setLastName] = useState("")
     const [phone, setPhone] = useState("")
     const [email, setEmail] = useState("")
-    const [query, setQuery] = useState("")
+    const [message, setMessage] = useState("")
+
+    const form = useRef()
+    const publicKey = "Z7GVl2qFeTMvYJddK"
+    const serviceId = "service_p1tju1c"
+    const templateId = "template_asztkp9"
 
     // Funcion para resetear los campos del form
     const resetFormFields = () => {
@@ -17,7 +25,29 @@ const ContactForm = () => {
         setLastName("")
         setPhone("")
         setEmail("")
-        setQuery("")
+        setMessage("")
+    }
+
+    const sendEmail = async () => {
+        // Template de params para el mail
+        const templateParams = {
+            from_firstName: firstName,
+            from_lastName: lastName,
+            from_phone: phone,
+            from_email: email,
+            to_name: "Parben Home",
+            message: message
+        }
+
+        try {
+            console.log(form.current)
+            const service = await emailjs.send(serviceId, templateId, templateParams, publicKey)
+            console.log("Exito mandando el mail!")
+            console.log(service)
+        }
+        catch (err) {
+            console.log("ERROR MANDANDO EL MAIL => ", err)
+        }
     }
 
     const handleSubmit = async (e) => {
@@ -28,7 +58,7 @@ const ContactForm = () => {
             lastName,
             phone,
             email,
-            query
+            message
         }
 
         // valido los campos ingresados
@@ -55,6 +85,10 @@ const ContactForm = () => {
             console.log(data)
             const addToDb = await addQuerieToDb(data)
 
+            // Se manda el mail
+            sendEmail()
+
+            // Toast avisando al user la opreación exitosa
             toast.success("Su consulta fue enviada, a la brevedad se contactarán con usted. Gracias.", {
                 position: "top-center",
                 autoClose: 5000,
@@ -71,21 +105,24 @@ const ContactForm = () => {
         }
     }
 
+
     return (
         <div className={css.formContainer}>
-            <form onSubmit={handleSubmit} className={css.form} >
+            <form ref={form} onSubmit={handleSubmit} className={css.form} >
                 <label >
                     <h3 className={css.nombreDeLosCampos}>Nombre</h3>
                     <input
                         className={css.formInput}
-                        type="text" value={firstName}
+                        type="text"
+                        value={firstName}
                         onChange={({ target }) => setFirstName(target.value)} />
                 </label>
                 <label >
                     <h3 className={css.nombreDeLosCampos}>Apellido</h3>
                     <input
                         className={css.formInput}
-                        type="text" value={lastName}
+                        type="text"
+                        value={lastName}
                         onChange={({ target }) => setLastName(target.value)} />
                 </label>
                 <label >
@@ -93,7 +130,8 @@ const ContactForm = () => {
                     <input
                         className={css.formInput}
                         type="number"
-                        value={phone} onChange={({ target }) => setPhone(target.value)} />
+                        value={phone}
+                        onChange={({ target }) => setPhone(target.value)} />
                 </label>
                 <label >
                     <h3 className={css.nombreDeLosCampos}>Email</h3>
@@ -108,7 +146,8 @@ const ContactForm = () => {
                     <textarea
                         className={css.formInputText}
                         type="text"
-                        value={query} onChange={({ target }) => setQuery(target.value)} />
+                        value={message}
+                        onChange={({ target }) => setMessage(target.value)} />
                 </label>
                 <button className={css.submitButton} type="submit"> ENVIAR </button>
             </form>
