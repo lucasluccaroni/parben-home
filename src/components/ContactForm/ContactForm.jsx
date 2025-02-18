@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { toast } from "react-toastify"
 import { formValidator } from "../../utils/formValidator"
+import { addQuerieToDb } from "../../services/firebase/firestore/formQueries"
 import css from "./ContactForm.module.css"
 
 const ContactForm = () => {
@@ -10,8 +11,16 @@ const ContactForm = () => {
     const [email, setEmail] = useState("")
     const [query, setQuery] = useState("")
 
+    // Funcion para resetear los campos del form
+    const resetFormFields = () => {
+        setFirstName("")
+        setLastName("")
+        setPhone("")
+        setEmail("")
+        setQuery("")
+    }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
 
         const data = {
@@ -21,8 +30,9 @@ const ContactForm = () => {
             email,
             query
         }
-        const { valid, errors } = formValidator(data)
 
+        // valido los campos ingresados
+        const { valid, errors } = formValidator(data)
         console.log(valid)
         console.log(errors)
 
@@ -36,8 +46,15 @@ const ContactForm = () => {
                 draggable: true,
                 progress: undefined,
                 theme: "colored",
+
             }))
+            return
+
         } else {
+            // Si todos los campos son correctos, mando la consulta a la DB
+            console.log(data)
+            const addToDb = await addQuerieToDb(data)
+
             toast.success("Su consulta fue enviada, a la brevedad se contactarán con usted. Gracias.", {
                 position: "top-center",
                 autoClose: 5000,
@@ -48,34 +65,52 @@ const ContactForm = () => {
                 progress: undefined,
                 theme: "colored",
             })
-            console.log(data)
+
+            // Reseteo los campos del formulario
+            resetFormFields()
         }
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit} className={css.formContainer} >
+        <div className={css.formContainer}>
+            <form onSubmit={handleSubmit} className={css.form} >
                 <label >
-                    <h3>Nombre</h3>
-                    <input type="text" placeholder="Nombre" value={firstName} onChange={({ target }) => setFirstName(target.value)} />
+                    <h3 className={css.nombreDeLosCampos}>Nombre</h3>
+                    <input
+                        className={css.formInput}
+                        type="text" value={firstName}
+                        onChange={({ target }) => setFirstName(target.value)} />
                 </label>
                 <label >
-                    <h3>Apellido</h3>
-                    <input type="text" placeholder="Apellido" value={lastName} onChange={({ target }) => setLastName(target.value)} />
+                    <h3 className={css.nombreDeLosCampos}>Apellido</h3>
+                    <input
+                        className={css.formInput}
+                        type="text" value={lastName}
+                        onChange={({ target }) => setLastName(target.value)} />
                 </label>
                 <label >
-                    <h3>Teléfono</h3>
-                    <input type="number" placeholder="Teléfono" value={phone} onChange={({ target }) => setPhone(target.value)} />
+                    <h3 className={css.nombreDeLosCampos}>Teléfono</h3>
+                    <input
+                        className={css.formInput}
+                        type="number"
+                        value={phone} onChange={({ target }) => setPhone(target.value)} />
                 </label>
                 <label >
-                    <h3>Email</h3>
-                    <input type="email" placeholder="Email" value={email} onChange={({ target }) => setEmail(target.value)} />
+                    <h3 className={css.nombreDeLosCampos}>Email</h3>
+                    <input
+                        className={css.formInput}
+                        type="email"
+                        value={email}
+                        onChange={({ target }) => setEmail(target.value)} />
                 </label>
                 <label >
-                    <h3>Consulta</h3>
-                    <input type="text" placeholder="Escribinos tu consulta" value={query} onChange={({ target }) => setQuery(target.value)} />
+                    <h3 className={css.nombreDeLosCampos}>Consulta</h3>
+                    <textarea
+                        className={css.formInputText}
+                        type="text"
+                        value={query} onChange={({ target }) => setQuery(target.value)} />
                 </label>
-                <button type="submit"> Enviar </button>
+                <button className={css.submitButton} type="submit"> ENVIAR </button>
             </form>
         </div>
     )

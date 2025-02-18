@@ -1,0 +1,15 @@
+.container {
+    border: solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-family: "M";
+    color: #37332D;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Marcellus", serif;
+
+}

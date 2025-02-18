@@ -4,8 +4,8 @@ import ContactForm from "../ContactForm/ContactForm"
 
 const ContactView = () => {
     return(
-        <div>
-            <h1>Contact View</h1>
+        <div className={css.container}>
+            <h1 className={css.titulo} >Dejanos tu consulta</h1>
             <ContactForm />
             <InfoMapContainer/>
         </div>
