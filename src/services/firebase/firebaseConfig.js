@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore"
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB9BTfnTC6b5uIKpQDuh_qyriGgFUVBWpc",
-    authDomain: "parben-home.firebaseapp.com",
-    projectId: "parben-home",
-    storageBucket: "parben-home.firebasestorage.app",
-    messagingSenderId: "501620079587",
-    appId: "1:501620079587:web:7e39915016ac1163f8fed6"
+    apiKey: import.meta.env.VITE_apyKey,
+    authDomain: import.meta.env.VITE_authDomain,
+    projectId: import.meta.env.VITE_projectId,
+    storageBucket:import.meta.env.VITE_storageBucket,
+    messagingSenderId: import.meta.env.VITE_messagingSenderId,
+    appId: import.meta.env.VITE_appId
 };
 
 

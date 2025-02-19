@@ -1,6 +1,12 @@
 import css from "./ComoComprar.module.css"
+import { useEffect } from "react"
 
 const ComoComprar = () => {
+
+    useEffect(() => {
+        document.title = "Parben Home | ¿Cómo comprar?"
+    }, [])
+
     return (
         <div className={css.container} >
             <h1 className={css.titulo} >Como comprar con nosotros</h1>

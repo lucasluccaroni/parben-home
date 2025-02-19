@@ -15,7 +15,7 @@ const ContactInfo = () => {
                 <h2 style={{ textDecoration: "underline" }} > Contacto</h2>
                 <p> Tel1: 1122334455</p>
                 <p>Tel2: 1122334455</p>
-                <p>mail@mail.com</p>
+                <p>parbendivan@gmail.com</p>
             </div>
         </div>
     )

@@ -2,10 +2,8 @@ import { useState } from "react"
 import { toast } from "react-toastify"
 import { formValidator } from "../../utils/formValidator"
 import { addQuerieToDb } from "../../services/firebase/firestore/formQueries"
+import { sendEmail } from "../../utils/emailService"
 import css from "./ContactForm.module.css"
-
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
     const [firstName, setFirstName] = useState("")
@@ -14,11 +12,6 @@ const ContactForm = () => {
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
 
-    const form = useRef()
-    const publicKey = "Z7GVl2qFeTMvYJddK"
-    const serviceId = "service_p1tju1c"
-    const templateId = "template_asztkp9"
-
     // Funcion para resetear los campos del form
     const resetFormFields = () => {
         setFirstName("")
@@ -26,28 +19,6 @@ const ContactForm = () => {
         setPhone("")
         setEmail("")
         setMessage("")
-    }
-
-    const sendEmail = async () => {
-        // Template de params para el mail
-        const templateParams = {
-            from_firstName: firstName,
-            from_lastName: lastName,
-            from_phone: phone,
-            from_email: email,
-            to_name: "Parben Home",
-            message: message
-        }
-
-        try {
-            console.log(form.current)
-            const service = await emailjs.send(serviceId, templateId, templateParams, publicKey)
-            console.log("Exito mandando el mail!")
-            console.log(service)
-        }
-        catch (err) {
-            console.log("ERROR MANDANDO EL MAIL => ", err)
-        }
     }
 
     const handleSubmit = async (e) => {
@@ -86,7 +57,7 @@ const ContactForm = () => {
             const addToDb = await addQuerieToDb(data)
 
             // Se manda el mail
-            sendEmail()
+            sendEmail(data)
 
             // Toast avisando al user la opreación exitosa
             toast.success("Su consulta fue enviada, a la brevedad se contactarán con usted. Gracias.", {
@@ -105,10 +76,9 @@ const ContactForm = () => {
         }
     }
 
-
     return (
         <div className={css.formContainer}>
-            <form ref={form} onSubmit={handleSubmit} className={css.form} >
+            <form onSubmit={handleSubmit} className={css.form} >
                 <label >
                     <h3 className={css.nombreDeLosCampos}>Nombre</h3>
                     <input
@@ -160,7 +130,6 @@ export default ContactForm
 
 
 /*
-
 <ToastContainer
 position="top-center"
 autoClose={5000}
@@ -174,11 +143,9 @@ pauseOnHover={false}
 theme="light"
 transition={Bounce}
 />
-
 */
 
 /*
-
 toast.warn('🦄 Wow so easy!', {
 position: "top-center",
 autoClose: 5000,
@@ -190,5 +157,4 @@ progress: undefined,
 theme: "light",
 transition: Bounce,
 });
-
 */

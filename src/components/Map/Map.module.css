@@ -17,6 +17,14 @@
     border: 0;
 }
 
+/* ---- MEDIA QUERIES ---- */
+
+@media(width > 1920px){
+    .mapContainer{
+        margin-right: 10rem;
+    }
+}
+
 @media(width <= 1900px) {
     .map {
         width: 50rem;

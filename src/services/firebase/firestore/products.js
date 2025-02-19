@@ -7,10 +7,12 @@ import {
     getDoc,
     doc
 } from "firebase/firestore";
+import { productsDTO } from "../../../dto/products"
 
 
 export const useProducts = () => {
 
+    // Traigo los productos de la DB + validacion para traer por categoriga
     const getProducts = async (categoryId) => {
         try {
             const collectionRef = categoryId
@@ -21,8 +23,7 @@ export const useProducts = () => {
             console.log("querySnapShot en productsJs => ", querySnapShot)
 
             const products = querySnapShot.docs.map(doc => {
-                const fields = doc.data()
-                return { id: doc.id, ...fields }
+                return productsDTO(doc) // DTO
             })
             return products
         }
@@ -32,18 +33,19 @@ export const useProducts = () => {
         }
     }
 
-    const getProductById = async (productId) =>{
-        try{
+    // Traigo un producto por ID de la DB
+    const getProductById = async (productId) => {
+        try {
             const documentRef = doc(db, "products", productId)
-
             const queryDocumentSnapShot = await getDoc(documentRef)
-            console.log("queryDocumentSnapShot en productJs => ", queryDocumentSnapShot) 
-
-            const fields = queryDocumentSnapShot.data()
-            const product = {id: queryDocumentSnapShot.id, ...fields}
-            return product
+            console.log("queryDocumentSnapShot en productJs => ", queryDocumentSnapShot)
+            const productAdapted = productsDTO(queryDocumentSnapShot)  // DTO
+            return productAdapted
+            // const fields = queryDocumentSnapShot.data()
+            // const product = { id: queryDocumentSnapShot.id, ...fields }
+            // return product
         }
-        catch(err){
+        catch (err) {
             console.log("Error en getProductsById - poductsJs => ", err)
             return null
         }

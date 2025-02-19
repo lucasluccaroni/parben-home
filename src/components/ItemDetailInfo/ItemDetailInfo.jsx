@@ -5,7 +5,6 @@ const ItemDetailInfo = ({ name, category, description, price }) => {
         <div className={css.container} >
             <div className={css.namePriceContainer} >
             <h1 className={css.name} > {name} </h1>
-            <h2 className={css.price}  > ${price} </h2>
             <div className={css.linksContainer} >
             <a className={css.wpLink} href="https://wa.me/5491162763002" target="_blank" rel="noopener noreferrer">
                 <img className={css.wpLogo} src="/images/redes/whatsapp.png" alt="Whatsapp logo" />
