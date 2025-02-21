@@ -1,8 +1,8 @@
 import css from "./ItemDetail.module.css"
 import ItemDetailInfo from "../ItemDetailInfo/ItemDetailInfo"
-const ItemDetail = ({ id, name, price, img, category, description }) => {
+const ItemDetail = ({ id, name, img, category, description1, description2, description3 }) => {
     const props = {
-        name, price, category, description
+        name, category, description1, description2, description3
     }
     return (
         <div className={css.container}>
@@ -10,6 +10,8 @@ const ItemDetail = ({ id, name, price, img, category, description }) => {
             <img className={css.img} src={img} />
             </div>
             <ItemDetailInfo {...props} />
+            {/* <div className={css.waterMark} ></div> */}
+            <img  className={css.waterMark} src="/images/logo-navegador3.png" alt="marca-de-agua" />
         </div>
     )
 }
