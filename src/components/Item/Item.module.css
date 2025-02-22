@@ -1,0 +1,50 @@
+.card {
+    /* border: solid blue;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    flex: 1 1 calc(25% - 20px);
+    /* 25% del ancho menos el espacio entre cards */
+    box-sizing: border-box;
+    /* Asegura que el padding y el border se incluyan en el ancho total */
+    background-color: lightblue;
+    /* Color de fondo de la card */
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 600px;
+    height: 600px;
+}
+
+.cardImg {
+    height: 300px;
+    width: 300px;
+}
+
+
+
+/* Media query para pantallas medianas */
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(33.33% - 20px);
+        /* 3 cards por fila en pantallas medianas */
+    }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 cards por fila en pantallas pequeñas */
+    }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+        /* 1 card por fila en pantallas muy pequeñas */
+    }
+}

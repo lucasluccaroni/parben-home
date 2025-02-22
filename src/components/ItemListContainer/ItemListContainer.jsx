@@ -5,24 +5,27 @@ import { useParams } from "react-router-dom"
 import css from "./ItemListContainer.module.css"
 
 import { useProducts } from "../../services/firebase/firestore/products"
+import { sortProducts } from "../../utils/sortProducts"
 import { useAsync } from "../../hooks/useAsync"
 
 const ItemListContainer = ({ message }) => {
     // const [products, setProducts] = useState([])
     // const [loading, setLoading] = useState(true)
     const [viewOption, setViewOtion] = useState("grilla")
+    const [sort, setSort] = useState("az")
 
     const { categoryId } = useParams()
     const { getProducts } = useProducts()
+    const { alphabeticOrderAZ, alphabeticOrderZA } = sortProducts()
 
     // Lógica para traer productos a traves de useAsync
 
-    const { data: products, loading, error } = useAsync(() => getProducts(categoryId), [categoryId])
+    let { data: products, loading, error } = useAsync(() => getProducts(categoryId), [categoryId])
 
 
-    console.log(products)
-    console.log(loading)
-    console.log(error)
+    console.log( "1°", products)
+    console.log("loading =>", loading)
+    console.log("error =>", error)
 
 
     // useEffect para importar datos
@@ -66,10 +69,30 @@ const ItemListContainer = ({ message }) => {
     // }, [categoryId])
     // console.log(products)
 
+
     // Cambio de componente entre vista de grilla o columna
     const ItemView = viewOption === "grilla" ? ItemGrid : ItemList
     const changeViewOption = () => {
         setViewOtion(viewOption === "grilla" ? "columna" : "grilla")
+    }
+
+    // Cambio de orden alfabético
+    useEffect(()=> {
+        try{
+            console.log("2° Products dentro del SORT  => ", products)
+            console.log(sort)
+            const sortedProducts = sort === "az" ? alphabeticOrderAZ(products) : alphabeticOrderZA(products)   
+            console.log("3° SORTED PRODUCTS => ", sortedProducts)
+            products = sortedProducts
+        }
+        catch(err){
+            console.log("Error ordenando los productos => ", err)
+        }
+    }, [products, sort])
+    
+    
+    const changeSort = () => {
+        setSort(sort === "az" ? "za" : "az" )
     }
 
     // Componente Loading
@@ -85,7 +108,8 @@ const ItemListContainer = ({ message }) => {
     return (
         <div className={css.container} >
             <h1> {message} </h1>
-            <button onClick={changeViewOption} > {viewOption === "grilla" ? "Ver: columna" : "Ver: grilla"} </button>
+            <button onClick={changeSort} > {sort === "az" ? "Ordenar A-Z" : "Ordenar Z-A"} </button>
+            {/* <button onClick={changeViewOption} > {viewOption === "grilla" ? "Ver: columna" : "Ver: grilla"} </button> */}
             <ItemView products={products} />
         </div>
     )

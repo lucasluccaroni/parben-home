@@ -9,7 +9,7 @@ export const productsDTO = (doc) => {
         description1: fields.description1,
         description2: fields.description2,
         description3: fields.description3,
-        img: fields.img,
+        img1: fields.img1,
         img2: fields.img2
     }
 }

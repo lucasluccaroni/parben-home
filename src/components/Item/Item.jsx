@@ -1,11 +1,11 @@
+import css from "./Item.module.css"
 import { Link } from "react-router-dom"
 
-const Item = ({id, name, price, img, category}) => {
+const Item = ({id, name, img1, img2 ,category}) => {
     return (
-        <div>
+        <div className={css.card} >
+            <img src={img1} className={css.cardImg} />
             <h2> {name} </h2>
-            <h3> {price} </h3>
-            <img src={img} style={{ width: 300 }} />
             <Link to={`/detalle/${id}`} > Ver detalle </Link>
         </div>
     )

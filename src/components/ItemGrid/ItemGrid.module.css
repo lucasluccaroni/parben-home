@@ -1,6 +1,12 @@
 .grid{
     border: solid rgb(197, 9, 244);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    font-family: "Geist", serif;
+    
+    
+    /* justify-content: space-around; */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
