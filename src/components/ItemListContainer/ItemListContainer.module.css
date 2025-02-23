@@ -1,3 +1,53 @@
-.container{
+/* .container{
     margin-top: 40vh;
+} */
+
+.img {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 30rem;
+    /* border: solid red; */
+    background-image: url("/images/products-category/esquineros.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 50px;
+    font-family: "Marcellus", serif;
+}
+
+/* .sortButton {
+    font-family: "Geist", serif;
+    background-color: #A79F92; 
+} */
+
+.sortButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 2rem;
+    width: 7rem;
+    padding: 3px;
+    margin-top: 3rem;
+    margin-bottom: 2vh;
+    margin-left: 5vh;
+    margin-right: 20px;
+    border: solid black 1px;
+    background-color: #A79F92;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-family: "Marcellus", serif;
+    font-family: "Geist", serif;
+}
+
+.boton:active{
+    transform: scale(0.90);
 }

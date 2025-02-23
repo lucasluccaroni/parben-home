@@ -107,8 +107,12 @@ const ItemListContainer = ({ message }) => {
 
     return (
         <div className={css.container} >
-            <h1> {message} </h1>
-            <button onClick={changeSort} > {sort === "az" ? "Ordenar A-Z" : "Ordenar Z-A"} </button>
+            <div className={css.img} >
+                <h1 className={css.titulo} > {categoryId} </h1>
+            </div>
+            {/* <img className={css.img} src="/images/products-category/sofas.jpg" alt="" /> */}
+            {/* <h1> {message} </h1> */}
+            <button className={css.sortButton} onClick={changeSort} > {sort === "az" ? "Ordenar A-Z" : "Ordenar Z-A"} </button>
             {/* <button onClick={changeViewOption} > {viewOption === "grilla" ? "Ver: columna" : "Ver: grilla"} </button> */}
             <ItemView products={products} />
         </div>
