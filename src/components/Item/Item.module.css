@@ -1,5 +1,6 @@
 .card {
     border: solid 1px #100F0F;
+    border-radius: 1%;
     height: 30rem;
     width: 25rem;
     margin: 15px;
@@ -32,37 +33,57 @@
     font-size: medium;
     margin-top: 15px;
     padding: 10px;
-
+}
+.button:hover{
+    color: #100F0F;
+    background-color: #F2F3EE;;
 }
 
 
 
+/* ---- MEDIA QUERIES ---- */
 
+@media (width < 450px){
+    .card{
+        width: 15rem;
+        height: 25rem;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .cardImg{
+        width: 15rem;
+        height: 15rem;
+    }
+    .button{
+        margin-top: 25px;
+        font-size: 15px;
+    }
+}
 
 
 
 
 
 /* Media query para pantallas medianas */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .card {
-        flex: 1 1 calc(33.33% - 20px);
-        /* 3 cards por fila en pantallas medianas */
+        flex: 1 1 calc(33.33% - 20px); 3 cards por fila en pantallas medianas
     }
-}
+} */
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .card {
-        flex: 1 1 calc(50% - 20px);
-        /* 2 cards por fila en pantallas pequeñas */
+        flex: 1 1 calc(50% - 20px);  2 cards por fila en pantallas pequeñas
+        
     }
-}
+} */
 
 /* Media query para pantallas muy pequeñas */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .card {
-        flex: 1 1 100%;
-        /* 1 card por fila en pantallas muy pequeñas */
+        flex: 1 1 100%; 1 card por fila en pantallas muy pequeñas
+        
     }
-}
+} */

@@ -1,5 +1,6 @@
 import css from "./ComoComprar.module.css"
 import { useEffect } from "react"
+import NavigateButtons from "../NavigateButtons/NavigateButtons"
 
 const ComoComprar = () => {
 
@@ -9,6 +10,7 @@ const ComoComprar = () => {
 
     return (
         <div className={css.container} >
+            <NavigateButtons/>
             <h1 className={css.titulo} >Como comprar con nosotros</h1>
 
             <div className={css.grandContainer} >

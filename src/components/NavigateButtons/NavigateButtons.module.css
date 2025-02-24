@@ -1,0 +1,7 @@
+.buttonsContainer{
+    width: fit-content;
+    height: fit-content;
+    align-self: start;
+    display: flex;
+    margin-top: 2vh;
+}

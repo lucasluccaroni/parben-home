@@ -22,32 +22,25 @@
     font-family: "Marcellus", serif;
 }
 
-/* .sortButton {
-    font-family: "Geist", serif;
-    background-color: #A79F92; 
-} */
-
 .sortButton {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 2rem;
-    width: 7rem;
-    padding: 3px;
-    margin-top: 3rem;
-    margin-bottom: 2vh;
-    margin-left: 5vh;
-    margin-right: 20px;
+    height: 40px;
+    width: 120px;
+    padding: 1px;
+    margin-top: 2rem;
+    margin-bottom: 1vh;
+    margin-left: 2vh;
     border: solid black 1px;
     background-color: #A79F92;
     color: white;
     text-decoration: none;
     font-size: large;
-    font-family: "Marcellus", serif;
     font-family: "Geist", serif;
 }
 
-.boton:active{
+.sortButton:active {
     transform: scale(0.90);
 }

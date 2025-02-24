@@ -1,18 +1,3 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.titulo {
-    font-family: "M";
-    color: #37332D;
-    text-align: center;
-    font-size: 60px;
-    font-family: "Marcellus", serif;
-
-}
-
 .navigateButton {
     display: flex;
     justify-content: center;
@@ -22,10 +7,9 @@
     height: 2rem;
     width: 6rem;
     padding: 2px;
-    margin-bottom: 2vh;
-    margin-top: 3vh;
+    /* margin-bottom: 2vh; */
+    /* margin-top: 3vh; */
     margin-left: 2vh;
-    margin-right: 20px;
     border: solid black 1px;
     background-color: #A79F92;
     color: white;

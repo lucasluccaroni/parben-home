@@ -4,26 +4,49 @@
     /* border: solid yellow; */
 }
 
-.boton {
+/* .navigateButton {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: start;
     text-align: center;
     height: 2rem;
     width: 6rem;
-    padding: 3px;
+    padding: 2px;
     margin-bottom: 2vh;
+    margin-top: 3vh;
     margin-left: 2vh;
     margin-right: 20px;
     border: solid black 1px;
     background-color: #A79F92;
     color: white;
     text-decoration: none;
-    font-size: x-large;
+    font-size: large;
     font-family: "Marcellus", serif;
     font-family: "Geist", serif;
 }
 
-.boton:active{
+.navigateButton:active{
     transform: scale(0.90);
+} */
+
+
+
+/* ---- MEDIA QUERIES ---- */
+
+@media (width < 1350px){
+    /* .itemDetailContainer{
+        
+    } */
+}
+@media(width < 700px){
+    .itemDetailContainer{
+        margin-top: 15vh;
+    }
+}
+
+@media(width < 500px){
+    .itemDetailContainer{
+        margin-top: 10vh;
+    }
 }

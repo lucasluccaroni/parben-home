@@ -4,6 +4,7 @@ import { useAsync } from "../../hooks/useAsync"
 import { useProducts } from "../../services/firebase/firestore/products"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import css from "./ItemDetailContainer.module.css"
+import NavigateButtons from "../NavigateButtons/NavigateButtons"
 
 const ItemDetailContainer = () => {
     // const [loading, setLoading] = useState(true)
@@ -53,7 +54,8 @@ const ItemDetailContainer = () => {
 
     return (
         <div className={css.itemDetailContainer}>
-            <Link className={css.boton} to={`/category/${productCategory}`} > Volver </Link>
+            <NavigateButtons/>
+            {/* <Link className={css.navigateButton} to={`/category/${productCategory}`} > Volver </Link> */}
             <ItemDetail {...product} />
         </div>
     )

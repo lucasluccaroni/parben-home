@@ -124,10 +124,9 @@
 
 
 
-@media(width >=1950px) {
+@media(width <=1550px) {
     .container {
-        height: 56rem;
-
+        height: 45rem; 
     }
 }
 
@@ -175,8 +174,8 @@
 
 @media (width <=700px) {
     .container{
-        width: 100vw;
-        padding-left: 2rem;
+        width: 76vw;
+        /* padding-left: 2rem; */
     }
     .nameContainer{
         width: 20rem;
@@ -227,6 +226,10 @@
 }
 
 @media(width <=400px) {
+    .container{
+        width: 100vw;
+        padding-left: 5vw;
+    }
     .nameContainer{
         width: 15rem;
         /* font-size: medium; */

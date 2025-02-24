@@ -41,13 +41,13 @@
     }
 }
 
-@media(width >=1950px) {
+@media(width <=1550px) {
     .imgContainer {
-        height: 900px;
+        height: 45rem;
     }
 
     .img {
-        height: 900px;
+        height: 45rem;
     }
 }
 
@@ -103,7 +103,7 @@
     }
 }
 
-@media(width < 850px){
+@media(width < 850px) {
     .waterMark {
         height: 55px;
         width: 60px;
@@ -124,7 +124,7 @@
     }
 
     .waterMark {
-        left: 89%;
+        left: 79%;
         bottom: 0.2%;
     }
 }
@@ -140,20 +140,21 @@
     }
 }
 
-@media (width < 560PX) {
-    .waterMark{
-        left: 86%;
+@media (width < 560px) {
+    .waterMark {
+        left: 77%;
+        height: 50px;
+        width: 55px;
     }
 }
 
-@media(width <500px) {
+@media(width <=500px) {
     .container {
         height: 56rem;
-
     }
 
     .waterMark {
-        left: 83%;
+        left: 76%;
     }
 
     .imgContainer {
@@ -168,20 +169,17 @@
 }
 
 @media(width <=400px) {
-    /* .imgContainer {
-        width: 80vw;
+    .imgContainer {
+        width: 100vw;
         height: 400px;
-    } */
-
-    .img {
-        width: 80vw;
-        height: 250px;
-        /* height: 25vh; */
     }
-
+    .img {
+        width: 100vw;
+        height: 250px;
+    }
     .waterMark {
         height: 45px;
         width: 50px;
-        left: 80%;
+        left: 82%;
     }
 }

@@ -11,7 +11,7 @@ const ProductCategory = ({ path, pathName, img, variantValidation }) => {
     }, [variantValidation])
 
     return (
-        <Link style={{ backgroundImage: `url(${img})` }} className={css.links} to={`${path}`} > {pathName} </Link>
+        <Link style={{ backgroundImage: `url(${img})` }} className={css.links} to={`${path}`} pathName={pathName}> {pathName} </Link>
     )
 }
 
