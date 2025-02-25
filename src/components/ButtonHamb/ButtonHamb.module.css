@@ -3,6 +3,7 @@
     display: inline-block;
     margin: 0;
 }
+
 .menuContent {
     display: none;
     position: absolute;
@@ -31,7 +32,7 @@
     display: block;
 }
 
-.link{
+.link {
     padding-right: 10px;
     margin-right: 0;
     width: 7vw;
@@ -47,7 +48,7 @@
     font-family: "Marcellus", serif;
 }
 
-.link:hover{
+.link:hover {
     background-color: #A79F92;
     color: #37332D;
 }
@@ -55,8 +56,17 @@
 
 /* ---- MEDIA QUERIES  ---- */
 
-@media (max-width: 700px){
-    .link{
+@media(width < 900px) {
+    .link {
+        font-size: larger;
+    }
+    .menuContent{
+        font-size: larger;
+    }
+}
+
+@media (max-width: 700px) {
+    .link {
         height: 80px;
     }
 }

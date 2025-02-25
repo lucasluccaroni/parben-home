@@ -1,7 +1,7 @@
 .card {
-    border: solid 1px #100F0F;
+    text-decoration: none;
     border-radius: 1%;
-    height: 30rem;
+    height: 23rem;
     width: 25rem;
     margin: 15px;
     display: flex;
@@ -10,15 +10,10 @@
     align-items: center;
     color: #F2F3EE;
     background-color: #37332D;
-
-
-    /* flex: 1 1 calc(25% - 20px);
-    box-sizing: border-box;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    width: 600px;
-    height: 600px; */
+    /* border: solid orange 1px; */
+}
+.card:hover{
+    transform: scale(0.99);
 }
 
 .cardImg {
@@ -26,7 +21,7 @@
     width: 25rem;
 }
 
-.button{
+/* .button {
     text-decoration: none;
     border: solid 1px #F2F3EE;
     color: #F2F3EE;
@@ -34,30 +29,48 @@
     margin-top: 15px;
     padding: 10px;
 }
-.button:hover{
+
+.button:hover {
     color: #100F0F;
-    background-color: #F2F3EE;;
-}
+    background-color: #F2F3EE;
+    ;
+} */
 
 
 
 /* ---- MEDIA QUERIES ---- */
 
-@media (width < 450px){
-    .card{
+@media (width < 450px) {
+    .card {
         width: 15rem;
-        height: 25rem;
+        height: 18rem;
     }
-    h2{
+
+    h2 {
         font-size: 18px;
     }
-    .cardImg{
+
+    .cardImg {
         width: 15rem;
         height: 15rem;
     }
-    .button{
+
+    /* .button {
         margin-top: 25px;
         font-size: 15px;
+    } */
+}
+
+@media(width < 280px){
+    .card{
+        width: 10rem;
+        height: 15rem;
+    }
+    .cardImg{
+        width: 10rem;
+    }
+    h2{
+        font-size: 12px;
     }
 }
 

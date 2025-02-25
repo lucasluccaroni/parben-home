@@ -20,3 +20,23 @@
     color: #100F0F;
     margin-top: 0;
 }
+
+/*---- MEDIA QUERIES ---- */
+
+@media(width< 1000px){
+    .titulo{
+        font-size: 40px
+    }
+    .subTitulo{
+        font-size: 30px;
+    }
+}
+
+@media(width< 700px){
+    .titulo{
+        font-size: 35px
+    }
+    .subTitulo{
+        font-size: 25px;
+    }
+}

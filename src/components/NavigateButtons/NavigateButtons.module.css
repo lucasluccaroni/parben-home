@@ -3,5 +3,8 @@
     height: fit-content;
     align-self: start;
     display: flex;
-    margin-top: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+
 }

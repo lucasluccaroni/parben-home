@@ -2,6 +2,7 @@
     position: relative;
     width: 100vw;
     height: 57rem;
+    object-fit: cover;
 }
 
 
@@ -17,15 +18,17 @@
     }
 }
 
-@media (800px <=width <=900px) {
-    .fotoHome {
-        height: 30rem;
-    }
-}
 
 @media (width <= 800px) {
     .fotoHome {
-        color: wheat;
-        height: 50rem;
+        height: 30rem;
+        object-fit: cover;
+
+    }
+}
+
+@media(width < 700px){
+    .fotoHome{
+        height: 35rem;
     }
 }

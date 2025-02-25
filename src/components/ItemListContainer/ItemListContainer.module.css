@@ -32,8 +32,9 @@
     padding: 1px;
     margin-top: 2rem;
     margin-bottom: 1vh;
-    margin-left: 2vh;
+    margin-left: 3vw;
     border: solid black 1px;
+    border-radius: 3%;
     background-color: #A79F92;
     color: white;
     text-decoration: none;
