@@ -1,32 +1,36 @@
 import { useEffect, useState } from "react"
 import { useParams, Link } from "react-router-dom"
 import ItemList from "../ItemList/ItemList"
-
 import css from "./ItemListContainer.module.css"
-
 import { useProducts } from "../../services/firebase/firestore/products"
 import { sortProducts } from "../../utils/sortProducts"
 import { useAsync } from "../../hooks/useAsync"
 import NavigateButtons from "../NavigateButtons/NavigateButtons"
+import { paths, matchPathName } from "../../utils/paths"
 
-const ItemListContainer = ({ message }) => {
+const ItemListContainer = () => {
     // const [products, setProducts] = useState([])
     // const [loading, setLoading] = useState(true)
-    const [viewOption, setViewOtion] = useState("grilla")
+    // const [viewOption, setViewOtion] = useState("grilla")
     const [sort, setSort] = useState("az")
-
+    const [categoryName, setCategoryName] = useState("")
     const { categoryId } = useParams()
     const { getProducts } = useProducts()
     const { alphabeticOrderAZ, alphabeticOrderZA } = sortProducts()
 
-    // Lógica para traer productos a traves de useAsync
+    console.log(categoryId)
 
+    // Lógica para traer productos a traves de useAsync
     let { data: products, loading, error } = useAsync(() => getProducts(categoryId), [categoryId])
 
 
-    console.log("1°", products)
-    console.log("loading =>", loading)
-    console.log("error =>", error)
+    // Logica para matchear el categoryId que viene por params con el nombre del path
+
+    console.log(categoryName)
+
+    // console.log("1°", products)
+    // console.log("loading =>", loading)
+    // console.log("error =>", error)
 
 
     // useEffect para importar datos
@@ -81,16 +85,23 @@ const ItemListContainer = ({ message }) => {
 
     useEffect(() => {
         try {
-            console.log("2° Products dentro del SORT  => ", products)
-            console.log(sort)
+            // Ordenar productos A-Z y Z-A
+            // console.log("2° Products dentro del SORT  => ", products)
+            // console.log(sort)
             const sortedProducts = sort === "az" ? alphabeticOrderAZ(products) : alphabeticOrderZA(products)
-            console.log("3° SORTED PRODUCTS => ", sortedProducts)
+            // console.log("3° SORTED PRODUCTS => ", sortedProducts)
             products = sortedProducts
         }
         catch (err) {
             console.log("Error ordenando los productos => ", err)
         }
     }, [products, sort])
+
+    useEffect(() => {
+        //Cambio de nombre en la categoria que se muestra en pantalla
+        setCategoryName(matchPathName(paths, categoryId))
+
+    }, [categoryId])
 
 
     const changeSort = () => {
@@ -110,12 +121,12 @@ const ItemListContainer = ({ message }) => {
     return (
         <div className={css.container} >
             <div className={css.img} >
-                <h1 className={css.titulo} > {categoryId} </h1>
+                <h1 className={css.titulo} > {categoryName} </h1>
             </div>
             {/* <img className={css.img} src="/images/products-category/sofas.jpg" alt="" /> */}
             {/* <h1> {message} </h1> */}
             {/* <button onClick={changeViewOption} > {viewOption === "grilla" ? "Ver: columna" : "Ver: grilla"} </button> */}
-            <NavigateButtons/>
+            <NavigateButtons />
             <button className={css.sortButton} onClick={changeSort} > {sort === "az" ? "Ordenar A-Z" : "Ordenar Z-A"} </button>
             <ItemList products={products} />
         </div>

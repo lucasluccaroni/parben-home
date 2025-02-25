@@ -29,12 +29,9 @@ function App() {
           <Route path='/tips' element={<TipsView />} />
           <Route path='/contacto' element={<ContactView />} />
           <Route path='/como-comprar' element={<ComoComprar />} />
-          <Route path='*' element={<h1>404 Página no encontrada :(</h1>} />
-
-          <Route path="/category/:categoryId" element={<ItemListContainer message={"CATEGORIA AQUI ej. sofas"} />} />
-
+          <Route path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route path='*' element={<h1>404 Página no encontrada</h1>} />
         </Routes>
-
         <ToastContainer />
       </BrowserRouter>
       <Footer />
