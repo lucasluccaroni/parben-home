@@ -18,7 +18,7 @@ const ItemDetailContainer = () => {
 
     console.log(productId)
 
-    const { data: product, loading, error, productCategory } = useAsync(() => getProductById(productId))
+    const { data: product, loading, error, /* productCategory */ } = useAsync(() => getProductById(productId))
 
     // setProductCategory(product.category)
     // useEffect(() => {

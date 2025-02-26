@@ -1,29 +1,44 @@
 import { useEffect, useState } from "react"
-import { useParams, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import ItemList from "../ItemList/ItemList"
 import css from "./ItemListContainer.module.css"
 import { useProducts } from "../../services/firebase/firestore/products"
-import { sortProducts } from "../../utils/sortProducts"
 import { useAsync } from "../../hooks/useAsync"
 import NavigateButtons from "../NavigateButtons/NavigateButtons"
 import { paths, matchPathName } from "../../utils/paths"
 import Loading from "../Loading/Loading"
+// import { sortProducts } from "../../utils/sortProducts"
 
 const ItemListContainer = () => {
     // const [products, setProducts] = useState([])
     // const [loading, setLoading] = useState(true)
     // const [viewOption, setViewOtion] = useState("grilla")
     // const [sort, setSort] = useState("az")
+    // const { alphabeticOrderAZ, alphabeticOrderZA } = sortProducts()
     const [categoryName, setCategoryName] = useState("")
     const { categoryId } = useParams()
-    const { getProducts } = useProducts()
-    const { alphabeticOrderAZ, alphabeticOrderZA } = sortProducts()
+    const { getProducts, getProductsByCategory } = useProducts()
 
     console.log(categoryId)
 
     // Lógica para traer productos a traves de useAsync
-    let { data: products, loading, error } = useAsync(() => getProducts(categoryId), [categoryId])
-
+    // let { data: products, loading, error } = useAsync(() => getProducts(categoryId), [categoryId])
+    let {data: products, loading, error} = useAsync(()=> getProductsByCategory(categoryId), [ categoryId])
+    
+    // useEffect(()=>{
+    //     const fetchData = async () =>{
+    //         try{
+    //             const result = await getProductsByCategory(categoryId)
+    //             console.log(result)
+    //             return result
+    
+    //         }
+    //         catch(err){
+    //             console.log(err)
+    //         }
+    //     }
+    //     fetchData()
+    // }, [categoryId])
 
     // Logica para matchear el categoryId que viene por params con el nombre del path
 
@@ -107,10 +122,11 @@ const ItemListContainer = () => {
     // const changeSort = () => {
     //     setSort(sort === "az" ? "za" : "az")
     // }
+    
 
     // Componente Loading
     if (loading) {
-        return  <Loading/>
+        return <Loading />
     }
 
     // Componente Error

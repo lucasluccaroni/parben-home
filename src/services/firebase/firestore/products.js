@@ -33,6 +33,42 @@ export const useProducts = () => {
         }
     }
 
+    //- Traigo productos por categorias de la DB (Nueva refactorizacion de la DB)
+    const getProductsByCategory = async (categoryId) => {
+        try {
+            let querySnapShot
+
+            // Si existe un categoryId, busca la subcoleccion dentro de products y hace un getDocs a todos los productos de esa categoria
+            if (categoryId) {
+                const categoryRef = collection(db, `products/categories/${categoryId}`)
+                console.log("CATEGORY REF => ", categoryRef)
+                querySnapShot = await getDocs(categoryRef)
+            } else {
+
+                // Si no se proporciona una categoría, buscar en todas las categorías
+                const categories = ["sofas", "esquineros", "poltronas", "mesas", "mesas-ratonas", "sillas", "racks-y-vajilleros", "comodas-y-mesas-luz", "escritorios-y-estanterias", "puffs", "iluminacion", "deco"]; // Listado de categorías
+                querySnapShot = [];
+
+                for (let i = 0; i < categories.length; i++) {
+                    const categoryRef = collection(db, `products/categories/${categories[i]}`);
+                    const snapshot = await getDocs(categoryRef);
+                    querySnapShot = querySnapShot.concat(snapshot.docs);
+                }
+            }
+
+            const products = querySnapShot.docs.map(doc => {
+                return productsDTO(doc)
+            })
+            return products
+        }
+        catch (err) {
+            console.log("Error en getProductsByCategory - productsJs => ", err)
+            return null
+        }
+    }
+
+
+
     // Traigo un producto por ID de la DB
     const getProductById = async (productId) => {
         try {
@@ -53,6 +89,7 @@ export const useProducts = () => {
 
     return {
         getProducts,
-        getProductById
+        getProductById,
+        getProductsByCategory
     }
 }
