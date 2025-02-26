@@ -7,12 +7,13 @@ import { sortProducts } from "../../utils/sortProducts"
 import { useAsync } from "../../hooks/useAsync"
 import NavigateButtons from "../NavigateButtons/NavigateButtons"
 import { paths, matchPathName } from "../../utils/paths"
+import Loading from "../Loading/Loading"
 
 const ItemListContainer = () => {
     // const [products, setProducts] = useState([])
     // const [loading, setLoading] = useState(true)
     // const [viewOption, setViewOtion] = useState("grilla")
-    const [sort, setSort] = useState("az")
+    // const [sort, setSort] = useState("az")
     const [categoryName, setCategoryName] = useState("")
     const { categoryId } = useParams()
     const { getProducts } = useProducts()
@@ -82,20 +83,19 @@ const ItemListContainer = () => {
     // }
 
     // Cambio de orden alfabético
-
-    useEffect(() => {
-        try {
-            // Ordenar productos A-Z y Z-A
-            // console.log("2° Products dentro del SORT  => ", products)
-            // console.log(sort)
-            const sortedProducts = sort === "az" ? alphabeticOrderAZ(products) : alphabeticOrderZA(products)
-            // console.log("3° SORTED PRODUCTS => ", sortedProducts)
-            products = sortedProducts
-        }
-        catch (err) {
-            console.log("Error ordenando los productos => ", err)
-        }
-    }, [products, sort])
+    // useEffect(() => {
+    //     try {
+    //         // Ordenar productos A-Z y Z-A
+    //         // console.log("2° Products dentro del SORT  => ", products)
+    //         // console.log(sort)
+    //         const sortedProducts = sort === "az" ? alphabeticOrderAZ(products) : alphabeticOrderZA(products)
+    //         // console.log("3° SORTED PRODUCTS => ", sortedProducts)
+    //         products = sortedProducts
+    //     }
+    //     catch (err) {
+    //         console.log("Error ordenando los productos => ", err)
+    //     }
+    // }, [products, sort])
 
     useEffect(() => {
         //Cambio de nombre en la categoria que se muestra en pantalla
@@ -104,13 +104,13 @@ const ItemListContainer = () => {
     }, [categoryId])
 
 
-    const changeSort = () => {
-        setSort(sort === "az" ? "za" : "az")
-    }
+    // const changeSort = () => {
+    //     setSort(sort === "az" ? "za" : "az")
+    // }
 
     // Componente Loading
     if (loading) {
-        return <h1 className={css.container} > Cargando... </h1>
+        return  <Loading/>
     }
 
     // Componente Error
@@ -127,7 +127,7 @@ const ItemListContainer = () => {
             {/* <h1> {message} </h1> */}
             {/* <button onClick={changeViewOption} > {viewOption === "grilla" ? "Ver: columna" : "Ver: grilla"} </button> */}
             <NavigateButtons />
-            <button className={css.sortButton} onClick={changeSort} > {sort === "az" ? "Ordenar A-Z" : "Ordenar Z-A"} </button>
+            {/* <button className={css.sortButton} onClick={changeSort} > {sort === "az" ? "Ordenar A-Z" : "Ordenar Z-A"} </button> */}
             <ItemList products={products} />
         </div>
     )

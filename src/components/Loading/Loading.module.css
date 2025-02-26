@@ -1,0 +1,40 @@
+.container {
+    /* border: solid red; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: 15rem;
+    height: 10rem;
+    filter: blur(5px);
+}
+
+.imgBlur {
+    width: 15rem;
+    height: 12rem;
+    filter: blur(10px);
+    /* Ajusta el valor inicial del difuminado */
+    animation: clearBlur 0.2s ease-in-out forwards;
+    /* Duración y tipo de animación */
+}
+
+@keyframes clearBlur {
+    to {
+        filter: blur(0);
+        /* Valor final del difuminado */
+    }
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+@media (width < 900px) {
+    .imgBlur {
+        width: 12rem;
+        height: 9rem;
+    }
+
+}

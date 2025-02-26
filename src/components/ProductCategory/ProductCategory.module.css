@@ -16,7 +16,7 @@
     font-family: "Geist", serif;
     font-family: "Marcellus", serif;
     /* height: 20vh; */
-    height: 12rem;
+    height: 15rem;
     /* width: 20vw; */
     width: 25rem;
     background-size: cover;
@@ -36,26 +36,40 @@
 /* background-color: #A79F92;  */
 
 
-@media (width <=460px) {
-    .links {
-        width: 7rem;
-        height: 3rem;
-        font-size: medium;
-    }
-
-    .links:hover{
-        font-size: large;
-    }
-}
 
 @media (width <=899px) {
     .links {
         width: 12rem;
-        height: 5rem;
-        font-size: medium;
+        height: 8rem;
+        font-size: large;
+        text-align: center;
     }
 
-    .links:hover{
+    .links:hover {
+        font-size: large;
+    }
+}
+
+@media (width <=460px) {
+    .links {
+        width: 10rem;
+        height: 6rem;
+        /* font-size: medium; */
+    }
+
+    .links:hover {
+        font-size: large;
+    }
+}
+
+@media (width <=416px) {
+    .links {
+        width: 15rem;
+        height: 8rem;
+        /* font-size: medium; */
+    }
+
+    .links:hover {
         font-size: large;
     }
 }

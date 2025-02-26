@@ -1,4 +1,5 @@
 import TopSideText from './components/TopSideText/TopSideText'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Navbar from './components/Navbar/Navbar'
 import HomeView from './components/HomeView/HomeView'
 import ProductsCategoryContainer from './components/ProductsCategoryContainer/ProductsCategoryContainer'
@@ -21,6 +22,7 @@ function App() {
       <TopSideText text={"🔥 ¡15% OFF EN EFECTIVO! 🔥"} />
       <BrowserRouter >
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<HomeView />} />
           <Route path="/productos" element={<ProductsCategoryContainer variantValidation={true} />} />

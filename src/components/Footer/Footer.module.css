@@ -110,4 +110,7 @@
     .container {
         height: 15rem;
     }
+    .firma{
+        font-size: small;
+    }
 }
