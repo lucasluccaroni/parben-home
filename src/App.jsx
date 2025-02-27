@@ -14,6 +14,7 @@ import "./App.css"
 
 import { ToastContainer } from 'react-toastify'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import AddProductForm from './components/AddProductForm/AddProductForm'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
+          <Route path='add-product' element={<AddProductForm />} />
           <Route path='/' element={<HomeView />} />
           <Route path="/productos" element={<ProductsCategoryContainer variantValidation={true} />} />
           <Route path='/detalle/:productId' element={<ItemDetailContainer />} />
