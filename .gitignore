@@ -15,6 +15,8 @@ dist-ssr
 *.local
 AddProductForm
 addProduct.js
+OLDaddProduct.js
+OLDAddProductForm.jsx
 
 # Editor directories and files
 .vscode/*
