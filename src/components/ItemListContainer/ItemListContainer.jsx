@@ -17,7 +17,7 @@ const ItemListContainer = () => {
     // const { alphabeticOrderAZ, alphabeticOrderZA } = sortProducts()
     const [categoryName, setCategoryName] = useState("")
     const { categoryId } = useParams()
-    const { getProducts, getProductsByCategory } = useProducts()
+    const { /* getProducts, */ getProductsByCategory } = useProducts()
 
     console.log(categoryId)
 
@@ -43,6 +43,7 @@ const ItemListContainer = () => {
     // Logica para matchear el categoryId que viene por params con el nombre del path
 
     console.log(categoryName)
+    console.log(products)
 
     // console.log("1°", products)
     // console.log("loading =>", loading)

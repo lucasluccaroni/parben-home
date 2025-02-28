@@ -13,25 +13,25 @@ import { productsDTO } from "../../../dto/products"
 export const useProducts = () => {
 
     // Traigo los productos de la DB + validacion para traer por categoriga
-    const getProducts = async (categoryId) => {
-        try {
-            const collectionRef = categoryId
-                ? query(collection(db, "products"), where("category", "==", categoryId))
-                : collection(db, "products")
+    // const getProducts = async (categoryId) => {
+    //     try {
+    //         const collectionRef = categoryId
+    //             ? query(collection(db, "products"), where("category", "==", categoryId))
+    //             : collection(db, "products")
 
-            const querySnapShot = await getDocs(collectionRef)
-            console.log("querySnapShot en productsJs => ", querySnapShot)
+    //         const querySnapShot = await getDocs(collectionRef)
+    //         console.log("querySnapShot en productsJs => ", querySnapShot)
 
-            const products = querySnapShot.docs.map(doc => {
-                return productsDTO(doc) // DTO
-            })
-            return products
-        }
-        catch (err) {
-            console.log("Error en getProducts - poductsJs => ", err)
-            return null
-        }
-    }
+    //         const products = querySnapShot.docs.map(doc => {
+    //             return productsDTO(doc) // DTO
+    //         })
+    //         return products
+    //     }
+    //     catch (err) {
+    //         console.log("Error en getProducts - poductsJs => ", err)
+    //         return null
+    //     }
+    // }
 
     //- Traigo productos por categorias de la DB (Nueva refactorizacion de la DB)
     const getProductsByCategory = async (categoryId) => {
@@ -43,6 +43,7 @@ export const useProducts = () => {
                 const categoryRef = collection(db, `products/categories/${categoryId}`)
                 console.log("CATEGORY REF => ", categoryRef)
                 querySnapShot = await getDocs(categoryRef)
+                console.log(querySnapShot)
             } else {
 
                 // Si no se proporciona una categoría, buscar en todas las categorías
@@ -67,12 +68,10 @@ export const useProducts = () => {
         }
     }
 
-
-
-    // Traigo un producto por ID de la DB
+    //- Traigo productos por categorias ID de la DB (Nueva refactorizacion de la DB)
     const getProductById = async (productId) => {
         try {
-            const documentRef = doc(db, "products", productId)
+            const documentRef = doc(db, "all_products", productId)
             const queryDocumentSnapShot = await getDoc(documentRef)
             console.log("queryDocumentSnapShot en productJs => ", queryDocumentSnapShot)
             const productAdapted = productsDTO(queryDocumentSnapShot)  // DTO
@@ -87,8 +86,27 @@ export const useProducts = () => {
         }
     }
 
+
+    // Traigo un producto por ID de la DB
+    // const getProductByIdOLD = async (productId) => {
+    //     try {
+    //         const documentRef = doc(db, "products", productId)
+    //         const queryDocumentSnapShot = await getDoc(documentRef)
+    //         console.log("queryDocumentSnapShot en productJs => ", queryDocumentSnapShot)
+    //         const productAdapted = productsDTO(queryDocumentSnapShot)  // DTO
+    //         return productAdapted
+    //         // const fields = queryDocumentSnapShot.data()
+    //         // const product = { id: queryDocumentSnapShot.id, ...fields }
+    //         // return product
+    //     }
+    //     catch (err) {
+    //         console.log("Error en getProductsById - poductsJs => ", err)
+    //         return null
+    //     }
+    // }
+
     return {
-        getProducts,
+        // getProducts,
         getProductById,
         getProductsByCategory
     }
