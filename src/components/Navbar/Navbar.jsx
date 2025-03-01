@@ -22,7 +22,7 @@ const Navbar = () => {
                 <Link className={css.link} to="/" > Inicio </Link>
                 <ButtonHamb />
                 <Link className={css.link} to="/servicios" > Servicios </Link>
-                <Link className={css.link} to="/tips" > Tips </Link>
+                <Link className={css.link} to="/quienes-somos" > Nosotros </Link>
                 <Link className={css.link} to="contacto" > Contacto </Link>
             </section>
             <Link className={css.comoComprarButton} to="como-comprar"> ¿Cómo comprar? </Link>

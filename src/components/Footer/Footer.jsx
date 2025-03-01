@@ -9,7 +9,7 @@ const Footer = () => {
                 <a href="https://www.instagram.com/lucasluccaroni/" target="_blank" rel="noopener noreferrer">
                     <img className={css.logo} src="/images/redes/instagram.png" alt="Instagram logo" />
                 </a>
-                <a href="https://wa.me/5491162763002" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5491170660505" target="_blank" rel="noopener noreferrer">
                     <img className={css.logo} src="/images/redes/whatsapp.png" alt="Whatsapp logo" />
                 </a>
                 <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -19,7 +19,7 @@ const Footer = () => {
                     <img className={css.logo} src="/images/redes/pinterest.png" alt="Pinterest logo" />
                 </a>
             </div>
-            <h3> mail@mail.com </h3>
+            <h3> parbendivan@gmail.com </h3>
             <div className={css.firma} >
                 <p className={css.firmaText} >Designed by: Lucas Luccaroni 2025</p>
                 <a href="https://github.com/lucasluccaroni" target="_blank" rel="noopener noreferrer">

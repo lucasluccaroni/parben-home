@@ -1,32 +1,21 @@
 import css from "./ComoComprar.module.css"
-import { useEffect } from "react"
-import NavigateButtons from "../NavigateButtons/NavigateButtons"
 
-const ComoComprar = () => {
-
-    useEffect(() => {
-        document.title = "Parben Home | ¿Cómo comprar?"
-    }, [])
+const ComoComprar = ({ number, color, texts:{text1, text2} }) => {
+    console.log(color)
 
     return (
-        <div className={css.container} >
-            <NavigateButtons/>
-            <h1 className={css.titulo} >Como comprar con nosotros</h1>
-
-            <div className={css.grandContainer} >
-
-                <div className={css.contenedor1} >
-                    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam debitis magnam quas eius tempora repudiandae laboriosam quibusdam aspernatur nesciunt tenetur! Vel doloribus voluptatibus quisquam voluptatum sequi velit autem animi error.
-                        Maxime eligendi perferendis, voluptates vero quibusdam consequatur sunt sed facere delectus. Sit cupiditate quae veniam ducimus ipsam veritatis maiores, facere natus molestiae, ex quas tempore itaque et culpa repudiandae impedit.
-                        Perspiciatis dicta ea totam, quibusdam quae architecto at praesentium eveniet ducimus, id blanditiis iste obcaecati odio deserunt beatae unde consequuntur adipisci fugiat libero officia pariatur. Nemo rem dicta quisquam consectetur.</h2>
-                </div>
-
-                <div className={css.contenedor2} >
-                    <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, laboriosam consequuntur beatae quo, sapiente ducimus natus exercitationem optio omnis id libero vitae aperiam doloremque quasi distinctio saepe obcaecati eius aspernatur.
-                        Excepturi magni assumenda quasi, minima corrupti recusandae porro rerum minus eum rem voluptates cumque magnam possimus quo sed perspiciatis sint repellendus alias consectetur delectus provident inventore. Unde sit id quasi!
-                        Dolor sequi ut, consequatur sint et ea doloremque, deleniti numquam molestiae culpa earum nihil perspiciatis voluptatem debitis cupiditate dolorem doloribus iure iusto, ipsam natus minus accusamus delectus nulla adipisci! Nostrum?</h2>
-                </div>
-
+        <div className={`${css.container} ${css[color]}`} >
+            <div className={`${css.numberContainer}`}>
+                {/* <div className={css.number} >
+                </div> */}
+                <h1 className={css.number} > {number}. </h1>
+            </div>
+            <div className={css.textContainer} >
+                <h1 className={css.text1} > {text1} </h1>
+                <h2 className={css.text2} > {text2} </h2>
+                {/* <h3 className={css.text} > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deleniti, accusantium doloribus, accusamus qui nisi voluptatem iste quam vero temporibus dignissimos. Aperiam similique nisi quae facere cum eveniet ex ipsam!
+                    Vero voluptatibus eveniet, iusto sequi unde et rem quaerat. Libero laborum odio labore deserunt ad ex quis adipisci, eaque quasi, quod ipsam aspernatur? Ab sequi cum quam, aliquam voluptates et.
+                </h3> */}
             </div>
         </div>
     )

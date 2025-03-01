@@ -6,9 +6,10 @@ import ProductsCategoryContainer from './components/ProductsCategoryContainer/Pr
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import ServicesView from './components/ServicesView/ServicesView'
-import TipsView from './components/TipsView/TipsView'
+import ComoComprarView from './components/ComoComprarView/ComoComprarView'
 import ContactView from './components/ContactView/ContactView'
-import ComoComprar from './components/ComoComprar/ComoComprar'
+import QuienesSomos from './components/QuienesSomos/QuienesSomos'
+// import ComoComprar from './components/ComoComprarOLD/ComoComprarOLD'
 import Footer from './components/Footer/Footer'
 import "./App.css"
 
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div className="App" >
-      <TopSideText text={"🔥 ¡15% OFF EN EFECTIVO! 🔥"} />
+      <TopSideText text={"🔥 ¡DESCUENTO EN EFECTIVO! 🔥"} />
       <BrowserRouter >
         <Navbar />
         <ScrollToTop />
@@ -30,9 +31,9 @@ function App() {
           <Route path="/productos" element={<ProductsCategoryContainer variantValidation={true} />} />
           <Route path='/detalle/:productId' element={<ItemDetailContainer />} />
           <Route path='/servicios' element={<ServicesView />} />
-          <Route path='/tips' element={<TipsView />} />
+          <Route path='/quienes-somos' element={<QuienesSomos />} />
           <Route path='/contacto' element={<ContactView />} />
-          <Route path='/como-comprar' element={<ComoComprar />} />
+          <Route path='/como-comprar' element={<ComoComprarView />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path='*' element={<h1>404 Página no encontrada</h1>} />
         </Routes>

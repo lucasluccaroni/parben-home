@@ -16,8 +16,8 @@
     color: white;
     text-decoration: none;
     font-size: large;
-    font-family: "Marcellus", serif;
     font-family: "Geist", serif;
+    font-family: "Marcellus", serif;
 }
 
 .navigateButton:active{

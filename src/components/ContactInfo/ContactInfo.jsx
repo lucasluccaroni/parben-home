@@ -9,12 +9,11 @@ const ContactInfo = () => {
             <div className={css.listaHorarios} >
                 <h2 style={{ textDecoration: "underline" }} > Horarios </h2>
                 <p className={css.text} > Lunes a viernes: 10 hs a 19 hs </p>
-                <p className={css.text} > Sabados: 10 hs a 16 hs </p>
+                <p className={css.text} > Sabados: 10 hs a 17 hs </p>
             </div>
             <div className={css.listaTelMail}>
                 <h2 style={{ textDecoration: "underline" }} > Contacto</h2>
-                <p className={css.text} > Tel1: 1122334455</p>
-                <p className={css.text} >Tel2: 1122334455</p>
+                <p className={css.text} > Tel: 1170660505</p>
                 <p className={css.text} >parbendivan@gmail.com</p>
             </div>
         </div>

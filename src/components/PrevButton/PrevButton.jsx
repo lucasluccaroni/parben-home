@@ -6,7 +6,7 @@ const PrevButton = () => {
 
     return (
         <button className={css.navigateButton} onClick={() => navigate(-1)}>
-            Volver
+            Anterior
         </button>
     )
 }
