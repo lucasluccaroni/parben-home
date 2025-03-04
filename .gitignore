@@ -17,6 +17,9 @@ AddProductForm
 addProduct.js
 OLDaddProduct.js
 OLDAddProductForm.jsx
+NewItemDetail
+NewItemDetail.jsx
+NewItemDetail.module.css
 
 # Editor directories and files
 .vscode/*

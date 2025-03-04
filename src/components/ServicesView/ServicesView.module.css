@@ -5,10 +5,26 @@
     align-items: center;
     /* justify-content: center; */
     font-family: "Marcellus", serif;
+    background-color: #F2F3EE;
 }
 
-.subTitulo {
-    font-size: 40px;
+.titulo {
+    font-size: 60px;
     color: #100F0F;
     margin-top: 50px;
+}
+
+/* ---- MEDIA QUEREIS ---- */
+
+@media(width < 610px){
+    .titulo{
+        font-size: 35px;
+        text-align: center;
+    }
+}
+@media(width < 510px){
+    .titulo{
+        font-size: 30px;
+        text-align: center;
+    }
 }
