@@ -45,3 +45,25 @@
 .sortButton:active {
     transform: scale(0.90);
 }
+
+
+/* ---- MEDIA QUERIES ---- */
+
+@media(width < 800px){
+    .titulo{
+        font-size: 40px;
+        text-align: center;
+        align-self: center;
+
+    }
+}
+
+
+@media(width < 300px){
+    .titulo{
+        font-size: 30px;
+        text-align: center;
+        align-self: center;
+
+    }
+}

@@ -1,0 +1,24 @@
+.container{
+    border: solid blue;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+
+.img{
+    width: 40rem;
+    height: 50rem;
+}
+
+
+.imgContainer{
+    border: solid red 2px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.itemDetailInfoContainer{
+    border: solid green 2px;
+    width: 60rem;
+}

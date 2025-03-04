@@ -17,7 +17,7 @@ const ButtonHamb = () => {
                     <Link to={"/category/comodas-y-mesas-luz"} > Cómodas y Mesas de Luz </Link>
                     <Link to={"/category/escritorios-y-estanterias"} > Escritorios y Estanterias </Link>
                     <Link to={"/category/puffs"} > Puffs </Link>
-                    <Link to={"/category/ilumninacion"} > Ilumniación </Link>
+                    <Link to={"/category/iluminacion"} > Ilumniación </Link>
                     <Link to={"/category/deco"} > Deco </Link>
 
 
