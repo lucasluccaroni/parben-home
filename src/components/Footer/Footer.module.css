@@ -42,6 +42,10 @@
     height: 40px;
 }
 
+.firmaText{
+    color: rgba(0, 0, 0, 0.469);
+    font-size: 16px;
+}
 
 /* ---- MEDIA QUERIES ---- */
 
@@ -67,6 +71,16 @@
     p {
         font-size: 15px;
     }
+    .firma{
+        width: 17rem;
+    }
+    .firmaText{
+        font-size: 12px;
+    }
+    .githubLogo{
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media(width <=750px) {
@@ -85,30 +99,35 @@
     }
 
     .firma {
-        font-size: 8px;
         width: 19rem;
         justify-content: space-evenly;
     }
-
-    .githubLogo {
-        width: 15px;
-        height: 15px;
+    .firmaText{
+        color: rgba(0, 0, 0, 0.469);
+        font-size: 12px;
     }
 }
 
 @media(width < 600px) {
     .container {
-        height: 20rem;
+        height: 25rem;
     }
 
     .containerLogos {
         justify-content: space-between;
     }
+
+    .firma{
+        width: 15rem;
+    }
+    .firmaText{
+        font-size: 10px;
+    }
 }
 
 @media(width < 400px) {
     .container {
-        height: 15rem;
+        height: 22rem;
     }
     .firma{
         font-size: small;
