@@ -23,7 +23,7 @@ const ItemDetailInfo = ({ name, description1, description2, description3 }) => {
 
             <div className={css.linksContainer} >
 
-                <a className={css.boton} href="https://wa.me/5491162763002" target="_blank" rel="noopener noreferrer">
+                <a className={css.boton} href="https://wa.me/5491170660505" target="_blank" rel="noopener noreferrer">
                     <p className={css.linkText} > ¡Lo quiero! </p>
                 </a>
 

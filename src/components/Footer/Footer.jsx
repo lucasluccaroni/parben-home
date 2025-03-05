@@ -6,7 +6,7 @@ const Footer = () => {
         <div className={css.container} >
             <h1> Seguinos </h1>
             <div className={css.containerLogos} >
-                <a href="https://www.instagram.com/lucasluccaroni/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/parbenhome/" target="_blank" rel="noopener noreferrer">
                     <img className={css.logo} src="/images/redes/instagram.png" alt="Instagram logo" />
                 </a>
                 <a href="https://wa.me/5491170660505" target="_blank" rel="noopener noreferrer">

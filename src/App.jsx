@@ -9,11 +9,8 @@ import ServicesView from './components/ServicesView/ServicesView'
 import ComoComprarView from './components/ComoComprarView/ComoComprarView'
 import ContactView from './components/ContactView/ContactView'
 import QuienesSomos from './components/QuienesSomos/QuienesSomos'
-// import ComoComprar from './components/ComoComprarOLD/ComoComprarOLD'
 import Footer from './components/Footer/Footer'
 import "./App.css"
-
-import NewItemDetail from './components/NewItemDetail/NewItemDetail'
 
 import { ToastContainer } from 'react-toastify'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
@@ -28,7 +25,6 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path='newItemDetail' element={<NewItemDetail/>} />
           <Route path='add-product' element={<AddProductForm />} />
           <Route path='/' element={<HomeView />} />
           <Route path="/productos" element={<ProductsCategoryContainer variantValidation={true} />} />

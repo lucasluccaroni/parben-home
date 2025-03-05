@@ -1,7 +1,7 @@
 
 export const paths = [
     { path: "/category/sofas", pathName: "Sofás", key: "1", img: "/images/products-category/sofas.png" },
-    { path: "/category/esquineros", pathName: "Esquineros", key: "2", img: "/images/products-category/esquineros.jpg" },
+    { path: "/category/esquineros", pathName: "Esquineros", key: "2", img: "/images/products-category/esquineros.png" },
     { path: "/category/poltronas", pathName: "Poltronas", key: "3", img: "/images/products-category/poltronas.png" },
     { path: "/category/mesas", pathName: "Mesas", key: "4", img: "/images/products-category/mesas.png" },
     { path: "/category/mesas-ratonas", pathName: "Mesas Ratonas", key: "5", img: "/images/products-category/ratonas.png" },
@@ -10,7 +10,7 @@ export const paths = [
     { path: "/category/comodas-y-mesas-luz", pathName: "Cómodas y Mesas de Luz", key: "8", img: "/images/products-category/comodas-mesas-luz.png" },
     { path: "/category/escritorios-y-estanterias", pathName: "Escritorios y Estanterías", key: "9", img: "/images/products-category/escritorios-estanterias.png" },
     { path: "/category/puffs", pathName: "Puffs", key: "10", img: "/images/products-category/puffs.png" },
-    { path: "/category/iluminacion", pathName: "Iluminación", key: "11", img: "/images/products-category/iluminacion.jpg" },
+    { path: "/category/iluminacion", pathName: "Iluminación", key: "11", img: "/images/products-category/iluminacion.png" },
     { path: "/category/deco", pathName: "Deco", key: "12", img: "/images/products-category/deco.png" },
 ]
 
