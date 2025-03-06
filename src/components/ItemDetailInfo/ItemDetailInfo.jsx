@@ -30,6 +30,8 @@ const ItemDetailInfo = ({ name, description1, description2, description3 }) => {
                 <a className={css.boton} href="/test.pdf" target="_blank" rel="noopener noreferrer">
                     <p className={css.linkText} > Lista de precios </p>
                 </a>
+                
+                <img className={css.waterMark} src="/images/logo-navegador3.png" alt="marca-de-agua" />
 
             </div>
         </div>

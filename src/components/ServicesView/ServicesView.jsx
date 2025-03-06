@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import Services from "../Services/Services"
+import ServicesComponent from "../ServicesComponent/ServicesComponent"
 import css from "./ServicesView.module.css"
 import NavigateButtons from "../NavigateButtons/NavigateButtons"
 
@@ -15,7 +15,7 @@ const ServicesView = () => {
         <div className={css.container}>
             <NavigateButtons/>
             <h1 className={css.titulo} >Los servicios que te ofrecemos</h1>
-            <Services/>
+            <ServicesComponent/>
         </div>
     )
 }

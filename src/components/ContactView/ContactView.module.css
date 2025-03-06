@@ -8,7 +8,7 @@
     font-family: "M";
     color: #37332D;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Marcellus", serif;
 
 }
@@ -35,6 +35,29 @@
     font-family: "Geist", serif;
 }
 
-.navigateButton:active{
+.navigateButton:active {
     transform: scale(0.90);
+}
+
+
+
+/* ---- MEDIA QUERIES ---- */
+@media (width < 1000px) {
+    .titulo {
+        font-size: 40px;
+    }
+}
+
+@media(width< 700px){
+    .titulo{
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+@media(width< 420px) {
+    .titulo {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
 }

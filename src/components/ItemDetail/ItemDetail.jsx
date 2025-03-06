@@ -11,7 +11,6 @@ const ItemDetail = ({ id, name, img1, img2, category, description1, description2
             </div>
             <ItemDetailInfo {...props} />
             {/* <div className={css.waterMark} ></div> */}
-            <img className={css.waterMark} src="/images/logo-navegador3.png" alt="marca-de-agua" />
         </div>
     )
 }

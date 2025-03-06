@@ -43,6 +43,7 @@
     align-items: center;
     text-align: center;
     color: #37332D;
+    color: #100F0F;
     text-decoration: none;
     font-size: x-large;
     font-family: "Marcellus", serif;
@@ -141,6 +142,8 @@
         width: 100%;
         padding: 0;
         margin: 0;
+        background-color: #f2f3ee52;
+
     }
 }
 

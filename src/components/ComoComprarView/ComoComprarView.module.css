@@ -14,21 +14,38 @@
 
 .subTitulo {
     font-family: "Marcellus", serif;
-    font-size: 40px;
+    font-size: 30px;
     color: #100F0F;
     margin-top: 0;
     text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+
 }
 
 
 /* ---- MEDIA QUERIES ---- */
 
 @media(width <= 1000px){
+    .titulo{
+        font-size: 40px; 
+    }
     .subTitulo{
-        font-size: 30px; 
+        font-size: 25px;
     }
 }
+
+@media(width< 700px){
+    .titulo{
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
 @media(width <= 500px){
+    .titulo{
+        font-size: 28px;
+    }
     .subTitulo{
         font-size: 20px; 
     }

@@ -18,13 +18,13 @@
 .titulo {
     color: #37332D;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Marcellus", serif;
 
 }
 
-h2{
-    font-weight: 400;
+.text{
+    font-weight: 350;
 }
 
 .grandContainer {
@@ -66,13 +66,18 @@ h2{
     }
 }
 
+@media (width < 1000px) {
+    .titulo {
+        font-size: 40px;
+    }
+    .text{
+        font-size: 20px;
+    }
+}
+
 @media(width <=750px) {
     .container {
         height: fit-content;
-    }
-
-    .titulo {
-        font-size: 40px;
     }
 
     .grandContainer {
@@ -90,9 +95,16 @@ h2{
     }
 }
 
+@media(width< 700px){
+    .titulo{
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
 @media(width <=420px) {
     .titulo {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .contenedor1 {

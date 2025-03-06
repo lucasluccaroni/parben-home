@@ -13,6 +13,7 @@
     align-items: flex-start;
     justify-content: end;
     font-family: "Geist", serif;
+    position: relative;
 }
 
 .nameContainer {
@@ -107,10 +108,19 @@
     font-family: "Marcellus", serif;
     color: #F2F3EE;
 }
-
 .boton:active {
     transform: scale(0.99);
 }
+
+.waterMark {
+    height: 90px;
+    width: 100px;
+    position: absolute;
+    bottom: 2%;
+    left: 87%;
+    opacity: 0.5;
+}
+
 
 
 /* ---- MEDIA QUERIES ---- */
@@ -120,6 +130,12 @@
 @media(width <=1550px) {
     .container {
         height: 45rem; 
+    }
+}
+
+@media(width < 1450px){
+    .waterMark{
+        left: 84%;
     }
 }
 
@@ -148,15 +164,20 @@
     }
 
     .linkText {
-        font-size: 8px;
-        margin-left: 5px;
+        font-size: 16px;
     }
 
+    .waterMark{
+        height: 70px;
+        width: 80px;
+
+    }    
+    
     /* .wpLogo {
         width: 20px;
         height: 20px;
     } */
-
+    
     /* .description {
         width: 35rem;
         height: 28rem;
@@ -165,6 +186,7 @@
         text-align: justify;
     } */
 }
+
 
 @media (width <=700px) {
     .container{
@@ -183,6 +205,10 @@
         width: 20rem;
         font-size: medium;
     }
+    .waterMark{
+        height: 55px;
+        width: 60px;
+    }
 }
 
 @media(width <=500px) {
@@ -198,6 +224,11 @@
     }
     h3{
         font-size: medium;
+    }
+
+    .waterMark{
+        height: 45px;
+        width: 50px;
     }
     /* .linksContainer{
         margin-top: 0;
@@ -217,6 +248,14 @@
         width: 80vw;
         height: fit-content;
     } */
+}
+
+@media(width < 450px){
+    .waterMark{
+        left: 80%;
+        /* height: 45px;
+        width: 50px; */
+    }
 }
 
 @media(width <=430px) {
@@ -235,7 +274,11 @@
         display: flex;
         flex-direction: column;
         /* font-size: small; */
-
+    }
+    .waterMark{
+        left: 75%;
+        /* height: 45px;
+        width: 50px; */
     }
     /* .linksContainer{
         margin-top: 0;
@@ -255,4 +298,12 @@
         width: 80vw;
         height: fit-content;
     } */
+}
+
+@media(width < 330px){
+    .waterMark{
+        height: 42px;
+        width: 45px;
+        left: 72%;
+    }
 }

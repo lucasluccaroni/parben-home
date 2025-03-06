@@ -1,7 +1,6 @@
 .container {
     height: 500px;
     width: 100vw;
-    /* border: dotted blue 2px; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -11,11 +10,6 @@
 .numberContainer {
     width: 200px;
     height: 500px;
-    /* border: solid yellow; */
-    /* border-radius: 50%; */
-    /* position: relative; */
-    /* bottom: 50px; */
-    /* top: 60px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,18 +18,12 @@
 
 .number {
     color: #F2F3EE;
-    /* border: solid violet; */
     font-size: 240px;
     font-family: "Marcellus", serif;
     text-decoration: none;
-    /* position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 0; */
 }
 
 .textContainer {
-    /* border: solid green; */
     width: 1100px;
     display: flex;
     flex-direction: column;
@@ -45,7 +33,6 @@
 
 .text1 {
     font-family: "Geist", serif;
-    /* font-size: 25px; */
     color: #F2F3EE;
     text-align: justify;
     text-decoration: none;
@@ -53,7 +40,6 @@
 
 .text2 {
     font-family: "Geist", serif;
-    /* font-size: 25px; */
     color: #F2F3EE;
     text-align: justify;
 }
@@ -73,6 +59,9 @@
 /* ---- MEDIA QUERIES ---- */
 
 @media (width <= 1380px){
+    .container, .numberContainer{
+        height: 350px;
+    }
     .container{
         padding: 20px;
     }
@@ -83,9 +72,13 @@
         width: 600px;
     }
     .text1{
+        font-size: 22px;
+    }
+    .text2{
         font-size: 20px;
     }
 }
+
 
 @media (width <= 950px){
     .container{
@@ -97,8 +90,14 @@
     .textContainer{
         width: 400px;
     }
+}
+
+@media(width < 720px){
     .text1{
-        font-size: 15px;
+        font-size: 20px;
+    }
+    .text2{
+        font-size: 18px;
     }
 }
 
@@ -113,27 +112,67 @@
     .textContainer{
         width: 300px;
     }
+}
+
+@media(width < 550px){
     .text1{
-        font-size: 15px;
+        font-size: 18px;
+    }
+    .text2{
+        font-size: 16px;
     }
 }
 
 @media (width <= 450px){
     .container{
-        align-items: center;
+        align-content: center;
+        height: 300px;
     }
     .numberContainer{
         width: 50px;
+        height: 200px;
     }
     .number{
         font-size: 50px;
-        margin-left: 0;
     }
     .textContainer{
-        width: 150px;
-        height: 400px;
+        height: 280px;
     }
     .text1{
-        font-size: 12px;
+        width: 15rem;
+        text-align: center;
+    }
+    .text2{
+        font-size: 14px;
+        height: 200px;
+        width: 15rem;
+    }
+}
+
+@media(width < 380px){
+    .textContainer{
+        width: 15rem;
+        height: 20rem;
+    }
+    .text1{
+        font-size: 16px;
+        width: 14rem;
+    }
+    .text2{
+        width: 14rem;
+        height: 250px;
+        /* height: 10rem; */
+    }
+}
+
+@media(width < 315px){
+    .numberContainer{
+        width: 40px;
+    }
+    .textContainer{
+        width: 13rem;
+    }
+    .text1, .text2{
+        width: 12rem;
     }
 }

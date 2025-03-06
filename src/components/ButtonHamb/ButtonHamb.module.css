@@ -25,7 +25,6 @@
 .menuContent a:hover {
     background-color: #A79F92;
     color: white;
-    /* border: solid black 1px; */
 }
 
 .menuContainer:hover .menuContent {
@@ -43,6 +42,7 @@
     align-items: center;
     text-align: center;
     color: #37332D;
+    color: #100F0F;
     text-decoration: none;
     font-size: x-large;
     font-family: "Marcellus", serif;
@@ -60,7 +60,8 @@
     .link {
         font-size: larger;
     }
-    .menuContent{
+
+    .menuContent {
         font-size: larger;
     }
 }
@@ -68,5 +69,6 @@
 @media (max-width: 700px) {
     .link {
         height: 80px;
+        background-color: #f2f3ee52;
     }
 }

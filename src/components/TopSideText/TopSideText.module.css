@@ -11,3 +11,11 @@
     align-items: center;
     justify-content: center;
 }
+
+
+@media(width < 700px){
+    .spanContainer{
+        font-size: small;
+        text-align: center;
+    }
+}

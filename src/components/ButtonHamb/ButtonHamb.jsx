@@ -19,21 +19,6 @@ const ButtonHamb = () => {
                     <Link to={"/category/puffs"} > Puffs </Link>
                     <Link to={"/category/iluminacion"} > Ilumniación </Link>
                     <Link to={"/category/deco"} > Deco </Link>
-
-
-
-                    {/* <a href="#">Sofas</a>
-                    <a href="#">Esquineros</a>
-                    <a href="#">Poltronas</a>
-                    <a href="#">Mesas</a>
-                    <a href="#">Mesas Ratonas</a>
-                    <a href="#">Sillas</a>
-                    <a href="#">Racks y Vajilleros </a>
-                    <a href="#">Comodas y Mesas de Luz </a>
-                    <a href="#">Escritorios y estanterias </a>
-                    <a href="#"> Puffs </a>
-                    <a href="#"> Iluminación </a>
-                    <a href="#" > Deco</a> */}
                 </div>
             </div>
         </>

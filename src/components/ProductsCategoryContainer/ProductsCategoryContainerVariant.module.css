@@ -1,4 +1,4 @@
-.container{
+.container {
     /* margin-top: 20vh; */
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
 .titulo {
     font-family: "Marcellus", serif;
     color: #F2F3EE;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 /* .boton {
@@ -42,17 +42,37 @@
 
 
 /* ---- MEDIA QUERIES ---- */
-@media(width <= 1625px){
-    .container{
+@media(width <=1625px) {
+    .container {
         padding: 20px;
     }
 }
-@media(width <= 645px){
-    .container{
+
+@media (width < 1000px) {
+    .titulo {
+        font-size: 40px;
+    }
+}
+
+@media(width< 700px){
+    .titulo{
+        font-size: 35px
+    }
+}
+
+@media(width <=645px) {
+    .container {
         padding: 10px;
     }
-    .titulo{
+
+    .titulo {
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
+    }
+}
+
+@media(width<420px) {
+    .titulo {
+        font-size: 28px;
     }
 }

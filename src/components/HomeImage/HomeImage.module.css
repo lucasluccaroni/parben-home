@@ -3,6 +3,7 @@
     width: 100vw;
     height: 57rem;
     object-fit: cover;
+    object-position: bottom;
 }
 
 
