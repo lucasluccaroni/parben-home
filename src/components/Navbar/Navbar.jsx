@@ -7,7 +7,7 @@ const Navbar = () => {
     const { pathname } = useLocation()
 
     let css
-    if(pathname !== "/"){
+    if (pathname !== "/") {
         css = stylesVariant
     } else {
         css = styles

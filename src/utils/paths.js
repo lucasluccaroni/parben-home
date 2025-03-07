@@ -18,8 +18,8 @@ export const paths = [
 export const matchPathName = (array, categoryId) => {
     for (let i = 0; i < array.length; i++) {
         const parts = array[i].path.split("/category/")
-        
-        if(parts[1] === categoryId){
+
+        if (parts[1] === categoryId) {
             return array[i].pathName
         }
     }

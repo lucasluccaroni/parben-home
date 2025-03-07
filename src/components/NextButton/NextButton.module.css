@@ -7,10 +7,8 @@
     height: 2rem;
     width: 6rem;
     padding: 3px;
-    /* margin-bottom: 2vh; */
     margin-left: 2vh;
     border: solid black 1px;
-    /* border-radius: 7%; */
     background-color: #A79F92;
     color: white;
     text-decoration: none;
@@ -19,6 +17,6 @@
     font-family: "Marcellus", serif;
 }
 
-.navigateButton:active{
+.navigateButton:active {
     transform: scale(0.90);
 }

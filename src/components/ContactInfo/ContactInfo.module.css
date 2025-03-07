@@ -1,26 +1,23 @@
 .container {
     background-color: #100F0F;
     color: #F2F3EE;
-    /* width: 40vw; */
     width: 48rem;
-    /* height: 100vh; */
     height: 58rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: x-large;
-    /* font-family: "Geist", serif; */
     font-family: "Marcellus", serif;
     position: relative;
 }
-.titulo{
+
+.titulo {
     font-size: 50px;
-    
+
 }
+
 .img {
-    /* width: 25vw; */
     width: 30rem;
-    /* height: 40vh; */
     height: 24rem;
     position: absolute;
     top: 30%;
@@ -34,16 +31,13 @@
     align-items: center;
     justify-items: center;
     padding: 15px;
-    /* width: 20vw; */
     width: 20rem;
     z-index: 10;
 }
 
 .listaTelMail {
     margin-top: 15;
-    /* width: 20vw; */
     width: 20rem;
-    /* height: 30vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +45,7 @@
     z-index: 10;
 }
 
-.text{
+.text {
     color: #F2F3EE;
 }
 
@@ -90,7 +84,6 @@
 }
 
 @media (width <=1000px) {
-
     .container {
         width: 100vw;
         height: fit-content;
@@ -114,10 +107,6 @@
 }
 
 @media (width < 900px) {
-    /* .titulo {
-        font-size: 30px;
-    } */
-
     .direccion {
         font-size: 24px;
     }
@@ -129,7 +118,6 @@
 
 
 @media (width <=768px) {
-
     .container {
         width: 100vw;
         height: fit-content;
@@ -139,7 +127,6 @@
         align-self: center;
         justify-self: center;
         top: 30%;
-        /* left: 35%; */
         width: 20rem;
         height: 15rem;
     }
@@ -151,8 +138,8 @@
 
 }
 
-@media(width< 700px){
-    .titulo{
+@media(width< 700px) {
+    .titulo {
         font-size: 35px;
         text-align: center;
     }
@@ -182,7 +169,6 @@
     .img {
         width: 18rem;
         height: 13rem;
-        /* left: 15%; */
     }
 }
 

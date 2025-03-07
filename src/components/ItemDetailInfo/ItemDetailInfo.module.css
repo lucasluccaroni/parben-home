@@ -1,7 +1,5 @@
 .container {
     /* border: solid blue 1px; */
-    /* width: 50rem; */
-    /* width: 44vw; */
     width: 55rem;
     height: 50rem;
     background-color: #37332D;
@@ -24,10 +22,11 @@
     flex-direction: column;
 }
 
-.name{
+.name {
     text-decoration: none;
-    
+
 }
+
 .line {
     height: 1px;
     color: #F2F3EE;
@@ -37,11 +36,10 @@
 }
 
 .descriptions {
+    /* border: solid red; */
     width: 30rem;
     margin-top: 20px;
     font-family: "Geist", serif;
-
-    /* border: solid red; */
 }
 
 .description {
@@ -52,31 +50,6 @@
 }
 
 
-
-/* .text {
-    margin-right: 10px;
-    padding-right: 10vw;
-    width: 20vw;
-    border: solid violet 1px;
-} 
-*/
-
-/* .pdfLink {
-    margin-top: 5px;
-    width: 150px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-evenly;
-    padding: 5px;
-    background-color: #d8a8a8;
-    border-radius: 2%;
-}
-.pdfLink:active {
-    transform: scale(0.99);
-} */
-
 .linkText {
     color: #F2F3EE;
     font-size: 18px;
@@ -84,8 +57,8 @@
 
 
 .linksContainer {
-    margin-top: 40px;
     /* border: solid blue; */
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -108,6 +81,7 @@
     font-family: "Marcellus", serif;
     color: #F2F3EE;
 }
+
 .boton:active {
     transform: scale(0.99);
 }
@@ -125,16 +99,14 @@
 
 /* ---- MEDIA QUERIES ---- */
 
-
-
 @media(width <=1550px) {
     .container {
-        height: 45rem; 
+        height: 45rem;
     }
 }
 
-@media(width < 1450px){
-    .waterMark{
+@media(width < 1450px) {
+    .waterMark {
         left: 84%;
     }
 }
@@ -150,11 +122,11 @@
     .container {
         width: 600px;
         height: 40rem;
-        /* width: 100vw; */
         align-items: start;
         justify-content: space-between;
     }
-    .descriptions{
+
+    .descriptions {
         height: fit-content;
     }
 
@@ -167,141 +139,96 @@
         font-size: 16px;
     }
 
-    .waterMark{
+    .waterMark {
         height: 70px;
         width: 80px;
 
-    }    
-    
-    /* .wpLogo {
-        width: 20px;
-        height: 20px;
-    } */
-    
-    /* .description {
-        width: 35rem;
-        height: 28rem;
-        padding-right: 2rem;
-        font-size: 16px;
-        text-align: justify;
-    } */
+    }
 }
 
 
 @media (width <=700px) {
-    .container{
+    .container {
         width: 26rem;
-        /* padding-left: 2rem; */
     }
-    .nameContainer{
+
+    .nameContainer {
         width: 20rem;
         height: 8rem;
         margin-top: 2rem;
     }
-    .name{
+
+    .name {
         font-size: x-large;
     }
-    .descriptions{
+
+    .descriptions {
         width: 20rem;
         font-size: medium;
     }
-    .waterMark{
+
+    .waterMark {
         height: 55px;
         width: 60px;
     }
 }
 
 @media(width <=500px) {
-    .container{
+    .container {
         height: 600px;
         justify-content: start;
     }
-    .name{
+
+    .name {
         font-size: large;
     }
-    .description{
+
+    .description {
         font-size: small;
     }
-    h3{
+
+    h3 {
         font-size: medium;
     }
 
-    .waterMark{
+    .waterMark {
         height: 45px;
         width: 50px;
     }
-    /* .linksContainer{
-        margin-top: 0;
-    } */
-    /* .descriptions{
-        height: fit-content;
-    } */
-    /* .container {
-        flex-direction: column;
-        height: fit-content;
-        width: 100vw;
-    } */
-
-    /* .description {
-        border: solid red;
-        padding-left: 1px;
-        width: 80vw;
-        height: fit-content;
-    } */
 }
 
-@media(width < 450px){
-    .waterMark{
+@media(width < 450px) {
+    .waterMark {
         left: 80%;
-        /* height: 45px;
-        width: 50px; */
     }
 }
 
 @media(width <=430px) {
-    .container{
+    .container {
         width: 100vw;
         padding-left: 5rem;
     }
-    .nameContainer{
-        width: 15rem;
-        /* font-size: medium; */
-    }
-    .descriptions{
+
+    .nameContainer {
         width: 15rem;
     }
-    .linksContainer{
+
+    .descriptions {
+        width: 15rem;
+    }
+
+    .linksContainer {
         display: flex;
         flex-direction: column;
-        /* font-size: small; */
     }
-    .waterMark{
-        left: 75%;
-        /* height: 45px;
-        width: 50px; */
-    }
-    /* .linksContainer{
-        margin-top: 0;
-    } */
-    /* .descriptions{
-        height: fit-content;
-    } */
-    /* .container {
-        flex-direction: column;
-        height: fit-content;
-        width: 100vw;
-    } */
 
-    /* .description {
-        border: solid red;
-        padding-left: 1px;
-        width: 80vw;
-        height: fit-content;
-    } */
+    .waterMark {
+        left: 75%;
+    }
 }
 
-@media(width < 330px){
-    .waterMark{
+@media(width < 330px) {
+    .waterMark {
         height: 42px;
         width: 45px;
         left: 72%;

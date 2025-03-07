@@ -10,7 +10,6 @@ const ItemDetail = ({ id, name, img1, img2, category, description1, description2
                 <img className={css.img} src={img2} />
             </div>
             <ItemDetailInfo {...props} />
-            {/* <div className={css.waterMark} ></div> */}
         </div>
     )
 }

@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-
 export const useAsync = (asyncFunction, dependencies = []) => {
     const [data, setData] = useState(null)
     const [loading, setLoading] = useState(true)
@@ -8,20 +7,19 @@ export const useAsync = (asyncFunction, dependencies = []) => {
     const [productCategory, setProductCategory] = useState(null)
 
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        const fetchData = async () =>{
-            try{
+        const fetchData = async () => {
+            try {
                 setLoading(true)
                 const result = await asyncFunction()
                 setData(result)
                 setProductCategory(result.category)
-                
-            } 
-            catch(error){
+            }
+            catch (error) {
                 setError(error)
             }
-            finally{
+            finally {
                 setLoading(false)
             }
         }

@@ -2,14 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
     height: 185px;
     position: absolute;
     top: 20;
     left: 0;
     width: 100%;
     z-index: 10;
-    /* Asegura que esté por encima de la imagen */
+    /* Asegura que este por encima de la imagen */
     background-color: transparent;
     /* Hace el fondo transparente */
 }
@@ -20,8 +19,6 @@
     padding: 30px;
     margin-left: 20px;
     cursor: pointer;
-    /* background-color: #37332D; */
-    /* color: #37332D; */
 }
 
 .section {
@@ -30,7 +27,6 @@
     width: fit-content;
     margin-right: 225px;
     height: 45px;
-
 }
 
 .link {
@@ -84,8 +80,6 @@
     }
 }
 
-
-
 @media (min-width: 700px) and (max-width: 1400px) {
     .nav {
         display: flex;
@@ -99,17 +93,17 @@
         margin-right: 0;
     }
 
-
     .comoComprarButton {
         margin-right: 0;
     }
 }
 
 @media(width < 900px) {
-    .link{
+    .link {
         font-size: larger;
     }
-    .comoComprarButton{
+
+    .comoComprarButton {
         margin-top: 20px;
         font-size: larger;
     }
@@ -121,17 +115,18 @@
         /* border: solid red; */
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        height: 500px;
+        height: 550px;
     }
 
     .section {
+        /* border: orange 1px solid; */
         display: flex;
         margin: 0;
         flex-direction: column;
         align-items: center;
-        height: 400px;
+        height: 350px;
     }
 
     .comoComprarButton {
@@ -142,8 +137,13 @@
         width: 100%;
         padding: 0;
         margin: 0;
+        height: 70px;
         background-color: #f2f3ee52;
-
+    }
+    .logo {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
     }
 }
 

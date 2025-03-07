@@ -8,34 +8,6 @@ const ComoComprarView = () => {
         document.title = "Parben Home | Cómo comprar?"
     }, [])
 
-    // const textOptionsOLD = (num) => {
-    //     switch (num) {
-    //         case 1:
-    //             const text = "🚚 Envíos rápidos y flexibles  ✔ A todo el país: Si estás en el interior, despachamos tu pedido desde el Gran Buenos Aires en el transporte que nos indiques. ¿No tenés uno ? No te preocupes, te contactamos con el mejor.  ✔ Entrega en menos de 48 hs: Para productos en stock y lista de entrega inmediata. ✔ Puntualidad garantizada: En el Gran Buenos Aires, te damos un rango de entrega de 1 hora y 30 minutos para que no pierdas el día esperando.Si no cumplimos con el horario, ¡el flete va por nuestra cuenta!.Además, coordinamos la entrega con vos varios días antes(en un rango horario que VOS puedas recibir) para que puedas organizarte.        ✔ Asesoría para ingreso: ¡No te preocupes por el tamaño! Ayudamos a calcular el ingreso a tu departamento o casa.Solo envíanos una foto y las medidas(en caso de ser necesario) y nuestro equipo te asesorará para que el mueble llegue sin inconvenientes "
-    //             return text
-    //             break;
-
-    //         case 2:
-    //             <h3>
-    //                 🎨 Creá tu ambiente ideal
-    //                 ✔ Asesoramiento gratuito: Enviános una foto del espacio que querés completar y nuestro equipo de expertos en interiorismo te ayudará a diseñar un ambiente a tu medida, con los tonos y telas que más te gusten.
-    //                 ✔ Personalización total: Transformamos tus ideas en realidad con muebles a medida completamente personalizados. Elegís la tela, el color y el tono de madera que mejor se adapte a tu estilo. Además, te ofrecemos la opción de seleccionar almohadones lisos o con costura, y podés definir la distribución de la placa de asiento según tus necesidades.
-    //                 ✔ Creación de tu mueble: Si viste un mueble que te encanta, solo mandanos la foto y las medidas… ¡Nosotros lo hacemos realidad!
-
-    //             </h3>
-    //             break
-    //         case 3:
-    //             <h3>
-    //                 🛠️ Garantía y confianza
-    //                 ✔ Calidad asegurada: Ofrecemos 10 años de garantía estructural y 5 años en placa, telas y costuras. Luego de ese plazo, cualquier reparación se hace al costo, para que tu mueble Parben te acompañe por muchos años.
-    //                 ✔ Pago seguro y sin sorpresas: El saldo restante (promo efectivo) lo abonás solo después de recibir tu mueble y confirmar que todo está perfecto. Así garantizamos que obtengas exactamente lo que pediste.
-
-    //             </h3>
-    //         default:
-    //             break;
-    //     }
-    // }
-
     const textOptions = (num) => {
         switch (num) {
             case 1:
@@ -53,7 +25,6 @@ const ComoComprarView = () => {
         }
     }
 
-
     return (
         <div className={css.container}>
             <NavigateButtons />
@@ -65,7 +36,6 @@ const ComoComprarView = () => {
             <ComoComprar number={3} color={"color2"} texts={textOptions(3)} />
             <ComoComprar number={4} color={"color1"} texts={textOptions(4)} />
             <ComoComprar number={5} color={"color2"} texts={textOptions(5)} />
-
         </div>
     )
 }

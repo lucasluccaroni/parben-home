@@ -4,24 +4,21 @@
 }
 
 .links {
+    /* border: solid 1px; */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
     margin: 15px;
-    /* border: solid 1px; */
     color: inherit;
     font-size: xx-large;
     text-decoration: none;
     font-family: "Geist", serif;
     font-family: "Marcellus", serif;
-    /* height: 30vh; */
     height: 20rem;
-    /* width: 40vw; */
     width: 47rem;
     background-size: cover;
     background-position: center;
-
 }
 
 .links:hover {

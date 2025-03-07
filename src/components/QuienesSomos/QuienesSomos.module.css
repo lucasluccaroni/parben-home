@@ -1,7 +1,6 @@
 .container {
     /* border: solid green; */
     width: 100vw;
-    /* height: 70rem; */
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/images/navbar-image.jpg");
     background-size: cover;
     background-position: center;
@@ -11,8 +10,6 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
-    /* justify-content: center; */
-    /* font-family: "Marcellus", serif; */
 }
 
 .titulo {
@@ -20,7 +17,6 @@
     text-align: center;
     font-size: 50px;
     font-family: "Marcellus", serif;
-
 }
 
 .text{
@@ -28,8 +24,8 @@
 }
 
 .grandContainer {
-    width: 80vw;
     /* border: solid greenyellow; */
+    width: 80vw;
     display: flex;
     flex-direction: column;
     font-family: "Geist", serif;
@@ -37,16 +33,16 @@
 }
 
 .contenedor1 {
-    align-self: end;
     /* border: solid violet; */
+    align-self: end;
     width: 50vw;
     height: 28rem;
     padding-right: 50px;
 }
 
 .contenedor2 {
-    align-self: start;
     /* border: solid yellow; */
+    align-self: start;
     width: 50vw;
     height: 28rem;
     padding-left: 50px;

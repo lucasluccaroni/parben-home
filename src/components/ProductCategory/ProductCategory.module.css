@@ -4,20 +4,18 @@
 }
 
 .links {
+    /* border: solid 1px; */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
     margin: 10px;
-    /* border: solid 1px; */
     color: inherit;
     font-size: x-large;
     text-decoration: none;
     font-family: "Geist", serif;
     font-family: "Marcellus", serif;
-    /* height: 20vh; */
     height: 15rem;
-    /* width: 20vw; */
     width: 25rem;
     background-size: cover;
     background-position: center;
@@ -30,13 +28,11 @@
 
     transform: scale(1.05);
 }
-
 /* color: #F2F3EE; *
 /* background-color: #37332D; */
 /* background-color: #A79F92;  */
 
-
-
+/* ---- MEDIA QUERIES ---- */
 @media (width <=899px) {
     .links {
         width: 12rem;
@@ -54,7 +50,6 @@
     .links {
         width: 10rem;
         height: 6rem;
-        /* font-size: medium; */
     }
 
     .links:hover {
@@ -66,7 +61,6 @@
     .links {
         width: 15rem;
         height: 8rem;
-        /* font-size: medium; */
     }
 
     .links:hover {

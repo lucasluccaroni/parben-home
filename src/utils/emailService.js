@@ -18,10 +18,10 @@ export const sendEmail = async (data) => {
 
     try {
         const service = await emailjs.send(serviceId, templateId, templateParams, publicKey)
-        console.log("Exito mandando el mail!")
-        console.log(service)
+        // console.log("Exito mandando el mail!")
+        // console.log(service)
     }
     catch (err) {
-        console.log("ERROR MANDANDO EL MAIL => ", err)
+        // console.log("ERROR MANDANDO EL MAIL => ", err)
     }
 } 

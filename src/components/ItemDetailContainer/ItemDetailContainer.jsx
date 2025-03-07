@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom"
-import { Link } from "react-router-dom"
 import { useAsync } from "../../hooks/useAsync"
 import { useProducts } from "../../services/firebase/firestore/products"
 import ItemDetail from "../ItemDetail/ItemDetail"
@@ -8,44 +7,17 @@ import NavigateButtons from "../NavigateButtons/NavigateButtons"
 import Loading from "../Loading/Loading"
 
 const ItemDetailContainer = () => {
-    // const [loading, setLoading] = useState(true)
-    // const [product, setProduct] = useState(null)
-    // const [productCategory, setProductCategory] = useState(null)
 
     const { productId } = useParams()
     const { getProductById } = useProducts()
 
-
-    console.log(productId)
-
+    // console.log(productId)
     const { data: product, loading, error, /* productCategory */ } = useAsync(() => getProductById(productId))
-
-    // setProductCategory(product.category)
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         try {
-    //             setLoading(true)
-    //             const product = await getProductById(productId)
-    //             setProduct(product)
-    //             setProductCategory(product.category)
-    //         }
-    //         catch (err) {
-    //             console.log("error dentro de useEffect itemDetailContainer => ", err)
-    //         }
-    //         finally {
-    //             setLoading(false)
-    //         }
-    //     }
-    //     fetchData()
-    // }, [productId])
-
-    console.log(product)
-
-
+    // console.log(product)
 
     // Componente Loading
     if (loading) {
-        return <Loading/>
+        return <Loading />
     }
 
     // Componente error
@@ -55,8 +27,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div className={css.itemDetailContainer}>
-            <NavigateButtons/>
-            {/* <Link className={css.navigateButton} to={`/category/${productCategory}`} > Volver </Link> */}
+            <NavigateButtons />
             <ItemDetail {...product} />
         </div>
     )

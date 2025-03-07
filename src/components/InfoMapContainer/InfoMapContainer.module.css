@@ -1,17 +1,14 @@
 .container {
-    /* border: double teal; */
     background-color: #37332D;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* width: 100vw;
-    height: 100vh; */
     width: 100vw;
     height: 58rem;
 }
 
-@media (width <= 1000px) { 
-    .container{
+@media (width <=1000px) {
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;

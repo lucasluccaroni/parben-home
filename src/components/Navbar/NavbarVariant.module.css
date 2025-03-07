@@ -53,6 +53,7 @@
     text-align: center;
     /* color: white; */
     color: #37332D;
+    color: #100F0F;
     text-decoration: none;
     font-size: x-large;
     font-family: "Marcellus", serif;
@@ -139,19 +140,21 @@
 
 @media (max-width: 700px) {
     .nav {
+        /* border: solid red; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 700px;
+        height: 550px;
     }
 
     .section {
+        /* border: orange 1px solid; */
         display: flex;
         margin: 0;
         flex-direction: column;
         align-items: center;
-        height: 400px;
+        height: 350px;
     }
 
     .comoComprarButton {
@@ -164,7 +167,9 @@
         padding: 0;
         margin: 0;
         height: 70px;
-        width: 125px;
+        /* width: 125px; */
+        background-color: #f2f3ee52;
+
     }
 
     .logo {

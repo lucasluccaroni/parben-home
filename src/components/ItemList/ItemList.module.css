@@ -1,14 +1,9 @@
 .list{
     /* border:  solid rgb(197, 9, 244); */
     font-family: "Geist", serif;
-    
     display: flex;
     align-items: center;
     justify-content: center;
-    
     flex-wrap: wrap;
     flex: 1 1 25%;
-    /* justify-content: space-around; */
-    /* flex-wrap: wrap;
-    gap: 20px; */
 }

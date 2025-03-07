@@ -27,7 +27,7 @@ export const sortProducts = () => {
     };
 
 
-    return{
+    return {
         alphabeticOrderAZ,
         alphabeticOrderZA
     }

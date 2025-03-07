@@ -1,13 +1,9 @@
-/* .container{
-    margin-top: 40vh;
-} */
-
 .img {
+    /* border: solid red; */
     padding: 0;
     margin: 0;
     width: 100vw;
     height: 30rem;
-    /* border: solid red; */
     background-image: url("/images/itemListImg.jpg");
     background-position: center;
     background-repeat: no-repeat;

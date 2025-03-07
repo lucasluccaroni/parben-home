@@ -21,6 +21,7 @@
 }
 
 .infoContainer {
+    /* border: solid salmon 1px; */
     height: 100%;
     width: 50rem;
     display: flex;
@@ -28,7 +29,6 @@
     align-items: center;
     text-align: justify;
     justify-content: center;
-    border: solid salmon 1px;
 }
 
 .titulo {
@@ -50,12 +50,12 @@ span {
 }
 
 .img {
+    /* border: solid violet 1px; */
     height: 500px;
     width: 600px;
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
-    border: solid violet 1px;
 }
 
 .img1 {
@@ -70,7 +70,7 @@ span {
     background-color: #100F0F;
 }
 
-.ambienteContainer{
+/* .ambienteContainer{
     border: solid green 1px;
 }
 .enviosContainer{
@@ -78,7 +78,7 @@ span {
 }
 .garantiaContainer{
     border: solid blue 1px;
-}
+} */
 
 
 /* ---- MEDIA QUERIES ---- */
@@ -182,7 +182,6 @@ span {
         width: 40rem;
         height: fit-content;
     }
-
     .infoContainer {
         width: 40rem;
     }
@@ -198,6 +197,8 @@ span {
     }
 
     .img {
+        margin-top: 20px;
+        margin-bottom: 20px;
         height: 350px;
         width: 400px;
     }
@@ -283,13 +284,11 @@ span {
     .ambienteContainer,
     .garantiaContainer {
         width: 16rem;
-        /* height: 70rem; */
         height: fit-content;
     }
 
     .infoContainer {
         width: 16rem;
-        /* height: 50rem; */
         height: fit-content;
     }
 

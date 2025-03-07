@@ -34,8 +34,8 @@ const ContactForm = () => {
 
         // valido los campos ingresados
         const { valid, errors } = formValidator(data)
-        console.log(valid)
-        console.log(errors)
+        // console.log(valid)
+        // console.log(errors)
 
         if (!valid) {
             errors.forEach(error => toast.error(error, {

@@ -1,9 +1,9 @@
-.formContainer{
+.formContainer {
     /* border: solid green; */
     margin-bottom: 4rem;
 }
 
-.form{
+.form {
     border: solid #100F0F 1px;
     background-color: #A79F92;
     width: 40rem;
@@ -14,12 +14,12 @@
     align-items: start;
 }
 
-.nombreDeLosCampos{
+.nombreDeLosCampos {
     color: #100F0F;
     font-family: "Geist", serif;
 }
 
-.formInput{
+.formInput {
     color: #100F0F;
     border: solid #100F0F 1px;
     font-family: "Geist", serif;
@@ -27,7 +27,7 @@
     height: 2rem;
 }
 
-.formInputText{
+.formInputText {
     border: solid #100F0F 1px;
     font-family: "Geist", serif;
     color: #100F0F;
@@ -39,7 +39,7 @@
     max-height: 5rem;
 }
 
-.submitButton{
+.submitButton {
     width: 4rem;
     height: 2rem;
     font-family: "Geist", serif;
@@ -54,58 +54,63 @@
 
 /* ---- MEDIA QUERIES ---- */
 @media(width < 730px) {
-    .titulo{
+    .titulo {
         font-size: 10px;
     }
-    .form{
+
+    .form {
         width: 30rem;
     }
-    .formInput{
+
+    .formInput {
         height: 1rem;
         width: 25rem;
     }
-    .formInputText{
+
+    .formInputText {
         width: 25rem;
         height: 7rem;
         min-width: 25rem;
         min-height: 7rem;
         max-width: 25rem;
-        max-height: 7rem;  
+        max-height: 7rem;
     }
 }
 
-
-@media(width <560px){
-    .form{
+@media(width <560px) {
+    .form {
         width: 20rem;
     }
-    .formInput{
+
+    .formInput {
         width: 18rem;
     }
-    .formInputText{
+
+    .formInputText {
         width: 16rem;
         height: 9rem;
         min-width: 16rem;
         min-height: 9rem;
         max-width: 16rem;
-        max-height: 9rem;  
+        max-height: 9rem;
     }
 }
 
-
-@media(width <400px){
-    .form{
+@media(width <400px) {
+    .form {
         width: 15rem;
     }
-    .formInput{
+
+    .formInput {
         width: 12rem;
     }
-    .formInputText{
+
+    .formInputText {
         width: 12rem;
         height: 10rem;
         min-width: 12rem;
         min-height: 10rem;
         max-width: 12rem;
-        max-height: 10rem;  
+        max-height: 10rem;
     }
 }
