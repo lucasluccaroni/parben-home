@@ -15,7 +15,7 @@ const Footer = () => {
                 <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
                     <img className={css.logo} src="/images/redes/facebook.png" alt="Facebook logo" />
                 </a>
-                <a href="http://pinterest.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://ar.pinterest.com/parbenhome/" target="_blank" rel="noopener noreferrer">
                     <img className={css.logo} src="/images/redes/pinterest.png" alt="Pinterest logo" />
                 </a>
             </div>
