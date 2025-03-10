@@ -10,10 +10,27 @@
 }
 
 .video {
-    /* border: solid black 5px; */
+    /* border: solid greenyellow 5px; */
     width: 100vw;
     height: 55rem;
 }
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+    /* 1s es la duración del fade-out */
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        background-color: black;
+        /* Hace que el fondo sea negro */
+    }
+}
+
 
 /* ---- MEDIA QUERIES ---- */
 @media (width <=1000px) {

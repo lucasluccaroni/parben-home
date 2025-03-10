@@ -166,6 +166,9 @@
         width: 20rem;
         font-size: medium;
     }
+    .description{
+        font-size: 15px;
+    }
 
     .waterMark {
         height: 55px;

@@ -21,8 +21,8 @@ function App() {
     <div className="App" >
       <TopSideText text={"🔥 ¡DESCUENTO EN EFECTIVO! 🔥"} />
       <BrowserRouter >
-        <Navbar />
         <ScrollToTop />
+        <Navbar />
         <Routes>
           <Route path='add-product' element={<AddProductForm />} />
           <Route path='/' element={<HomeView />} />

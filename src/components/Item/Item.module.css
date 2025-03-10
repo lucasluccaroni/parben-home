@@ -20,7 +20,9 @@
     height: 300px;
     width: 25rem;
 }
-
+.name{
+    text-align: center;
+}
 /* .button {
     text-decoration: none;
     border: solid 1px #F2F3EE;

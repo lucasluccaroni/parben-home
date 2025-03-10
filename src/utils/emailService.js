@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser"
 
-const publicKey = import.meta.env.VITE_publicKeY
+const publicKey = import.meta.env.VITE_publicKey
 const serviceId = import.meta.env.VITE_serviceId
 const templateId = import.meta.env.VITE_templateId
 
