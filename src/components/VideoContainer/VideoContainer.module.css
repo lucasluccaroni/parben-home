@@ -1,5 +1,5 @@
 .videoContainer {
-    /* border: dotted violet; */
+    /* border: 5px solid violet; */
     height: 100vh;
     width: 100vw;
     height: 55rem;
@@ -12,7 +12,6 @@
 .video {
     /* border: solid greenyellow 5px; */
     width: 100vw;
-    height: 55rem;
 }
 
 
@@ -20,9 +19,12 @@
 @media (width <=1000px) {
     .videoContainer {
         height: 40rem;
+        height: fit-content;
     }
 
     .video {
         height: 40rem;
+        height: fit-content;
+
     }
 }

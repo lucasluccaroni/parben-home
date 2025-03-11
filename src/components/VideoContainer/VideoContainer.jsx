@@ -1,5 +1,5 @@
 import css from "./VideoContainer.module.css"
-import video from "/video/home-video1-reduced-fades-final.mp4"
+import video from "/video/home-fade-reduced.mp4"
 
 const VideoContainer = () => {
 
