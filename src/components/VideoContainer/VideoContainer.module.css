@@ -10,7 +10,7 @@
 }
 
 .video {
-    /* border: solid greenyellow 5px; */
+    border: solid greenyellow 5px;
     width: 100vw;
     height: 55rem;
 }

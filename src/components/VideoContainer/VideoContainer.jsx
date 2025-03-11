@@ -21,15 +21,15 @@ const VideoContainer = () => {
     return (
         <div className={css.videoContainer} >
 
-            {/*  <video
+            {/* <video
                 ref={videoRef}
                 className={css.video}
-                src="/video/home-video1-fades-sin-marcaAgua.mp4"
+                src="https://drive.google.com/file/d/1jrBKrZhnZrS1B9Fd_FWWQ3wj8mY5eE2_/preview"
                 autoPlay
                 muted
                 loop
-                onEnded={handleVideoRef}
-            style={{ width: "100%" }}
+                // onEnded={handleVideoRef}
+                style={{ width: "100%" }}
             /> */}
 
 

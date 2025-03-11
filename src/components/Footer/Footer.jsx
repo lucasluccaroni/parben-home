@@ -12,7 +12,7 @@ const Footer = () => {
                 <a href="https://wa.me/5491170660505" target="_blank" rel="noopener noreferrer">
                     <img className={css.logo} src="/images/redes/whatsapp.png" alt="Whatsapp logo" />
                 </a>
-                <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/61574065673103" target="_blank" rel="noopener noreferrer">
                     <img className={css.logo} src="/images/redes/facebook.png" alt="Facebook logo" />
                 </a>
                 <a href="https://ar.pinterest.com/parbenhome/" target="_blank" rel="noopener noreferrer">
