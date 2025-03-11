@@ -21,19 +21,19 @@ const VideoContainer = () => {
     return (
         <div className={css.videoContainer} >
 
-            {/* <video
+            <video
                 ref={videoRef}
                 className={css.video}
-                src="https://drive.google.com/file/d/1jrBKrZhnZrS1B9Fd_FWWQ3wj8mY5eE2_/preview"
+                src="/video/home-video1-reduced.mp4"
                 autoPlay
                 muted
                 loop
                 // onEnded={handleVideoRef}
                 style={{ width: "100%" }}
-            /> */}
+            />
 
 
-            <iframe className={css.video} src="https://www.youtube.com/embed/EDjb2nLSxDo?autoplay=1&controls=0&muted=1&vq=hd1440" allow="autoplay;encrypted-media"></iframe>
+            {/* <iframe className={css.video} src="https://www.youtube.com/embed/EDjb2nLSxDo?autoplay=1&controls=0&muted=1&vq=hd1440" allow="autoplay;encrypted-media"></iframe> */}
         </div>
     )
 }
