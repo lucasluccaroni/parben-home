@@ -1,6 +1,6 @@
 .mapContainer {
     /* border: solid red; */
-    margin-left: 5vw;
+    margin-right: 20px;
     width: 59rem;
     height: 48rem;
 }
@@ -15,9 +15,10 @@
 
 /* ---- MEDIA QUERIES ---- */
 
-@media(width > 1920px) {
+@media(width >= 1920px) {
     .mapContainer {
-        margin-right: 10rem;
+        margin-right: 7rem;
+        
     }
 }
 
@@ -30,6 +31,8 @@
 @media(width <=1750px) {
     .map {
         width: 45rem;
+        margin-left: 6rem;
+
     }
 }
 
@@ -52,6 +55,11 @@
         width: fit-content;
         padding-top: 30px;
         padding-bottom: 30px;
+        margin-left: 0;
+        margin-right: 70px;
+        align-content: center;
+        justify-content: center;
+
     }
 
     .map {
@@ -71,5 +79,7 @@
     .map {
         width: 15rem;
         height: 15rem;
+        margin-right: 25px;
+
     }
 }

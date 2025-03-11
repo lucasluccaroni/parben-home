@@ -1,4 +1,5 @@
 import css from "./VideoContainer.module.css"
+import video from "/video/home-video1-reduced-fades-final.mp4"
 
 const VideoContainer = () => {
 
@@ -7,7 +8,7 @@ const VideoContainer = () => {
 
             <video
                 className={css.video}
-                src="/video/home-video1-reduced-fades-final.mp4"
+                src={video}
                 autoPlay
                 muted
                 loop
