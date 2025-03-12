@@ -13,6 +13,7 @@ const VideoContainer = () => {
                 muted
                 loop
                 style={{ width: "100%" }}
+                preload="metadata"
             />
 
 
