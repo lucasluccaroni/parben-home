@@ -9,9 +9,9 @@ const ScrollToTop = () => {
 
         const scrollContainer = document.querySelector(".App")
         if (scrollContainer) {
-            scrollContainer.scrollTo({ top: 0, behavior: "instant" });
+            scrollContainer.scrollTo({ top: 20, behavior: "instant" });
         } else {
-            window.scrollTo({ top: 0, behavior: "instant" });
+            window.scrollTo({ top: 20, behavior: "instant" });
         }
 
         console.log("scroll to top ", pathname)
