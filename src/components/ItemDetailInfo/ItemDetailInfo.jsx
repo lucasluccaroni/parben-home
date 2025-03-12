@@ -27,7 +27,7 @@ const ItemDetailInfo = ({ name, description1, description2, description3 }) => {
                     <p className={css.linkText} > ¡Lo quiero! </p>
                 </a>
 
-                <a className={css.boton} href="/test.pdf" target="_blank" rel="noopener noreferrer">
+                <a className={css.boton} href="/lista-precios.pdf" target="_blank" rel="noopener noreferrer">
                     <p className={css.linkText} > Lista de precios </p>
                 </a>
 

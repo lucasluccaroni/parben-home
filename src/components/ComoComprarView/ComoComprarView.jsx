@@ -5,7 +5,7 @@ import NavigateButtons from "../NavigateButtons/NavigateButtons"
 
 const ComoComprarView = () => {
     useEffect(() => {
-        document.title = "Parben Home | Cómo comprar?"
+        document.title = "Parben Home | ¿Cómo comprar?"
     }, [])
 
     const textOptions = (num) => {
