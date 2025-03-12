@@ -10,7 +10,6 @@ import ComoComprarView from './components/ComoComprarView/ComoComprarView'
 import ContactView from './components/ContactView/ContactView'
 import QuienesSomos from './components/QuienesSomos/QuienesSomos'
 import Footer from './components/Footer/Footer'
-import AddProductForm from './components/AddProductForm/AddProductForm'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { ToastContainer } from 'react-toastify'
 import "./App.css"
@@ -24,7 +23,6 @@ function App() {
         <ScrollToTop />
         <Navbar />
         <Routes>
-          <Route path='add-product' element={<AddProductForm />} />
           <Route path='/' element={<HomeView />} />
           <Route path="/productos" element={<ProductsCategoryContainer variantValidation={true} />} />
           <Route path='/detalle/:productId' element={<ItemDetailContainer />} />
