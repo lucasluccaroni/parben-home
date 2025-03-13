@@ -54,7 +54,7 @@ const ContactForm = () => {
         } else {
             // Si todos los campos son correctos, mando la consulta a la DB
             console.log(data)
-            const addToDb = await addQuerieToDb(data)
+            // const addToDb = await addQuerieToDb(data)
 
             // Se manda el mail
             sendEmail(data)

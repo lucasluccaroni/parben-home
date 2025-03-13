@@ -4,7 +4,7 @@ export const formValidator = (data) => {
     let valid = true
     const errors = []
 
-    const regexText = /^[a-zA-Z]{3,}$/
+    const regexText = /^[a-zA-Z]+(?: [a-zA-Z]+)*$/
     const regexNumber = /^[0-9]{8,}$/
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const wordCount = message.trim().split(/\s+/).length
