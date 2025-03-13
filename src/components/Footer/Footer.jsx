@@ -19,7 +19,7 @@ const Footer = () => {
                     <img className={css.logo} src="/images/redes/pinterest.png" alt="Pinterest logo" />
                 </a>
             </div>
-            <h3> parbendivan@gmail.com </h3>
+            <h3> info@parbenhome.com </h3>
             <div className={css.firma} >
                 <p className={css.firmaText} >Designed by: Lucas Luccaroni 2025</p>
                 <a href="https://github.com/lucasluccaroni" target="_blank" rel="noopener noreferrer">

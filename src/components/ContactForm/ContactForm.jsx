@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { toast } from "react-toastify"
 import { formValidator } from "../../utils/formValidator"
-import { addQuerieToDb } from "../../services/firebase/firestore/formQueries"
+// import { addQuerieToDb } from "../../services/firebase/firestore/formQueries"
 import { sendEmail } from "../../utils/emailService"
 import css from "./ContactForm.module.css"
 
@@ -57,7 +57,8 @@ const ContactForm = () => {
             // const addToDb = await addQuerieToDb(data)
 
             // Se manda el mail
-            sendEmail(data)
+            const mailing = await sendEmail(data)
+            console.log(mailing)
 
             // Toast avisando al user la opreación exitosa
             toast.success("Su consulta fue enviada, a la brevedad se contactarán con usted. Gracias.", {
