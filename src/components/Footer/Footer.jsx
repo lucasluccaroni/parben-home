@@ -4,7 +4,7 @@ const Footer = () => {
 
     return (
         <div className={css.container} >
-            <h1> Seguinos </h1>
+            <h1 className="fw-bold mb-4"> Seguinos</h1>
             <div className={css.containerLogos} >
                 <a href="https://www.instagram.com/parbenhome/" target="_blank" rel="noopener noreferrer">
                     <img className={css.logo} src="/images/redes/instagram.png" alt="Instagram logo" />
@@ -19,12 +19,15 @@ const Footer = () => {
                     <img className={css.logo} src="/images/redes/pinterest.png" alt="Pinterest logo" />
                 </a>
             </div>
-            <h3> info@parbenhome.com </h3>
-            <div className={css.firma} >
+            <h3 className="mt-4 fs-5 fw-bold"> info@parbenhome.com </h3>
+            {/* <div className={css.firma} >
                 <p className={css.firmaText} >Designed by: Lucas Luccaroni 2025</p>
                 <a href="https://github.com/lucasluccaroni" target="_blank" rel="noopener noreferrer">
                     <img className={css.githubLogo} src="/images/redes/github.png" alt="GitHub logo" />
                 </a>
+            </div> */}
+            <div className='d-flex justify-content-center px-3 mb-3 align-items-center translate-middle bottom-0 start-50 position-absolute flex-column text-dark mt-md-5 w-100'>
+                <span className="text-center text-break pt-2 border-top border-dark" style={{fontSize:11}}>Diseñado y desarrollado por <a target="_blank" className="text-decoration-none text-dark" href="https://www.agenciaocho.com">@AgenciaOcho</a>, <a target="_blank" className="text-decoration-none text-dark" href="https://www.ferdev.xyz">@FerDev</a> y <a target="_blank" className="text-decoration-none text-dark" href="https://github.com/lucasluccaroni">@LucasLuccaroni</a></span>
             </div>
         </div>
     )

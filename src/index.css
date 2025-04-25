@@ -6,3 +6,20 @@ body, html {
   overflow-x: hidden;
   background-color: #F2F3EE; 
 }
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+
+::-webkit-scrollbar{
+  width: 9px !important;
+  height: 0px !important;
+  background-color: black;
+}
+::-webkit-scrollbar-track{
+  border: 0px solid black;
+}
+::-webkit-scrollbar-thumb{
+  background: #A79F92;
+  border-radius: 5px;
+}

@@ -8,13 +8,19 @@
     width: 6rem;
     padding: 3px;
     margin-left: 2vh;
-    border: solid black 1px;
+    border: solid #A79F92 1px;
     background-color: #A79F92;
+    border-radius: 5px;
     color: white;
     text-decoration: none;
-    font-size: large;
+    font-size: 14px;
     font-family: "Geist", serif;
     font-family: "Marcellus", serif;
+    transition: .25s;
+}
+
+.navigateButton:hover {
+    background-color: #868076;
 }
 
 .navigateButton:active {

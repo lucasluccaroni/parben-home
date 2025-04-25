@@ -14,40 +14,37 @@
 }
 
 .logo {
-    width: 382px;
-    height: 110px;
-    padding: 30px;
-    margin-left: 20px;
+    width: 220px;
+    /* height: 110px; */
     cursor: pointer;
 }
 
 .section {
     display: flex;
     align-items: center;
-    width: fit-content;
-    margin-right: 225px;
-    height: 45px;
+    width: 500px;
+    background-color: aqua;
+    /* margin-right: 225px; */
+    /* height: 45px; */
 }
 
 .link {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 120px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
     text-align: center;
-    color: #37332D;
-    color: #100F0F;
+    color: white;
     text-decoration: none;
-    font-size: x-large;
+    font-size: 20px;
     font-family: "Marcellus", serif;
+    transition: .25s;
 }
 
 .link:hover {
+    padding: 5px 10px;
+    border-radius: 5px;
     background-color: #A79F92;
-    color: #37332D;
+    color: white;
 }
 
 .comoComprarButton {
@@ -55,14 +52,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 10px;
     height: 40px;
-    padding: 3px;
-    width: 200px;
-    margin-right: 100px;
-    background-color: #A79F92;
+    padding: 7px;
+    width: 220px;
+    background-color: #191817;
     color: white;
     text-decoration: none;
-    font-size: x-large;
+    font-size: 19px;
     font-family: "Marcellus", serif;
 }
 
@@ -70,17 +67,24 @@
     transform: scale(0.95);
 }
 
+.navBackground{
+    background: url(/images/navbar-image3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 /* ---- MEDIA QUERIES ---- */
 
-@media (min-width: 1400px) and (max-width: 1590px) {
+/* @media (min-width: 1400px) and (max-width: 1590px) {
     .comoComprarButton {
         font-size: large;
         padding: 10px;
     }
-}
+} */
 
-@media (min-width: 700px) and (max-width: 1400px) {
+/* @media (min-width: 700px) and (max-width: 1400px) {
     .nav {
         display: flex;
         flex-direction: column;
@@ -96,9 +100,9 @@
     .comoComprarButton {
         margin-right: 0;
     }
-}
+} */
 
-@media(width < 900px) {
+/* @media(width < 900px) {
     .link {
         font-size: larger;
     }
@@ -107,49 +111,25 @@
         margin-top: 20px;
         font-size: larger;
     }
-}
+} */
 
-
-@media (max-width: 700px) {
-    .nav {
-        /* border: solid red; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 550px;
+@media (max-width: 576px) {
+    .logo {
+        width: 175px;
     }
-
-    .section {
-        /* border: orange 1px solid; */
-        display: flex;
-        margin: 0;
-        flex-direction: column;
-        align-items: center;
-        height: 350px;
-    }
-
-    .comoComprarButton {
-        margin-right: 0;
-    }
-
     .link {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        height: 70px;
-        background-color: #f2f3ee52;
+        font-size: 16px;
+        margin-top: 8px;
+        padding: 4px 0px;
+        margin: 4px 0px;
     }
-    .logo {
-        margin-right: 0;
-        margin-left: 0;
-        padding: 0;
+    .link:hover{
+        background-color:transparent;
+        color: #4b463e;
+        padding: 4px 0px;
     }
-}
-
-@media (max-width: 400px) {
-    .logo {
-        width: 290px;
-        height: 80px;
+    .comoComprarButton {
+        font-size: 16px;
+        margin-top: 8px;
     }
 }

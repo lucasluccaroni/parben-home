@@ -1,7 +1,8 @@
 .container {
     /* border: solid green; */
     width: 100vw;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/images/navbar-image.jpg");
+    min-height: 600px;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.7)), url("/images/navbar-image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,22 +10,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 75px;
+    padding-top: 50px;
 }
 
 .titulo {
     color: #37332D;
     text-align: center;
-    font-size: 50px;
     font-family: "Marcellus", serif;
+    /* border-bottom: 1px solid black; */
+    padding-bottom: 5px;
 }
 
-.text{
+.font{
+    font-family: "Geist", serif;
+}
+
+/* .text{
     font-weight: 350;
 }
 
 .grandContainer {
-    /* border: solid greenyellow; */
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -33,7 +39,6 @@
 }
 
 .contenedor1 {
-    /* border: solid violet; */
     align-self: end;
     width: 50vw;
     height: 28rem;
@@ -41,18 +46,27 @@
 }
 
 .contenedor2 {
-    /* border: solid yellow; */
     align-self: start;
     width: 50vw;
     height: 28rem;
     padding-left: 50px;
 
-}
+} */
 
 
 /* ---- MEDIA QUERIES ---- */
 
-@media(width <=1350px) {
+
+@media(width <=750px) {
+    .container{
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/images/navbar-image.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }   
+}
+
+/* @media(width <=1350px) {
     .contenedor1 {
         font-size: 12px;
     }
@@ -71,25 +85,6 @@
     }
 }
 
-@media(width <=750px) {
-    .container {
-        height: fit-content;
-    }
-
-    .grandContainer {
-        height: fit-content;
-    }
-
-    .contenedor1 {
-        font-size: 10px;
-        width: 70vw;
-    }
-
-    .contenedor2 {
-        font-size: 10px;
-        width: 70vw;
-    }
-}
 
 @media(width< 700px){
     .titulo{
@@ -114,4 +109,4 @@
         padding-left: 5px;
         height: fit-content;
     }
-}
+} */

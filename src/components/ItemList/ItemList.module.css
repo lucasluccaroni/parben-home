@@ -6,4 +6,6 @@
     justify-content: center;
     flex-wrap: wrap;
     flex: 1 1 25%;
+    margin-top: 45px;
+    padding: 0px 10px;
 }

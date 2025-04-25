@@ -8,25 +8,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
-    margin: 10px;
-    color: inherit;
-    font-size: x-large;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 23px;
     text-decoration: none;
     font-family: "Geist", serif;
     font-family: "Marcellus", serif;
     height: 15rem;
     width: 25rem;
     background-size: cover;
+    opacity: .45;
     background-position: center;
+    transition: .25s;
 
 }
 
 .links:hover {
-    color: #F2F3EE;
-    font-size: xx-large;
-
-    transform: scale(1.05);
+    color: #ffffff;
+    font-size: 23px;
+    opacity: 1;
+    transform: scale(1.10);
 }
 /* color: #F2F3EE; *
 /* background-color: #37332D; */
@@ -48,8 +51,8 @@
 
 @media (width <=460px) {
     .links {
-        width: 10rem;
-        height: 6rem;
+        width: 24rem;
+        height: 12rem;
     }
 
     .links:hover {
@@ -59,8 +62,8 @@
 
 @media (width <=416px) {
     .links {
-        width: 15rem;
-        height: 8rem;
+        width: 20rem;
+        height: 10rem;
     }
 
     .links:hover {

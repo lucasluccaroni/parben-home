@@ -24,7 +24,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<HomeView />} />
-          <Route path="/productos" element={<ProductsCategoryContainer variantValidation={true} />} />
+          <Route path="/productos" element={<ProductsCategoryContainer variantValidation={false} />} />
           <Route path='/detalle/:productId' element={<ItemDetailContainer />} />
           <Route path='/servicios' element={<ServicesView />} />
           <Route path='/quienes-somos' element={<QuienesSomos />} />

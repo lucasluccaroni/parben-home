@@ -8,9 +8,9 @@
     font-family: "M";
     color: #37332D;
     text-align: center;
-    font-size: 50px;
+    padding-top: 50px;
     font-family: "Marcellus", serif;
-
+    padding-bottom: 5px;
 }
 
 .navigateButton {

@@ -8,14 +8,15 @@
 
 .titulo {
     font-family: "Marcellus", serif;
-    color: #F2F3EE;
-    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+    font-size: calc(1.375rem + 1.5vw) !important;
 }
 
 /* ---- MEDIA QUERIES ---- */
 @media(width <=1625px) {
     .container {
-        padding: 20px;
+        padding: 0px;
     }
 }
 

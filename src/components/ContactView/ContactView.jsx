@@ -3,6 +3,7 @@ import InfoMapContainer from "../InfoMapContainer/InfoMapContainer"
 import ContactForm from "../ContactForm/ContactForm"
 import { useEffect } from "react"
 import NavigateButtons from "../NavigateButtons/NavigateButtons"
+import IconosFlotantes from "../IconosFlotantes/IconosFlotantes"
 
 
 const ContactView = () => {
@@ -12,11 +13,12 @@ const ContactView = () => {
     }, [])
 
     return (
-        <div className={css.container}>
-            <NavigateButtons/>
-            <h1 className={css.titulo} >Dejanos tu consulta</h1>
+        <div className={`${css.container}`}>
+            {/* <NavigateButtons/> */}
+            <h1 className={`${css.titulo} display-5 mb-4 fw-bold`} >Dejanos tu consulta</h1>
             <ContactForm />
             <InfoMapContainer />
+            <IconosFlotantes/>
         </div>
     )
 }

@@ -11,7 +11,9 @@ const ProductCategory = ({ path, pathName, img, variantValidation }) => {
     }, [variantValidation])
 
     return (
-        <Link style={{ backgroundImage: `url(${img})` }} className={css.links} to={`${path}`} pathname={pathName}> {pathName} </Link>
+        <div className="d-flex justify-content-center align-items-center overflow-hidden bg-dark m-2">
+            <Link style={{ backgroundImage: `url(${img})` }} className={css.links} to={`${path}`} pathname={pathName}> {pathName} </Link>
+        </div>
     )
 }
 

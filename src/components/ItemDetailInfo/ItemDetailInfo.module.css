@@ -1,6 +1,6 @@
 .container {
     /* border: solid blue 1px; */
-    width: 55rem;
+    width: 50%;
     height: 50rem;
     background-color: #37332D;
     color: #F2F3EE;
@@ -8,23 +8,23 @@
     padding-right: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
     font-family: "Geist", serif;
     position: relative;
 }
 
 .nameContainer {
     /* border: solid rgb(0, 255, 4) 1px; */
-    height: 15rem;
-    width: 30rem;
+    height: 10rem;
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
 }
 
 .name {
     text-decoration: none;
-
+    text-align: start !important;
 }
 
 .line {
@@ -37,7 +37,7 @@
 
 .descriptions {
     /* border: solid red; */
-    width: 30rem;
+    max-width: 40rem;
     margin-top: 20px;
     font-family: "Geist", serif;
 }
@@ -72,10 +72,9 @@
     height: 2rem;
     width: 6rem;
     padding: 10px;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     margin-left: 2rem;
     margin-right: 20px;
-    border: solid #F2F3EE 1px;
     text-decoration: none;
     font-size: medium;
     font-family: "Marcellus", serif;
@@ -99,11 +98,11 @@
 
 /* ---- MEDIA QUERIES ---- */
 
-@media(width <=1550px) {
+/* @media(width <=1550px) {
     .container {
         height: 45rem;
     }
-}
+} */
 
 @media(width < 1450px) {
     .waterMark {
@@ -111,19 +110,21 @@
     }
 }
 
+/* 
 @media(width < 1400px) {
     .container {
         height: 40rem;
     }
-}
+} */
 
 
 @media(width <=1200px) {
     .container {
-        width: 600px;
-        height: 40rem;
-        align-items: start;
-        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0px;
     }
 
     .descriptions {
@@ -149,12 +150,13 @@
 
 @media (width <=700px) {
     .container {
-        width: 26rem;
+        width: 100%;
+        padding: 20px 20px;
     }
 
     .nameContainer {
-        width: 20rem;
-        height: 8rem;
+        width: 100%;
+        height: 7rem;
         margin-top: 2rem;
     }
 
@@ -163,7 +165,7 @@
     }
 
     .descriptions {
-        width: 20rem;
+        width: 100%;
         font-size: medium;
     }
     .description{
@@ -175,7 +177,7 @@
         width: 60px;
     }
 }
-
+/* 
 @media(width <=500px) {
     .container {
         height: 600px;
@@ -236,4 +238,4 @@
         width: 45px;
         left: 72%;
     }
-}
+} */

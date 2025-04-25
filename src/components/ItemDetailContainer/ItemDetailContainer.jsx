@@ -5,6 +5,7 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 import css from "./ItemDetailContainer.module.css"
 import NavigateButtons from "../NavigateButtons/NavigateButtons"
 import Loading from "../Loading/Loading"
+import IconosFlotantes from "../IconosFlotantes/IconosFlotantes"
 
 const ItemDetailContainer = () => {
 
@@ -27,8 +28,9 @@ const ItemDetailContainer = () => {
 
     return (
         <div className={css.itemDetailContainer}>
-            <NavigateButtons />
+            {/* <NavigateButtons /> */}
             <ItemDetail {...product} />
+            <IconosFlotantes/>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import ComoComprar from "../ComoComprar/ComoComprar"
 import css from "./ComoComprarView.module.css"
 import NavigateButtons from "../NavigateButtons/NavigateButtons"
+import IconosFlotantes from "../IconosFlotantes/IconosFlotantes"
 
 const ComoComprarView = () => {
     useEffect(() => {
@@ -27,15 +28,17 @@ const ComoComprarView = () => {
 
     return (
         <div className={css.container}>
-            <NavigateButtons />
-            <h1 className={css.titulo}> ¿Cómo comprar con nosotros? </h1>
-            <h2 className={css.subTitulo} > Comprar el sofá, mueble o ambiente completo con nosotros es un proceso fácil y seguro, que consta de 5 simples pasos:
-            </h2>
+            {/* <NavigateButtons /> */}
+            <div className="d-flex flex-column align-items-centera py-4 py-lg-5 my-4 my-lg-5 px-3">
+                <h1 className={`${css.titulo} display-5 mb-3 fw-bold text-center`}> ¿Cómo comprar con nosotros? </h1>
+                <h2 className={`${css.font} fs-5 text-center mb-5 ${css.sizeText}`} > Comprar el sofá, mueble o ambiente completo con nosotros es un proceso fácil y seguro, que consta de 5 simples pasos:</h2>
+            </div>
             <ComoComprar number={1} color={"color2"} texts={textOptions(1)} />
             <ComoComprar number={2} color={"color1"} texts={textOptions(2)} />
             <ComoComprar number={3} color={"color2"} texts={textOptions(3)} />
             <ComoComprar number={4} color={"color1"} texts={textOptions(4)} />
             <ComoComprar number={5} color={"color2"} texts={textOptions(5)} />
+            <IconosFlotantes/>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import ServicesComponent from "../ServicesComponent/ServicesComponent"
 import css from "./ServicesView.module.css"
 import NavigateButtons from "../NavigateButtons/NavigateButtons"
+import IconosFlotantes from "../IconosFlotantes/IconosFlotantes"
 
 
 const ServicesView = () => {
@@ -13,9 +14,11 @@ const ServicesView = () => {
 
     return (
         <div className={css.container}>
-            <NavigateButtons/>
-            <h1 className={css.titulo} >Los servicios que te ofrecemos</h1>
+            {/* <NavigateButtons/> */}
+            {/* <h1 className={css.titulo} >Los servicios que te ofrecemos</h1> */}
+            <h1 className={`${css.titulo} display-5 fw-bold`} >Nuestros servicios</h1>
             <ServicesComponent/>
+            <IconosFlotantes/>
         </div>
     )
 }

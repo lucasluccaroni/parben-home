@@ -1,35 +1,7 @@
 .fotoHome {
     position: relative;
     width: 100vw;
-    height: 57rem;
+    height: 100vh;
     object-fit: cover;
-    object-position: bottom;
-}
-
-
-@media (1100px <=width <=1300px) {
-    .fotoHome {
-        height: 50rem;
-    }
-}
-
-@media (900px <=width <=1100px) {
-    .fotoHome {
-        height: 40rem;
-    }
-}
-
-
-@media (width <= 800px) {
-    .fotoHome {
-        height: 30rem;
-        object-fit: cover;
-
-    }
-}
-
-@media(width < 700px){
-    .fotoHome{
-        height: 35rem;
-    }
+    object-position: center;
 }

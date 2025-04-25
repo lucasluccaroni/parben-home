@@ -8,10 +8,14 @@
     justify-content: center
 }
 
+.font{
+    font-family: "Geist", serif;
+}
+
 .enviosContainer,
 .ambienteContainer,
 .garantiaContainer {
-    border-top: solid 1px #100F0F;
+    /* border-top: solid 1px #100F0F; */
     width: 110rem;
     height: 50rem;
     font-family: "Geist", serif;
@@ -23,7 +27,7 @@
 .infoContainer {
     /* border: solid salmon 1px; */
     height: 100%;
-    width: 50rem;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +40,8 @@
     font-family: "Geist", serif;
     text-decoration: none;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
 }
 
 p {
@@ -51,8 +56,7 @@ span {
 
 .img {
     /* border: solid violet 1px; */
-    height: 500px;
-    width: 600px;
+    max-width: 600px;
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
@@ -92,14 +96,6 @@ span {
     .ambienteContainer,
     .garantiaContainer {
         width: 90rem;
-    }
-
-    .titulo {
-        font-size: 30px;
-    }
-
-    p {
-        font-size: 20px;
     }
 }
 
@@ -152,15 +148,6 @@ span {
         justify-content: space-evenly;
     }
 
-    .titulo {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
     .img {
         height: 300px;
         width: 400px;
@@ -184,16 +171,6 @@ span {
     }
     .infoContainer {
         width: 40rem;
-    }
-
-    /* .titulo {
-        font-size: 30px;
-    } */
-
-    p {
-        font-size: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
     }
 
     .img {
@@ -232,10 +209,10 @@ span {
         width: 25rem;
         /* height: 50rem; */
     }
-
+/* 
     .infoContainer {
         width: 25rem;
-    }
+    } */
 
     /* .titulo {
         font-size: 25px;
@@ -265,10 +242,6 @@ span {
         /* height: 40rem; */
     }
 
-    .titulo {
-        font-size: 20px;
-    }
-
     .img {
         height: 200px;
         width: 250px;
@@ -290,10 +263,6 @@ span {
     .infoContainer {
         width: 16rem;
         height: fit-content;
-    }
-
-    .titulo {
-        font-size: 20px;
     }
 
     .img {

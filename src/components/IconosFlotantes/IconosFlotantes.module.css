@@ -1,0 +1,16 @@
+
+.textwsp{
+    transition: .3s;
+    color: white;
+}
+  
+.textwsp:hover{
+    color: #25d366 !important;
+}
+
+.position{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    position: fixed;
+  }

@@ -1,8 +1,6 @@
 .container {
-    background-color: #100F0F;
     color: #F2F3EE;
     width: 48rem;
-    height: 58rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +11,11 @@
 
 .titulo {
     font-size: 50px;
+}
 
+.direccion {
+    color: #F2F3EE;
+    font-size: 1rem;
 }
 
 .img {
@@ -47,6 +49,7 @@
 
 .text {
     color: #F2F3EE;
+    font-size: 1rem !important;
 }
 
 
@@ -87,18 +90,12 @@
     .container {
         width: 100vw;
         height: fit-content;
+        padding: 70px 10px 0px 10px;
     }
 
     .titulo {
         font-size: 40px;
         margin-top: 3rem;
-    }
-
-    .img {
-        top: 30%;
-        left: 30%;
-        width: 25rem;
-        height: 20rem;
     }
 
     .direccion {
@@ -107,10 +104,6 @@
 }
 
 @media (width < 900px) {
-    .direccion {
-        font-size: 24px;
-    }
-
     .text {
         font-size: 18px;
     }
@@ -129,11 +122,6 @@
         top: 30%;
         width: 20rem;
         height: 15rem;
-    }
-
-    .direccion {
-        font-size: 20px;
-        text-align: center;
     }
 
 }
@@ -156,43 +144,7 @@
         font-size: 25px;
     }
 
-    .direccion {
-        font-size: 20px;
-    }
-
     .text {
         font-size: 18px;
-    }
-}
-
-@media (width < 430px) {
-    .img {
-        width: 18rem;
-        height: 13rem;
-    }
-}
-
-@media (width <=390px) {
-
-    .container {
-        width: 100vw;
-        height: fit-content;
-    }
-
-    .titulo {
-        text-align: center;
-    }
-
-    .img {
-        top: 30%;
-        left: 15%;
-        width: 16rem;
-        height: 12rem;
-        align-self: center;
-
-    }
-
-    .direccion {
-        text-align: center;
     }
 }

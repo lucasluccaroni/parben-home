@@ -1,0 +1,47 @@
+
+.link{
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter !important;
+    font-family: "Marcellus", serif;
+    transition: .25s;
+}
+
+.link:hover {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #A79F92;
+    color: white;
+}
+
+.menu{
+    background-color: #a79f92f6 !important;
+}
+
+.itemMenu{
+    transition: .25s;
+    border-radius: 5px;
+}
+
+.itemMenu:hover{
+    background-color: #787369;
+}
+
+@media (max-width: 576px) {
+    .link {
+        font-size: 16px;
+        margin-top: 8px;
+        padding: 4px 0px;
+        margin: 4px 0px;
+    }
+    .link:hover{
+        background-color:transparent;
+        color: #4b463e;
+        padding: 4px 0px;
+    }
+}

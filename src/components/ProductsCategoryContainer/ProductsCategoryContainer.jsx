@@ -4,6 +4,7 @@ import ProductCategoryList from "../ProductsCategoryList/ProductsCategoryList"
 import NavigateButtons from "../NavigateButtons/NavigateButtons"
 import { useEffect, useState } from "react"
 import { paths } from "../../utils/paths"
+import IconosFlotantes from "../IconosFlotantes/IconosFlotantes"
 
 const ProductsCategoryContainer = ({ variantValidation }) => {
     const [css, setCss] = useState(styles)
@@ -15,9 +16,10 @@ const ProductsCategoryContainer = ({ variantValidation }) => {
 
     return (
         <div className={css.container} >
-            {variantValidation && <NavigateButtons />}
-            <h1 className={css.titulo} > Nuestros Productos </h1>
+            {/* {variantValidation && <NavigateButtons />} */}
+            <h1 className={`${css.titulo} display-5`}>Nuestros Productos</h1>
             <ProductCategoryList paths={paths} variantValidation={variantValidation} />
+            <IconosFlotantes/>
         </div>
     )
 }

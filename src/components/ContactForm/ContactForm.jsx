@@ -53,12 +53,12 @@ const ContactForm = () => {
 
         } else {
             // Si todos los campos son correctos, mando la consulta a la DB
-            console.log(data)
+            // console.log(data)
             // const addToDb = await addQuerieToDb(data)
 
             // Se manda el mail
             const mailing = await sendEmail(data)
-            console.log(mailing)
+            // console.log(mailing)
 
             // Toast avisando al user la opreación exitosa
             toast.success("Su consulta fue enviada, a la brevedad se contactarán con usted. Gracias.", {
@@ -78,48 +78,38 @@ const ContactForm = () => {
     }
 
     return (
-        <div className={css.formContainer}>
-            <form onSubmit={handleSubmit} className={css.form} >
-                <label >
-                    <h3 className={css.nombreDeLosCampos}>Nombre</h3>
+        <div className={`${css.formContainer} px-3`}>
+            <form onSubmit={handleSubmit} className={css.form}>
                     <input
-                        className={css.formInput}
+                        className={`${css.customPlaceholderColor} form-control-plaintext border border-2 p-3 my-2 rounded w-100`}
                         type="text"
+                        placeholder="Nombre"
                         value={firstName}
                         onChange={({ target }) => setFirstName(target.value)} />
-                </label>
-                <label >
-                    <h3 className={css.nombreDeLosCampos}>Apellido</h3>
                     <input
-                        className={css.formInput}
+                        className={`${css.customPlaceholderColor} form-control-plaintext border border-2 p-3 my-2 rounded w-100`}
                         type="text"
+                        placeholder="Apellido"
                         value={lastName}
                         onChange={({ target }) => setLastName(target.value)} />
-                </label>
-                <label >
-                    <h3 className={css.nombreDeLosCampos}>Teléfono</h3>
                     <input
-                        className={css.formInput}
+                        className={`${css.customPlaceholderColor} form-control-plaintext border border-2 p-3 my-2 rounded w-100`}
                         type="number"
+                        placeholder="Teléfono"
                         value={phone}
                         onChange={({ target }) => setPhone(target.value)} />
-                </label>
-                <label >
-                    <h3 className={css.nombreDeLosCampos}>Email</h3>
                     <input
-                        className={css.formInput}
+                        className={`${css.customPlaceholderColor} form-control-plaintext border border-2 p-3 my-2 rounded w-100`}
                         type="email"
+                        placeholder="Email"
                         value={email}
                         onChange={({ target }) => setEmail(target.value)} />
-                </label>
-                <label >
-                    <h3 className={css.nombreDeLosCampos}>Consulta</h3>
                     <textarea
-                        className={css.formInputText}
+                        className={`${css.customPlaceholderColor} form-control-plaintext border border-2 p-3 my-2 rounded w-100`}
                         type="text"
+                        placeholder="Consulta"
                         value={message}
                         onChange={({ target }) => setMessage(target.value)} />
-                </label>
                 <button className={css.submitButton} type="submit"> ENVIAR </button>
             </form>
         </div>

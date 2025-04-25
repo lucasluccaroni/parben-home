@@ -1,20 +1,21 @@
 .img {
     /* border: solid red; */
-    padding: 0;
+    padding: 0px;
     margin: 0;
     width: 100vw;
-    height: 30rem;
-    background-image: url("/images/itemListImg.jpg");
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.66)), url("/images/itemListImg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
 .titulo {
-    font-size: 50px;
+    color: white;
     font-family: "Marcellus", serif;
 }
 
@@ -45,7 +46,7 @@
 
 /* ---- MEDIA QUERIES ---- */
 
-@media(width < 800px){
+/* @media(width < 800px){
     .titulo{
         font-size: 40px;
         text-align: center;
@@ -62,4 +63,4 @@
         align-self: center;
 
     }
-}
+} */

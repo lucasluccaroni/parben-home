@@ -5,22 +5,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 46rem;
+    height: 35rem;
     position: relative;
     background-color: #A79F92;
     font-family: "Marcellus", serif;
+    position: relative;
 }
 
 .containerLogos {
     width: 55rem;
+    margin: 10px 0px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    margin: 0px 20px;
 }
 
 .firma {
@@ -48,86 +50,10 @@
 /* ---- MEDIA QUERIES ---- */
 
 
-@media(width < 1400px) {
-    .container {
-        height: 30rem;
-    }
-}
-
-@media(width < 1100px) {
-    .containerLogos {
-        justify-content: space-evenly;
-    }
-
-    .logo {
-        width: 70px;
-        height: 70px;
-    }
-}
-
-@media(width < 900px) {
-    p {
-        font-size: 15px;
-    }
-    .firma{
-        width: 17rem;
-    }
-    .firmaText{
-        font-size: 12px;
-    }
-    .githubLogo{
-        width: 25px;
-        height: 25px;
-    }
-}
-
-@media(width <=750px) {
-
-    h1 {
-        font-size: 30px;
-    }
-
-    .containerLogos {
-        width: 80vw;
-    }
-
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
-
-    .firma {
-        width: 19rem;
-        justify-content: space-evenly;
-    }
-    .firmaText{
-        color: rgba(0, 0, 0, 0.469);
-        font-size: 12px;
-    }
-}
 
 @media(width < 600px) {
-    .container {
-        height: 25rem;
-    }
-
-    .containerLogos {
-        justify-content: space-between;
-    }
-
-    .firma{
-        width: 15rem;
-    }
-    .firmaText{
-        font-size: 10px;
-    }
-}
-
-@media(width < 400px) {
-    .container {
-        height: 22rem;
-    }
-    .firma{
-        font-size: small;
+    .logo{
+        width: 40px;
+        margin: 0px 10px;
     }
 }

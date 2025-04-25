@@ -1,5 +1,5 @@
 .container {
-    height: 500px;
+    height: 600px;
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
@@ -34,16 +34,29 @@
 .text1 {
     font-family: "Geist", serif;
     color: #F2F3EE;
-    text-align: justify;
+    font-size: calc(1.325rem + .9vw) !important;
+    text-align: start;
     text-decoration: none;
 }
 
 .text2 {
     font-family: "Geist", serif;
     color: #F2F3EE;
-    text-align: justify;
+    font-size: 1.1rem !important;
+    text-align: start;
 }
 
+.textStyle1{
+    font-family: "Geist", serif;
+    color: #F2F3EE;
+    font-size: calc(1.325rem + .9vw) !important;
+}
+
+.textStyle2{
+    font-family: "Geist", serif;
+    color: #F2F3EE;
+    font-size: 1.1rem !important;
+}
 
 .color1{
     background-color: #100F0F;
@@ -93,11 +106,8 @@
 }
 
 @media(width < 720px){
-    .text1{
-        font-size: 20px;
-    }
-    .text2{
-        font-size: 18px;
+    .textStyle2{
+        font-size: 0.9rem !important;
     }
 }
 

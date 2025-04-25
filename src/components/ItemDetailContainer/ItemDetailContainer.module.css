@@ -1,5 +1,5 @@
 .itemDetailContainer {
-    margin-top: 2vh;
+    /* margin-top: 2vh; */
     font-family: "Geist", serif;
     /* border: solid yellow; */
 }
@@ -8,7 +8,7 @@
 
 /* ---- MEDIA QUERIES ---- */
 
-@media(width < 700px){
+/* @media(width < 700px){
     .itemDetailContainer{
         margin-top: 15vh;
     }
@@ -18,4 +18,4 @@
     .itemDetailContainer{
         margin-top: 10vh;
     }
-}
+} */
