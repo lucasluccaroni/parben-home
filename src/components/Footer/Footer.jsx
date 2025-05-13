@@ -27,7 +27,7 @@ const Footer = () => {
                 </a>
             </div> */}
             <div className='d-flex justify-content-center px-3 mb-3 align-items-center translate-middle bottom-0 start-50 position-absolute flex-column text-dark mt-md-5 w-100'>
-                <span className="text-center text-break pt-2 border-top border-dark" style={{fontSize:11}}>Diseñado y desarrollado por <a target="_blank" className="text-decoration-none text-dark" href="https://github.com/lucasluccaroni">@LucasLuccaroni</a></span> + colaboracion de <a target="_blank" className="text-decoration-none text-dark" href="https://www.ferdev.xyz">@FerDev</a>
+                <span className="text-center text-break pt-2 border-top border-dark" style={{fontSize:11}}>Diseñado y desarrollado por <a target="_blank" className="text-decoration-none text-dark" href="https://github.com/lucasluccaroni">@LucasLuccaroni</a>  + colaboracion de <a target="_blank" className="text-decoration-none text-dark" href="https://www.ferdev.xyz">@FerDev</a> </span>
             </div>
         </div>
     )
