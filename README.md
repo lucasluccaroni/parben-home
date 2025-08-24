@@ -1,7 +1,7 @@
 # **Parben Home**
 ### _Mobiliario de diseño_
 
-## **[Link aquí](http://parbenhome.com)**
+## **[Link aquí](https://www.parben.com.ar/)**
 
 Parben Home es una aplicacion web diseñada para una mueblería de diseño.
 
